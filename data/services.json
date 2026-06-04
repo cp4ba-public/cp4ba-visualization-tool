@@ -1,0 +1,19 @@
+{
+  "26.0.0": [
+    "application",
+    "bai",
+    "baw_authoring",
+    "baw_runtime",
+    "content",
+    "cpfs-im",
+    "decisions",
+    "decisions_ads",
+    "document_processing",
+    "document_processing_runtime",
+    "foundation",
+    "operator",
+    "workflow-process-service-authoring",
+    "workstreams",
+    "zen"
+  ]
+}

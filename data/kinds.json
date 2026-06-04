@@ -1,0 +1,25 @@
+{
+  "kinds": [
+    "Certificate",
+    "Cluster",
+    "ConfigMap",
+    "CronJob",
+    "Deployment",
+    "HorizontalPodAutoscaler",
+    "Job",
+    "NetworkPolicy",
+    "Operator",
+    "PersistentVolumeClaim",
+    "Pod",
+    "PodDisruptionBudget",
+    "ReplicaSet",
+    "Role",
+    "RoleBinding",
+    "Route",
+    "Secret",
+    "Service",
+    "ServiceAccount",
+    "StatefulSet",
+    "ZenExtension"
+  ]
+}
