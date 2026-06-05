@@ -67796,6 +67796,175 @@
     {
       "Capability": "document_processing",
       "foundational_services": "cpfs-im-zen",
+      "app_description": "App-Engine component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator,ibm-dpe-operator,ibm-bts-operator-controller-manager) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-dpe-operator<br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>",
+      "deployment": "icp4adeploy-workspace-aae-ae-deployment",
+      "reference": "application/icp4adeploy-workspace-aae-ae-deployment/ae",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "app-engine Deployment",
+      "long_description": "This Deployment manages the app-engine component of CP4BA.\nCapabilities: application\nIf this component is down, related functionality will be unavailable.",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-deployment",
+          "kind": "Deployment",
+          "short_description": "Deployment for icp4adeploy-workspace-aae-ae-deployment",
+          "troubleshooting": [
+            "Check Deployment status: oc get deployment icp4adeploy-workspace-aae-ae-deployment",
+            "View Deployment logs: oc logs deployment/icp4adeploy-workspace-aae-ae-deployment",
+            "Describe Deployment: oc describe deployment icp4adeploy-workspace-aae-ae-deployment"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aae-ae-scripts",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-workspace-aae-ae-scripts",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-workspace-aae-ae-scripts",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-workspace-aae-ae-scripts"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aae-ae-configuration",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-workspace-aae-ae-configuration",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-workspace-aae-ae-configuration",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-workspace-aae-ae-configuration"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aae-ae-logrotate",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-workspace-aae-ae-logrotate",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-workspace-aae-ae-logrotate",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-workspace-aae-ae-logrotate"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aae-ae-file-config",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-workspace-aae-ae-file-config",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-workspace-aae-ae-file-config",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-workspace-aae-ae-file-config"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-pg-client-cert-secret",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-pg-client-cert-secret",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-pg-client-cert-secret",
+            "Describe Secret: oc describe secret icp4adeploy-pg-client-cert-secret"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aae-ae-db-client-tls",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-workspace-aae-ae-db-client-tls",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-workspace-aae-ae-db-client-tls",
+            "Describe Secret: oc describe secret icp4adeploy-workspace-aae-ae-db-client-tls"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aae-app-engine-tls-secret",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-workspace-aae-app-engine-tls-secret",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-workspace-aae-app-engine-tls-secret",
+            "Describe Secret: oc describe secret icp4adeploy-workspace-aae-app-engine-tls-secret"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aae-ae-credential",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-workspace-aae-ae-credential",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-workspace-aae-ae-credential",
+            "Describe Secret: oc describe secret icp4adeploy-workspace-aae-ae-credential"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "cp4a-shared-log-pvc",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for cp4a-shared-log-pvc",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim cp4a-shared-log-pvc",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim cp4a-shared-log-pvc"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aaeae-file-pvc",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for icp4adeploy-workspace-aaeae-file-pvc",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-workspace-aaeae-file-pvc",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-workspace-aaeae-file-pvc"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq",
+          "kind": "Pod",
+          "short_description": "Pod for icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq",
+          "troubleshooting": [
+            "Check Pod status: oc get pod icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq",
+            "View Pod logs: oc logs pod/icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq",
+            "Describe Pod: oc describe pod icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-d9g6v",
+          "kind": "Pod",
+          "short_description": "Pod for icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-d9g6v",
+          "troubleshooting": [
+            "Check Pod status: oc get pod icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-d9g6v",
+            "View Pod logs: oc logs pod/icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-d9g6v",
+            "Describe Pod: oc describe pod icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-d9g6v"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-mc4k7",
+          "kind": "Pod",
+          "short_description": "Pod for icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-mc4k7",
+          "troubleshooting": [
+            "Check Pod status: oc get pod icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-mc4k7",
+            "View Pod logs: oc logs pod/icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-mc4k7",
+            "Describe Pod: oc describe pod icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-mc4k7"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-zlk68",
+          "kind": "Pod",
+          "short_description": "Pod for icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-zlk68",
+          "troubleshooting": [
+            "Check Pod status: oc get pod icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-zlk68",
+            "View Pod logs: oc logs pod/icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-zlk68",
+            "Describe Pod: oc describe pod icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-zlk68"
+          ],
+          "dependency": []
+        }
+      ]
+    },
+    {
+      "Capability": "document_processing",
+      "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Cds-Deploy component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator,ibm-dpe-operator,ibm-bts-operator-controller-manager) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-dpe-operator<br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>",
       "deployment": "icp4adeploy-cds-deploy",
       "reference": "document_processing/icp4adeploy-cds-deploy/cds",
@@ -70557,6 +70726,31 @@
             "Check Pod status: oc get pod setup-multi-tenancy-tables-job-sc7l9",
             "View Pod logs: oc logs pod/setup-multi-tenancy-tables-job-sc7l9",
             "Describe Pod: oc describe pod setup-multi-tenancy-tables-job-sc7l9"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing",
+      "app": "Service",
+      "module": "icp4adeploy-workspace-aae-ae-service",
+      "reference": "document_processing/Service/icp4adeploy-workspace-aae-ae-service",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "Service icp4adeploy-workspace-aae-ae-service",
+      "long_description": "Kubernetes Service resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-service",
+          "kind": "Service",
+          "short_description": "Service for icp4adeploy-workspace-aae-ae-service",
+          "troubleshooting": [
+            "Check Service status: oc get service icp4adeploy-workspace-aae-ae-service",
+            "View Service logs: oc logs service/icp4adeploy-workspace-aae-ae-service",
+            "Describe Service: oc describe service icp4adeploy-workspace-aae-ae-service"
           ],
           "dependency": []
         }
@@ -74114,6 +74308,30 @@
     },
     {
       "Capability": "document_processing",
+      "app": "Secret",
+      "module": "icp4adeploy-workspace-aae-ae-credential",
+      "reference": "document_processing/Secret/icp4adeploy-workspace-aae-ae-credential",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "Secret icp4adeploy-workspace-aae-ae-credential",
+      "long_description": "Kubernetes Secret resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-credential",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-workspace-aae-ae-credential",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-workspace-aae-ae-credential",
+            "Describe Secret: oc describe secret icp4adeploy-workspace-aae-ae-credential"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing",
       "app": "PersistentVolumeClaim",
       "module": "icp4adeploy-gitgateway-deploy-7dcd94d7c6-9gvzr-opt-jre-folder-pvc",
       "reference": "document_processing/PersistentVolumeClaim/icp4adeploy-gitgateway-deploy-7dcd94d7c6-9gvzr-opt-jre-folder-pvc",
@@ -74936,6 +75154,31 @@
     },
     {
       "Capability": "document_processing",
+      "app": "Pod",
+      "module": "icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq",
+      "reference": "document_processing/Pod/icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "Pod icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq",
+      "long_description": "Kubernetes Pod resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq",
+          "kind": "Pod",
+          "short_description": "Pod for icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq",
+          "troubleshooting": [
+            "Check Pod status: oc get pod icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq",
+            "View Pod logs: oc logs pod/icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq",
+            "Describe Pod: oc describe pod icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing",
       "app": "PersistentVolumeClaim",
       "module": "icp4adeploy-cdra-deploy-79947f5d5-7fzkf-tmp-folder-pvc",
       "reference": "document_processing/PersistentVolumeClaim/icp4adeploy-cdra-deploy-79947f5d5-7fzkf-tmp-folder-pvc",
@@ -75145,6 +75388,31 @@
           "troubleshooting": [
             "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-cpe-deploy-6d45c74f4c-vk8zw-opt-tivoli-folder-pvc",
             "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-cpe-deploy-6d45c74f4c-vk8zw-opt-tivoli-folder-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing",
+      "app": "ReplicaSet",
+      "module": "icp4adeploy-workspace-aae-ae-deployment-6b6c97c947",
+      "reference": "document_processing/ReplicaSet/icp4adeploy-workspace-aae-ae-deployment-6b6c97c947",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "ReplicaSet icp4adeploy-workspace-aae-ae-deployment-6b6c97c947",
+      "long_description": "Kubernetes ReplicaSet resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-deployment-6b6c97c947",
+          "kind": "ReplicaSet",
+          "short_description": "ReplicaSet for icp4adeploy-workspace-aae-ae-deployment-6b6c97c947",
+          "troubleshooting": [
+            "Check ReplicaSet status: oc get replicaset icp4adeploy-workspace-aae-ae-deployment-6b6c97c947",
+            "View ReplicaSet logs: oc logs replicaset/icp4adeploy-workspace-aae-ae-deployment-6b6c97c947",
+            "Describe ReplicaSet: oc describe replicaset icp4adeploy-workspace-aae-ae-deployment-6b6c97c947"
           ],
           "dependency": []
         }
@@ -75651,6 +75919,30 @@
           "troubleshooting": [
             "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-navigator-deploy-78dffb99d6-h9bf8-server-folder-pvc",
             "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-navigator-deploy-78dffb99d6-h9bf8-server-folder-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing",
+      "app": "ConfigMap",
+      "module": "icp4adeploy-workspace-aae-ae-file-config",
+      "reference": "document_processing/ConfigMap/icp4adeploy-workspace-aae-ae-file-config",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "ConfigMap icp4adeploy-workspace-aae-ae-file-config",
+      "long_description": "Kubernetes ConfigMap resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-file-config",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-workspace-aae-ae-file-config",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-workspace-aae-ae-file-config",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-workspace-aae-ae-file-config"
           ],
           "dependency": []
         }
@@ -76376,6 +76668,30 @@
             "Check Pod status: oc get pod icp4adeploy-webhook-5cdb685547-p5p7c",
             "View Pod logs: oc logs pod/icp4adeploy-webhook-5cdb685547-p5p7c",
             "Describe Pod: oc describe pod icp4adeploy-webhook-5cdb685547-p5p7c"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing",
+      "app": "Secret",
+      "module": "icp4adeploy-workspace-aae-ae-credential-init",
+      "reference": "document_processing/Secret/icp4adeploy-workspace-aae-ae-credential-init",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "Secret icp4adeploy-workspace-aae-ae-credential-init",
+      "long_description": "Kubernetes Secret resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-credential-init",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-workspace-aae-ae-credential-init",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-workspace-aae-ae-credential-init",
+            "Describe Secret: oc describe secret icp4adeploy-workspace-aae-ae-credential-init"
           ],
           "dependency": []
         }
@@ -77200,6 +77516,30 @@
           "troubleshooting": [
             "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-cpe-watcher-548cb6b4dc-dz2qg-ibm-folder-pvc",
             "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-cpe-watcher-548cb6b4dc-dz2qg-ibm-folder-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing",
+      "app": "ConfigMap",
+      "module": "icp4adeploy-workspace-aae-ae-logrotate",
+      "reference": "document_processing/ConfigMap/icp4adeploy-workspace-aae-ae-logrotate",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "ConfigMap icp4adeploy-workspace-aae-ae-logrotate",
+      "long_description": "Kubernetes ConfigMap resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-logrotate",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-workspace-aae-ae-logrotate",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-workspace-aae-ae-logrotate",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-workspace-aae-ae-logrotate"
           ],
           "dependency": []
         }
@@ -78671,6 +79011,30 @@
           "troubleshooting": [
             "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-cpe-deploy-6d45c74f4c-j52v9-etc-supervisor-folder-pvc",
             "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-cpe-deploy-6d45c74f4c-j52v9-etc-supervisor-folder-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing",
+      "app": "ConfigMap",
+      "module": "icp4adeploy-workspace-aae-ae-configuration-init",
+      "reference": "document_processing/ConfigMap/icp4adeploy-workspace-aae-ae-configuration-init",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "ConfigMap icp4adeploy-workspace-aae-ae-configuration-init",
+      "long_description": "Kubernetes ConfigMap resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-configuration-init",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-workspace-aae-ae-configuration-init",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-workspace-aae-ae-configuration-init",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-workspace-aae-ae-configuration-init"
           ],
           "dependency": []
         }
@@ -83122,6 +83486,30 @@
     },
     {
       "Capability": "document_processing",
+      "app": "Secret",
+      "module": "icp4adeploy-workspace-aae-app-engine-admin-secret",
+      "reference": "document_processing/Secret/icp4adeploy-workspace-aae-app-engine-admin-secret",
+      "scope": [
+        "Icp4Adeploy"
+      ],
+      "short_description": "Secret icp4adeploy-workspace-aae-app-engine-admin-secret",
+      "long_description": "Kubernetes Secret resource for icp4adeploy",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-app-engine-admin-secret",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-workspace-aae-app-engine-admin-secret",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-workspace-aae-app-engine-admin-secret",
+            "Describe Secret: oc describe secret icp4adeploy-workspace-aae-app-engine-admin-secret"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing",
       "app": "PersistentVolumeClaim",
       "module": "icp4adeploy-cpe-deploy-6d45c74f4c-j52v9-licenses-folder-pvc",
       "reference": "document_processing/PersistentVolumeClaim/icp4adeploy-cpe-deploy-6d45c74f4c-j52v9-licenses-folder-pvc",
@@ -84015,6 +84403,30 @@
     },
     {
       "Capability": "document_processing",
+      "app": "PersistentVolumeClaim",
+      "module": "icp4adeploy-workspace-aaeae-file-pvc",
+      "reference": "document_processing/PersistentVolumeClaim/icp4adeploy-workspace-aaeae-file-pvc",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "PersistentVolumeClaim icp4adeploy-workspace-aaeae-file-pvc",
+      "long_description": "Kubernetes PersistentVolumeClaim resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aaeae-file-pvc",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for icp4adeploy-workspace-aaeae-file-pvc",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-workspace-aaeae-file-pvc",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-workspace-aaeae-file-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing",
       "app": "Secret",
       "module": "ibm-usage-metering-upload-token",
       "reference": "document_processing/Secret/ibm-usage-metering-upload-token",
@@ -84231,6 +84643,30 @@
     },
     {
       "Capability": "document_processing",
+      "app": "ConfigMap",
+      "module": "icp4adeploy-workspace-aae-ae-configuration",
+      "reference": "document_processing/ConfigMap/icp4adeploy-workspace-aae-ae-configuration",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "ConfigMap icp4adeploy-workspace-aae-ae-configuration",
+      "long_description": "Kubernetes ConfigMap resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-configuration",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-workspace-aae-ae-configuration",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-workspace-aae-ae-configuration",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-workspace-aae-ae-configuration"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing",
       "app": "PersistentVolumeClaim",
       "module": "icp4adeploy-processing-extraction-747864f9d6-ckw6w-nginx-folder",
       "reference": "document_processing/PersistentVolumeClaim/icp4adeploy-processing-extraction-747864f9d6-ckw6w-nginx-folder",
@@ -84271,6 +84707,30 @@
           "troubleshooting": [
             "Check Role status: oc get role c83ae6661bca71ad4dbc2b1e7ef20a709303a703ff1f8119cc222135e388cfa",
             "Describe Role: oc describe role c83ae6661bca71ad4dbc2b1e7ef20a709303a703ff1f8119cc222135e388cfa"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing",
+      "app": "ConfigMap",
+      "module": "icp4adeploy-workspace-aae-zen-ext-logout",
+      "reference": "document_processing/ConfigMap/icp4adeploy-workspace-aae-zen-ext-logout",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "ConfigMap icp4adeploy-workspace-aae-zen-ext-logout",
+      "long_description": "Kubernetes ConfigMap resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-zen-ext-logout",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-workspace-aae-zen-ext-logout",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-workspace-aae-zen-ext-logout",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-workspace-aae-zen-ext-logout"
           ],
           "dependency": []
         }
@@ -84560,6 +85020,30 @@
           "troubleshooting": [
             "Check PersistentVolumeClaim status: oc get persistentvolumeclaim cpe-filestore",
             "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim cpe-filestore"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing",
+      "app": "Secret",
+      "module": "icp4adeploy-workspace-aae-app-engine-ext-tls-secret",
+      "reference": "document_processing/Secret/icp4adeploy-workspace-aae-app-engine-ext-tls-secret",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "Secret icp4adeploy-workspace-aae-app-engine-ext-tls-secret",
+      "long_description": "Kubernetes Secret resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-app-engine-ext-tls-secret",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-workspace-aae-app-engine-ext-tls-secret",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-workspace-aae-app-engine-ext-tls-secret",
+            "Describe Secret: oc describe secret icp4adeploy-workspace-aae-app-engine-ext-tls-secret"
           ],
           "dependency": []
         }
@@ -87559,6 +88043,31 @@
     },
     {
       "Capability": "document_processing",
+      "app": "Service",
+      "module": "icp4adeploy-workspace-aae-ae-service-headless",
+      "reference": "document_processing/Service/icp4adeploy-workspace-aae-ae-service-headless",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "Service icp4adeploy-workspace-aae-ae-service-headless",
+      "long_description": "Kubernetes Service resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-service-headless",
+          "kind": "Service",
+          "short_description": "Service for icp4adeploy-workspace-aae-ae-service-headless",
+          "troubleshooting": [
+            "Check Service status: oc get service icp4adeploy-workspace-aae-ae-service-headless",
+            "View Service logs: oc logs service/icp4adeploy-workspace-aae-ae-service-headless",
+            "Describe Service: oc describe service icp4adeploy-workspace-aae-ae-service-headless"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing",
       "app": "Role",
       "module": "ibm-cpe-watcher",
       "reference": "document_processing/Role/ibm-cpe-watcher",
@@ -87728,6 +88237,30 @@
     },
     {
       "Capability": "document_processing",
+      "app": "ConfigMap",
+      "module": "icp4adeploy-workspace-aae-ae-scripts",
+      "reference": "document_processing/ConfigMap/icp4adeploy-workspace-aae-ae-scripts",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "ConfigMap icp4adeploy-workspace-aae-ae-scripts",
+      "long_description": "Kubernetes ConfigMap resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-scripts",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-workspace-aae-ae-scripts",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-workspace-aae-ae-scripts",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-workspace-aae-ae-scripts"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing",
       "app": "PersistentVolumeClaim",
       "module": "icp4adeploy-cpe-deploy-6d45c74f4c-vk8zw-server-tranlog-folder-pvc",
       "reference": "document_processing/PersistentVolumeClaim/icp4adeploy-cpe-deploy-6d45c74f4c-vk8zw-server-tranlog-folder-pvc",
@@ -87816,6 +88349,30 @@
           "troubleshooting": [
             "Check ConfigMap status: oc get configmap icp4adeploy-bastudio-lombardi-configmap",
             "Describe ConfigMap: oc describe configmap icp4adeploy-bastudio-lombardi-configmap"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing",
+      "app": "Secret",
+      "module": "icp4adeploy-workspace-aae-app-engine-tls-secret",
+      "reference": "document_processing/Secret/icp4adeploy-workspace-aae-app-engine-tls-secret",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "Secret icp4adeploy-workspace-aae-app-engine-tls-secret",
+      "long_description": "Kubernetes Secret resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-app-engine-tls-secret",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-workspace-aae-app-engine-tls-secret",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-workspace-aae-app-engine-tls-secret",
+            "Describe Secret: oc describe secret icp4adeploy-workspace-aae-app-engine-tls-secret"
           ],
           "dependency": []
         }
@@ -88950,6 +89507,30 @@
           "troubleshooting": [
             "Check Secret status: oc get secret ibm-ban-secret",
             "Describe Secret: oc describe secret ibm-ban-secret"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing",
+      "app": "ZenExtension",
+      "module": "icp4adeploy-workspace-aae-zen-ext",
+      "reference": "document_processing/ZenExtension/icp4adeploy-workspace-aae-zen-ext",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "ZenExtension icp4adeploy-workspace-aae-zen-ext",
+      "long_description": "Kubernetes ZenExtension resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-zen-ext",
+          "kind": "ZenExtension",
+          "short_description": "ZenExtension for icp4adeploy-workspace-aae-zen-ext",
+          "troubleshooting": [
+            "Check ZenExtension status: oc get zenextension icp4adeploy-workspace-aae-zen-ext",
+            "Describe ZenExtension: oc describe zenextension icp4adeploy-workspace-aae-zen-ext"
           ],
           "dependency": []
         }
@@ -120541,124 +121122,6 @@
     {
       "Capability": "document_processing_runtime",
       "foundational_services": "cpfs-im-zen",
-      "app_description": "Icp4Adeploy-Gitgateway-Deploy component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
-      "deployment": "icp4adeploy-gitgateway-deploy",
-      "reference": "document_processing/icp4adeploy-gitgateway-deploy/gitgateway",
-      "scope": [
-        "Icp4Adeploy-Gitgateway-Deploy"
-      ],
-      "short_description": "icp4adeploy-gitgateway-deploy Deployment",
-      "long_description": "This Deployment manages the icp4adeploy-gitgateway-deploy component of CP4BA.\nCapabilities: document_processing\nIf this component is down, related functionality will be unavailable.",
-      "k8s_objects": [
-        {
-          "name": "icp4adeploy-gitgateway-deploy",
-          "kind": "Deployment",
-          "short_description": "Deployment for icp4adeploy-gitgateway-deploy",
-          "troubleshooting": [
-            "Check Deployment status: oc get deployment icp4adeploy-gitgateway-deploy",
-            "View Deployment logs: oc logs deployment/icp4adeploy-gitgateway-deploy",
-            "Describe Deployment: oc describe deployment icp4adeploy-gitgateway-deploy"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4a-root-ca",
-          "kind": "Secret",
-          "short_description": "Secret for icp4a-root-ca",
-          "troubleshooting": [
-            "Check Secret status: oc get secret icp4a-root-ca",
-            "Describe Secret: oc describe secret icp4a-root-ca"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "gitgateway-datastore",
-          "kind": "PersistentVolumeClaim",
-          "short_description": "PersistentVolumeClaim for gitgateway-datastore",
-          "troubleshooting": [
-            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim gitgateway-datastore",
-            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim gitgateway-datastore"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "gitgateway-logstore",
-          "kind": "PersistentVolumeClaim",
-          "short_description": "PersistentVolumeClaim for gitgateway-logstore",
-          "troubleshooting": [
-            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim gitgateway-logstore",
-            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim gitgateway-logstore"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-gitgateway-deploy-7dcd94d7c6-9gvzr",
-          "kind": "Pod",
-          "short_description": "Pod for icp4adeploy-gitgateway-deploy-7dcd94d7c6-9gvzr",
-          "troubleshooting": [
-            "Check Pod status: oc get pod icp4adeploy-gitgateway-deploy-7dcd94d7c6-9gvzr",
-            "View Pod logs: oc logs pod/icp4adeploy-gitgateway-deploy-7dcd94d7c6-9gvzr",
-            "Describe Pod: oc describe pod icp4adeploy-gitgateway-deploy-7dcd94d7c6-9gvzr"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-gitgateway-deploy-7dcd94d7c6-s2rpf",
-          "kind": "Pod",
-          "short_description": "Pod for icp4adeploy-gitgateway-deploy-7dcd94d7c6-s2rpf",
-          "troubleshooting": [
-            "Check Pod status: oc get pod icp4adeploy-gitgateway-deploy-7dcd94d7c6-s2rpf",
-            "View Pod logs: oc logs pod/icp4adeploy-gitgateway-deploy-7dcd94d7c6-s2rpf",
-            "Describe Pod: oc describe pod icp4adeploy-gitgateway-deploy-7dcd94d7c6-s2rpf"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-gitgateway-svc",
-          "kind": "Service",
-          "short_description": "Service for icp4adeploy-gitgateway-svc",
-          "troubleshooting": [
-            "Check Service status: oc get service icp4adeploy-gitgateway-svc",
-            "View Service logs: oc logs service/icp4adeploy-gitgateway-svc",
-            "Describe Service: oc describe service icp4adeploy-gitgateway-svc"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-gitgateway-deploy-7dcd94d7c6",
-          "kind": "ReplicaSet",
-          "short_description": "ReplicaSet for icp4adeploy-gitgateway-deploy-7dcd94d7c6",
-          "troubleshooting": [
-            "Check ReplicaSet status: oc get replicaset icp4adeploy-gitgateway-deploy-7dcd94d7c6",
-            "Describe ReplicaSet: oc describe replicaset icp4adeploy-gitgateway-deploy-7dcd94d7c6"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-gitgateway-service-account",
-          "kind": "ServiceAccount",
-          "short_description": "ServiceAccount for icp4adeploy-gitgateway-service-account",
-          "troubleshooting": [
-            "Check ServiceAccount status: oc get serviceaccount icp4adeploy-gitgateway-service-account",
-            "Describe ServiceAccount: oc describe serviceaccount icp4adeploy-gitgateway-service-account"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-gitgateway-zen-extension",
-          "kind": "ZenExtension",
-          "short_description": "ZenExtension for icp4adeploy-gitgateway-zen-extension",
-          "troubleshooting": [
-            "Check ZenExtension status: oc get zenextension icp4adeploy-gitgateway-zen-extension",
-            "Describe ZenExtension: oc describe zenextension icp4adeploy-gitgateway-zen-extension"
-          ],
-          "dependency": []
-        }
-      ]
-    },
-    {
-      "Capability": "document_processing_runtime",
-      "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Aca component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-postprocessing",
       "reference": "content/icp4adeploy-postprocessing/postprocessing",
@@ -122427,6 +122890,175 @@
           "troubleshooting": [
             "Check PodDisruptionBudget status: oc get poddisruptionbudget icp4adeploy-classifyprocess-classify-pdb",
             "Describe PodDisruptionBudget: oc describe poddisruptionbudget icp4adeploy-classifyprocess-classify-pdb"
+          ],
+          "dependency": []
+        }
+      ]
+    },
+    {
+      "Capability": "document_processing_runtime",
+      "foundational_services": "cpfs-im-zen",
+      "app_description": "App-Engine component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
+      "deployment": "icp4adeploy-workspace-aae-ae-deployment",
+      "reference": "application/icp4adeploy-workspace-aae-ae-deployment/ae",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "app-engine Deployment",
+      "long_description": "This Deployment manages the app-engine component of CP4BA.\nCapabilities: application\nIf this component is down, related functionality will be unavailable.",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-deployment",
+          "kind": "Deployment",
+          "short_description": "Deployment for icp4adeploy-workspace-aae-ae-deployment",
+          "troubleshooting": [
+            "Check Deployment status: oc get deployment icp4adeploy-workspace-aae-ae-deployment",
+            "View Deployment logs: oc logs deployment/icp4adeploy-workspace-aae-ae-deployment",
+            "Describe Deployment: oc describe deployment icp4adeploy-workspace-aae-ae-deployment"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aae-ae-scripts",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-workspace-aae-ae-scripts",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-workspace-aae-ae-scripts",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-workspace-aae-ae-scripts"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aae-ae-configuration",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-workspace-aae-ae-configuration",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-workspace-aae-ae-configuration",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-workspace-aae-ae-configuration"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aae-ae-logrotate",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-workspace-aae-ae-logrotate",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-workspace-aae-ae-logrotate",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-workspace-aae-ae-logrotate"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aae-ae-file-config",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-workspace-aae-ae-file-config",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-workspace-aae-ae-file-config",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-workspace-aae-ae-file-config"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-pg-client-cert-secret",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-pg-client-cert-secret",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-pg-client-cert-secret",
+            "Describe Secret: oc describe secret icp4adeploy-pg-client-cert-secret"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aae-ae-db-client-tls",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-workspace-aae-ae-db-client-tls",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-workspace-aae-ae-db-client-tls",
+            "Describe Secret: oc describe secret icp4adeploy-workspace-aae-ae-db-client-tls"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aae-app-engine-tls-secret",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-workspace-aae-app-engine-tls-secret",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-workspace-aae-app-engine-tls-secret",
+            "Describe Secret: oc describe secret icp4adeploy-workspace-aae-app-engine-tls-secret"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aae-ae-credential",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-workspace-aae-ae-credential",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-workspace-aae-ae-credential",
+            "Describe Secret: oc describe secret icp4adeploy-workspace-aae-ae-credential"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "cp4a-shared-log-pvc",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for cp4a-shared-log-pvc",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim cp4a-shared-log-pvc",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim cp4a-shared-log-pvc"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aaeae-file-pvc",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for icp4adeploy-workspace-aaeae-file-pvc",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-workspace-aaeae-file-pvc",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-workspace-aaeae-file-pvc"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq",
+          "kind": "Pod",
+          "short_description": "Pod for icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq",
+          "troubleshooting": [
+            "Check Pod status: oc get pod icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq",
+            "View Pod logs: oc logs pod/icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq",
+            "Describe Pod: oc describe pod icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-d9g6v",
+          "kind": "Pod",
+          "short_description": "Pod for icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-d9g6v",
+          "troubleshooting": [
+            "Check Pod status: oc get pod icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-d9g6v",
+            "View Pod logs: oc logs pod/icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-d9g6v",
+            "Describe Pod: oc describe pod icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-d9g6v"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-mc4k7",
+          "kind": "Pod",
+          "short_description": "Pod for icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-mc4k7",
+          "troubleshooting": [
+            "Check Pod status: oc get pod icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-mc4k7",
+            "View Pod logs: oc logs pod/icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-mc4k7",
+            "Describe Pod: oc describe pod icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-mc4k7"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-zlk68",
+          "kind": "Pod",
+          "short_description": "Pod for icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-zlk68",
+          "troubleshooting": [
+            "Check Pod status: oc get pod icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-zlk68",
+            "View Pod logs: oc logs pod/icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-zlk68",
+            "Describe Pod: oc describe pod icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-zlk68"
           ],
           "dependency": []
         }
@@ -124728,6 +125360,31 @@
     },
     {
       "Capability": "document_processing_runtime",
+      "app": "Service",
+      "module": "icp4adeploy-workspace-aae-ae-service",
+      "reference": "document_processing_runtime/Service/icp4adeploy-workspace-aae-ae-service",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "Service icp4adeploy-workspace-aae-ae-service",
+      "long_description": "Kubernetes Service resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-service",
+          "kind": "Service",
+          "short_description": "Service for icp4adeploy-workspace-aae-ae-service",
+          "troubleshooting": [
+            "Check Service status: oc get service icp4adeploy-workspace-aae-ae-service",
+            "View Service logs: oc logs service/icp4adeploy-workspace-aae-ae-service",
+            "Describe Service: oc describe service icp4adeploy-workspace-aae-ae-service"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing_runtime",
       "app": "PersistentVolumeClaim",
       "module": "icp4adeploy-cpe-deploy-6d45c74f4c-vk8zw-server-apps-folder-pvc",
       "reference": "document_processing_runtime/PersistentVolumeClaim/icp4adeploy-cpe-deploy-6d45c74f4c-vk8zw-server-apps-folder-pvc",
@@ -126777,30 +127434,6 @@
     },
     {
       "Capability": "document_processing_runtime",
-      "app": "Secret",
-      "module": "icp4adeploy-gitgateway-service-account-dockercfg-zk6l9",
-      "reference": "document_processing_runtime/Secret/icp4adeploy-gitgateway-service-account-dockercfg-zk6l9",
-      "scope": [
-        "Icp4Adeploy"
-      ],
-      "short_description": "Secret icp4adeploy-gitgateway-service-account-dockercfg-zk6l9",
-      "long_description": "Kubernetes Secret resource for icp4adeploy",
-      "k8s_objects": [
-        {
-          "name": "icp4adeploy-gitgateway-service-account-dockercfg-zk6l9",
-          "kind": "Secret",
-          "short_description": "Secret for icp4adeploy-gitgateway-service-account-dockercfg-zk6l9",
-          "troubleshooting": [
-            "Check Secret status: oc get secret icp4adeploy-gitgateway-service-account-dockercfg-zk6l9",
-            "Describe Secret: oc describe secret icp4adeploy-gitgateway-service-account-dockercfg-zk6l9"
-          ],
-          "dependency": []
-        }
-      ],
-      "table_only": true
-    },
-    {
-      "Capability": "document_processing_runtime",
       "app": "PersistentVolumeClaim",
       "module": "icp4adeploy-ban-job-psgz4-licenses-folder-pvc",
       "reference": "document_processing_runtime/PersistentVolumeClaim/icp4adeploy-ban-job-psgz4-licenses-folder-pvc",
@@ -126937,30 +127570,6 @@
           "troubleshooting": [
             "Check ServiceAccount status: oc get serviceaccount ibm-cs-install-catalog-v4-17-0",
             "Describe ServiceAccount: oc describe serviceaccount ibm-cs-install-catalog-v4-17-0"
-          ],
-          "dependency": []
-        }
-      ],
-      "table_only": true
-    },
-    {
-      "Capability": "document_processing_runtime",
-      "app": "PersistentVolumeClaim",
-      "module": "gitgateway-cfgstore",
-      "reference": "document_processing_runtime/PersistentVolumeClaim/gitgateway-cfgstore",
-      "scope": [
-        "Gitgateway-Cfgstore"
-      ],
-      "short_description": "PersistentVolumeClaim gitgateway-cfgstore",
-      "long_description": "Kubernetes PersistentVolumeClaim resource for gitgateway-cfgstore",
-      "k8s_objects": [
-        {
-          "name": "gitgateway-cfgstore",
-          "kind": "PersistentVolumeClaim",
-          "short_description": "PersistentVolumeClaim for gitgateway-cfgstore",
-          "troubleshooting": [
-            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim gitgateway-cfgstore",
-            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim gitgateway-cfgstore"
           ],
           "dependency": []
         }
@@ -127298,31 +127907,6 @@
             "Check ReplicaSet status: oc get replicaset icp4adeploy-wdu-extraction-78f47c5679",
             "View ReplicaSet logs: oc logs replicaset/icp4adeploy-wdu-extraction-78f47c5679",
             "Describe ReplicaSet: oc describe replicaset icp4adeploy-wdu-extraction-78f47c5679"
-          ],
-          "dependency": []
-        }
-      ],
-      "table_only": true
-    },
-    {
-      "Capability": "document_processing_runtime",
-      "app": "ReplicaSet",
-      "module": "icp4adeploy-gitgateway-deploy-7dcd94d7c6",
-      "reference": "document_processing_runtime/ReplicaSet/icp4adeploy-gitgateway-deploy-7dcd94d7c6",
-      "scope": [
-        "Icp4Adeploy-Gitgateway-Deploy"
-      ],
-      "short_description": "ReplicaSet icp4adeploy-gitgateway-deploy-7dcd94d7c6",
-      "long_description": "Kubernetes ReplicaSet resource for icp4adeploy-gitgateway-deploy",
-      "k8s_objects": [
-        {
-          "name": "icp4adeploy-gitgateway-deploy-7dcd94d7c6",
-          "kind": "ReplicaSet",
-          "short_description": "ReplicaSet for icp4adeploy-gitgateway-deploy-7dcd94d7c6",
-          "troubleshooting": [
-            "Check ReplicaSet status: oc get replicaset icp4adeploy-gitgateway-deploy-7dcd94d7c6",
-            "View ReplicaSet logs: oc logs replicaset/icp4adeploy-gitgateway-deploy-7dcd94d7c6",
-            "Describe ReplicaSet: oc describe replicaset icp4adeploy-gitgateway-deploy-7dcd94d7c6"
           ],
           "dependency": []
         }
@@ -128081,6 +128665,30 @@
     },
     {
       "Capability": "document_processing_runtime",
+      "app": "Secret",
+      "module": "icp4adeploy-workspace-aae-ae-credential",
+      "reference": "document_processing_runtime/Secret/icp4adeploy-workspace-aae-ae-credential",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "Secret icp4adeploy-workspace-aae-ae-credential",
+      "long_description": "Kubernetes Secret resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-credential",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-workspace-aae-ae-credential",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-workspace-aae-ae-credential",
+            "Describe Secret: oc describe secret icp4adeploy-workspace-aae-ae-credential"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing_runtime",
       "app": "PersistentVolumeClaim",
       "module": "icp4adeploy-gitgateway-deploy-7dcd94d7c6-9gvzr-opt-jre-folder-pvc",
       "reference": "document_processing_runtime/PersistentVolumeClaim/icp4adeploy-gitgateway-deploy-7dcd94d7c6-9gvzr-opt-jre-folder-pvc",
@@ -128807,6 +129415,31 @@
     },
     {
       "Capability": "document_processing_runtime",
+      "app": "Pod",
+      "module": "icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq",
+      "reference": "document_processing_runtime/Pod/icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "Pod icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq",
+      "long_description": "Kubernetes Pod resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq",
+          "kind": "Pod",
+          "short_description": "Pod for icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq",
+          "troubleshooting": [
+            "Check Pod status: oc get pod icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq",
+            "View Pod logs: oc logs pod/icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq",
+            "Describe Pod: oc describe pod icp4adeploy-workspace-aae-ae-deployment-75cc8f9887-4tmsq"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing_runtime",
       "app": "PersistentVolumeClaim",
       "module": "icp4adeploy-cdra-deploy-79947f5d5-7fzkf-tmp-folder-pvc",
       "reference": "document_processing_runtime/PersistentVolumeClaim/icp4adeploy-cdra-deploy-79947f5d5-7fzkf-tmp-folder-pvc",
@@ -129016,6 +129649,31 @@
           "troubleshooting": [
             "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-cpe-deploy-6d45c74f4c-vk8zw-opt-tivoli-folder-pvc",
             "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-cpe-deploy-6d45c74f4c-vk8zw-opt-tivoli-folder-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing_runtime",
+      "app": "ReplicaSet",
+      "module": "icp4adeploy-workspace-aae-ae-deployment-6b6c97c947",
+      "reference": "document_processing_runtime/ReplicaSet/icp4adeploy-workspace-aae-ae-deployment-6b6c97c947",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "ReplicaSet icp4adeploy-workspace-aae-ae-deployment-6b6c97c947",
+      "long_description": "Kubernetes ReplicaSet resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-deployment-6b6c97c947",
+          "kind": "ReplicaSet",
+          "short_description": "ReplicaSet for icp4adeploy-workspace-aae-ae-deployment-6b6c97c947",
+          "troubleshooting": [
+            "Check ReplicaSet status: oc get replicaset icp4adeploy-workspace-aae-ae-deployment-6b6c97c947",
+            "View ReplicaSet logs: oc logs replicaset/icp4adeploy-workspace-aae-ae-deployment-6b6c97c947",
+            "Describe ReplicaSet: oc describe replicaset icp4adeploy-workspace-aae-ae-deployment-6b6c97c947"
           ],
           "dependency": []
         }
@@ -129522,6 +130180,30 @@
           "troubleshooting": [
             "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-navigator-deploy-78dffb99d6-h9bf8-server-folder-pvc",
             "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-navigator-deploy-78dffb99d6-h9bf8-server-folder-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing_runtime",
+      "app": "ConfigMap",
+      "module": "icp4adeploy-workspace-aae-ae-file-config",
+      "reference": "document_processing_runtime/ConfigMap/icp4adeploy-workspace-aae-ae-file-config",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "ConfigMap icp4adeploy-workspace-aae-ae-file-config",
+      "long_description": "Kubernetes ConfigMap resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-file-config",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-workspace-aae-ae-file-config",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-workspace-aae-ae-file-config",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-workspace-aae-ae-file-config"
           ],
           "dependency": []
         }
@@ -130223,6 +130905,30 @@
             "Check Pod status: oc get pod icp4adeploy-webhook-5cdb685547-p5p7c",
             "View Pod logs: oc logs pod/icp4adeploy-webhook-5cdb685547-p5p7c",
             "Describe Pod: oc describe pod icp4adeploy-webhook-5cdb685547-p5p7c"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing_runtime",
+      "app": "Secret",
+      "module": "icp4adeploy-workspace-aae-ae-credential-init",
+      "reference": "document_processing_runtime/Secret/icp4adeploy-workspace-aae-ae-credential-init",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "Secret icp4adeploy-workspace-aae-ae-credential-init",
+      "long_description": "Kubernetes Secret resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-credential-init",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-workspace-aae-ae-credential-init",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-workspace-aae-ae-credential-init",
+            "Describe Secret: oc describe secret icp4adeploy-workspace-aae-ae-credential-init"
           ],
           "dependency": []
         }
@@ -130949,6 +131655,30 @@
           "troubleshooting": [
             "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-cpe-watcher-548cb6b4dc-dz2qg-ibm-folder-pvc",
             "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-cpe-watcher-548cb6b4dc-dz2qg-ibm-folder-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing_runtime",
+      "app": "ConfigMap",
+      "module": "icp4adeploy-workspace-aae-ae-logrotate",
+      "reference": "document_processing_runtime/ConfigMap/icp4adeploy-workspace-aae-ae-logrotate",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "ConfigMap icp4adeploy-workspace-aae-ae-logrotate",
+      "long_description": "Kubernetes ConfigMap resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-logrotate",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-workspace-aae-ae-logrotate",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-workspace-aae-ae-logrotate",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-workspace-aae-ae-logrotate"
           ],
           "dependency": []
         }
@@ -132163,30 +132893,6 @@
     },
     {
       "Capability": "document_processing_runtime",
-      "app": "ServiceAccount",
-      "module": "icp4adeploy-gitgateway-service-account",
-      "reference": "document_processing_runtime/ServiceAccount/icp4adeploy-gitgateway-service-account",
-      "scope": [
-        "Icp4Adeploy-Gitgateway-Sa"
-      ],
-      "short_description": "ServiceAccount icp4adeploy-gitgateway-service-account",
-      "long_description": "Kubernetes ServiceAccount resource for icp4adeploy-gitgateway-sa",
-      "k8s_objects": [
-        {
-          "name": "icp4adeploy-gitgateway-service-account",
-          "kind": "ServiceAccount",
-          "short_description": "ServiceAccount for icp4adeploy-gitgateway-service-account",
-          "troubleshooting": [
-            "Check ServiceAccount status: oc get serviceaccount icp4adeploy-gitgateway-service-account",
-            "Describe ServiceAccount: oc describe serviceaccount icp4adeploy-gitgateway-service-account"
-          ],
-          "dependency": []
-        }
-      ],
-      "table_only": true
-    },
-    {
-      "Capability": "document_processing_runtime",
       "app": "PersistentVolumeClaim",
       "module": "icp4adeploy-graphql-deploy-6db88467b4-d52z9-tmp-folder-pvc",
       "reference": "document_processing_runtime/PersistentVolumeClaim/icp4adeploy-graphql-deploy-6db88467b4-d52z9-tmp-folder-pvc",
@@ -132284,30 +132990,6 @@
     {
       "Capability": "document_processing_runtime",
       "app": "PersistentVolumeClaim",
-      "module": "gitgateway-datastore",
-      "reference": "document_processing_runtime/PersistentVolumeClaim/gitgateway-datastore",
-      "scope": [
-        "Gitgateway-Datastore"
-      ],
-      "short_description": "PersistentVolumeClaim gitgateway-datastore",
-      "long_description": "Kubernetes PersistentVolumeClaim resource for gitgateway-datastore",
-      "k8s_objects": [
-        {
-          "name": "gitgateway-datastore",
-          "kind": "PersistentVolumeClaim",
-          "short_description": "PersistentVolumeClaim for gitgateway-datastore",
-          "troubleshooting": [
-            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim gitgateway-datastore",
-            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim gitgateway-datastore"
-          ],
-          "dependency": []
-        }
-      ],
-      "table_only": true
-    },
-    {
-      "Capability": "document_processing_runtime",
-      "app": "PersistentVolumeClaim",
       "module": "icp4adeploy-cpe-deploy-6d45c74f4c-j52v9-etc-supervisor-folder-pvc",
       "reference": "document_processing_runtime/PersistentVolumeClaim/icp4adeploy-cpe-deploy-6d45c74f4c-j52v9-etc-supervisor-folder-pvc",
       "scope": [
@@ -132331,23 +133013,22 @@
     },
     {
       "Capability": "document_processing_runtime",
-      "app": "Service",
-      "module": "icp4adeploy-gitgateway-svc",
-      "reference": "document_processing_runtime/Service/icp4adeploy-gitgateway-svc",
+      "app": "ConfigMap",
+      "module": "icp4adeploy-workspace-aae-ae-configuration-init",
+      "reference": "document_processing_runtime/ConfigMap/icp4adeploy-workspace-aae-ae-configuration-init",
       "scope": [
-        "Icp4Adeploy-Gitgateway-Svc"
+        "App-Engine"
       ],
-      "short_description": "Service icp4adeploy-gitgateway-svc",
-      "long_description": "Kubernetes Service resource for icp4adeploy-gitgateway-svc",
+      "short_description": "ConfigMap icp4adeploy-workspace-aae-ae-configuration-init",
+      "long_description": "Kubernetes ConfigMap resource for app-engine",
       "k8s_objects": [
         {
-          "name": "icp4adeploy-gitgateway-svc",
-          "kind": "Service",
-          "short_description": "Service for icp4adeploy-gitgateway-svc",
+          "name": "icp4adeploy-workspace-aae-ae-configuration-init",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-workspace-aae-ae-configuration-init",
           "troubleshooting": [
-            "Check Service status: oc get service icp4adeploy-gitgateway-svc",
-            "View Service logs: oc logs service/icp4adeploy-gitgateway-svc",
-            "Describe Service: oc describe service icp4adeploy-gitgateway-svc"
+            "Check ConfigMap status: oc get configmap icp4adeploy-workspace-aae-ae-configuration-init",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-workspace-aae-ae-configuration-init"
           ],
           "dependency": []
         }
@@ -134329,30 +135010,6 @@
             "Check Service status: oc get service icp4adeploy-navigator-svc",
             "View Service logs: oc logs service/icp4adeploy-navigator-svc",
             "Describe Service: oc describe service icp4adeploy-navigator-svc"
-          ],
-          "dependency": []
-        }
-      ],
-      "table_only": true
-    },
-    {
-      "Capability": "document_processing_runtime",
-      "app": "ZenExtension",
-      "module": "icp4adeploy-gitgateway-zen-extension",
-      "reference": "document_processing_runtime/ZenExtension/icp4adeploy-gitgateway-zen-extension",
-      "scope": [
-        "Adp"
-      ],
-      "short_description": "ZenExtension icp4adeploy-gitgateway-zen-extension",
-      "long_description": "Kubernetes ZenExtension resource for adp",
-      "k8s_objects": [
-        {
-          "name": "icp4adeploy-gitgateway-zen-extension",
-          "kind": "ZenExtension",
-          "short_description": "ZenExtension for icp4adeploy-gitgateway-zen-extension",
-          "troubleshooting": [
-            "Check ZenExtension status: oc get zenextension icp4adeploy-gitgateway-zen-extension",
-            "Describe ZenExtension: oc describe zenextension icp4adeploy-gitgateway-zen-extension"
           ],
           "dependency": []
         }
@@ -136459,6 +137116,30 @@
     },
     {
       "Capability": "document_processing_runtime",
+      "app": "Secret",
+      "module": "icp4adeploy-workspace-aae-app-engine-admin-secret",
+      "reference": "document_processing_runtime/Secret/icp4adeploy-workspace-aae-app-engine-admin-secret",
+      "scope": [
+        "Icp4Adeploy"
+      ],
+      "short_description": "Secret icp4adeploy-workspace-aae-app-engine-admin-secret",
+      "long_description": "Kubernetes Secret resource for icp4adeploy",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-app-engine-admin-secret",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-workspace-aae-app-engine-admin-secret",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-workspace-aae-app-engine-admin-secret",
+            "Describe Secret: oc describe secret icp4adeploy-workspace-aae-app-engine-admin-secret"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing_runtime",
       "app": "PersistentVolumeClaim",
       "module": "icp4adeploy-cpe-deploy-6d45c74f4c-j52v9-licenses-folder-pvc",
       "reference": "document_processing_runtime/PersistentVolumeClaim/icp4adeploy-cpe-deploy-6d45c74f4c-j52v9-licenses-folder-pvc",
@@ -137183,31 +137864,6 @@
     },
     {
       "Capability": "document_processing_runtime",
-      "app": "Pod",
-      "module": "icp4adeploy-gitgateway-deploy-7dcd94d7c6-9gvzr",
-      "reference": "document_processing_runtime/Pod/icp4adeploy-gitgateway-deploy-7dcd94d7c6-9gvzr",
-      "scope": [
-        "Icp4Adeploy-Gitgateway-Deploy"
-      ],
-      "short_description": "Pod icp4adeploy-gitgateway-deploy-7dcd94d7c6-9gvzr",
-      "long_description": "Kubernetes Pod resource for icp4adeploy-gitgateway-deploy",
-      "k8s_objects": [
-        {
-          "name": "icp4adeploy-gitgateway-deploy-7dcd94d7c6-9gvzr",
-          "kind": "Pod",
-          "short_description": "Pod for icp4adeploy-gitgateway-deploy-7dcd94d7c6-9gvzr",
-          "troubleshooting": [
-            "Check Pod status: oc get pod icp4adeploy-gitgateway-deploy-7dcd94d7c6-9gvzr",
-            "View Pod logs: oc logs pod/icp4adeploy-gitgateway-deploy-7dcd94d7c6-9gvzr",
-            "Describe Pod: oc describe pod icp4adeploy-gitgateway-deploy-7dcd94d7c6-9gvzr"
-          ],
-          "dependency": []
-        }
-      ],
-      "table_only": true
-    },
-    {
-      "Capability": "document_processing_runtime",
       "app": "PersistentVolumeClaim",
       "module": "icp4adeploy-cdra-deploy-79947f5d5-7fzkf-logs-system-folder-pvc",
       "reference": "document_processing_runtime/PersistentVolumeClaim/icp4adeploy-cdra-deploy-79947f5d5-7fzkf-logs-system-folder-pvc",
@@ -137320,6 +137976,30 @@
           "troubleshooting": [
             "Check ConfigMap status: oc get configmap icp4adeploy-aca-config",
             "Describe ConfigMap: oc describe configmap icp4adeploy-aca-config"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing_runtime",
+      "app": "PersistentVolumeClaim",
+      "module": "icp4adeploy-workspace-aaeae-file-pvc",
+      "reference": "document_processing_runtime/PersistentVolumeClaim/icp4adeploy-workspace-aaeae-file-pvc",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "PersistentVolumeClaim icp4adeploy-workspace-aaeae-file-pvc",
+      "long_description": "Kubernetes PersistentVolumeClaim resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aaeae-file-pvc",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for icp4adeploy-workspace-aaeae-file-pvc",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-workspace-aaeae-file-pvc",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-workspace-aaeae-file-pvc"
           ],
           "dependency": []
         }
@@ -137544,6 +138224,30 @@
     },
     {
       "Capability": "document_processing_runtime",
+      "app": "ConfigMap",
+      "module": "icp4adeploy-workspace-aae-ae-configuration",
+      "reference": "document_processing_runtime/ConfigMap/icp4adeploy-workspace-aae-ae-configuration",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "ConfigMap icp4adeploy-workspace-aae-ae-configuration",
+      "long_description": "Kubernetes ConfigMap resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-configuration",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-workspace-aae-ae-configuration",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-workspace-aae-ae-configuration",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-workspace-aae-ae-configuration"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing_runtime",
       "app": "PersistentVolumeClaim",
       "module": "icp4adeploy-processing-extraction-747864f9d6-ckw6w-nginx-folder",
       "reference": "document_processing_runtime/PersistentVolumeClaim/icp4adeploy-processing-extraction-747864f9d6-ckw6w-nginx-folder",
@@ -137584,6 +138288,30 @@
           "troubleshooting": [
             "Check Role status: oc get role c83ae6661bca71ad4dbc2b1e7ef20a709303a703ff1f8119cc222135e388cfa",
             "Describe Role: oc describe role c83ae6661bca71ad4dbc2b1e7ef20a709303a703ff1f8119cc222135e388cfa"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing_runtime",
+      "app": "ConfigMap",
+      "module": "icp4adeploy-workspace-aae-zen-ext-logout",
+      "reference": "document_processing_runtime/ConfigMap/icp4adeploy-workspace-aae-zen-ext-logout",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "ConfigMap icp4adeploy-workspace-aae-zen-ext-logout",
+      "long_description": "Kubernetes ConfigMap resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-zen-ext-logout",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-workspace-aae-zen-ext-logout",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-workspace-aae-zen-ext-logout",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-workspace-aae-zen-ext-logout"
           ],
           "dependency": []
         }
@@ -137873,6 +138601,30 @@
           "troubleshooting": [
             "Check PersistentVolumeClaim status: oc get persistentvolumeclaim cpe-filestore",
             "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim cpe-filestore"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing_runtime",
+      "app": "Secret",
+      "module": "icp4adeploy-workspace-aae-app-engine-ext-tls-secret",
+      "reference": "document_processing_runtime/Secret/icp4adeploy-workspace-aae-app-engine-ext-tls-secret",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "Secret icp4adeploy-workspace-aae-app-engine-ext-tls-secret",
+      "long_description": "Kubernetes Secret resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-app-engine-ext-tls-secret",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-workspace-aae-app-engine-ext-tls-secret",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-workspace-aae-app-engine-ext-tls-secret",
+            "Describe Secret: oc describe secret icp4adeploy-workspace-aae-app-engine-ext-tls-secret"
           ],
           "dependency": []
         }
@@ -140725,6 +141477,31 @@
     },
     {
       "Capability": "document_processing_runtime",
+      "app": "Service",
+      "module": "icp4adeploy-workspace-aae-ae-service-headless",
+      "reference": "document_processing_runtime/Service/icp4adeploy-workspace-aae-ae-service-headless",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "Service icp4adeploy-workspace-aae-ae-service-headless",
+      "long_description": "Kubernetes Service resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-service-headless",
+          "kind": "Service",
+          "short_description": "Service for icp4adeploy-workspace-aae-ae-service-headless",
+          "troubleshooting": [
+            "Check Service status: oc get service icp4adeploy-workspace-aae-ae-service-headless",
+            "View Service logs: oc logs service/icp4adeploy-workspace-aae-ae-service-headless",
+            "Describe Service: oc describe service icp4adeploy-workspace-aae-ae-service-headless"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing_runtime",
       "app": "Role",
       "module": "ibm-cpe-watcher",
       "reference": "document_processing_runtime/Role/ibm-cpe-watcher",
@@ -140823,30 +141600,6 @@
     {
       "Capability": "document_processing_runtime",
       "app": "PersistentVolumeClaim",
-      "module": "gitgateway-logstore",
-      "reference": "document_processing_runtime/PersistentVolumeClaim/gitgateway-logstore",
-      "scope": [
-        "Gitgateway-Logstore"
-      ],
-      "short_description": "PersistentVolumeClaim gitgateway-logstore",
-      "long_description": "Kubernetes PersistentVolumeClaim resource for gitgateway-logstore",
-      "k8s_objects": [
-        {
-          "name": "gitgateway-logstore",
-          "kind": "PersistentVolumeClaim",
-          "short_description": "PersistentVolumeClaim for gitgateway-logstore",
-          "troubleshooting": [
-            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim gitgateway-logstore",
-            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim gitgateway-logstore"
-          ],
-          "dependency": []
-        }
-      ],
-      "table_only": true
-    },
-    {
-      "Capability": "document_processing_runtime",
-      "app": "PersistentVolumeClaim",
       "module": "icp4adeploy-navigator-watcher-fb8698588-cq4s4-log-folder-pvc",
       "reference": "document_processing_runtime/PersistentVolumeClaim/icp4adeploy-navigator-watcher-fb8698588-cq4s4-log-folder-pvc",
       "scope": [
@@ -140886,6 +141639,30 @@
           "troubleshooting": [
             "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-processing-extraction-747864f9d6-l6t8n-tmp",
             "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-processing-extraction-747864f9d6-l6t8n-tmp"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing_runtime",
+      "app": "ConfigMap",
+      "module": "icp4adeploy-workspace-aae-ae-scripts",
+      "reference": "document_processing_runtime/ConfigMap/icp4adeploy-workspace-aae-ae-scripts",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "ConfigMap icp4adeploy-workspace-aae-ae-scripts",
+      "long_description": "Kubernetes ConfigMap resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-ae-scripts",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-workspace-aae-ae-scripts",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-workspace-aae-ae-scripts",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-workspace-aae-ae-scripts"
           ],
           "dependency": []
         }
@@ -140958,6 +141735,30 @@
           "troubleshooting": [
             "Check Secret status: oc get secret icp4adeploy-aca-service-account-dockercfg-b4c9c",
             "Describe Secret: oc describe secret icp4adeploy-aca-service-account-dockercfg-b4c9c"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing_runtime",
+      "app": "Secret",
+      "module": "icp4adeploy-workspace-aae-app-engine-tls-secret",
+      "reference": "document_processing_runtime/Secret/icp4adeploy-workspace-aae-app-engine-tls-secret",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "Secret icp4adeploy-workspace-aae-app-engine-tls-secret",
+      "long_description": "Kubernetes Secret resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-app-engine-tls-secret",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-workspace-aae-app-engine-tls-secret",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-workspace-aae-app-engine-tls-secret",
+            "Describe Secret: oc describe secret icp4adeploy-workspace-aae-app-engine-tls-secret"
           ],
           "dependency": []
         }
@@ -142044,6 +142845,30 @@
           "troubleshooting": [
             "Check Secret status: oc get secret ibm-ban-secret",
             "Describe Secret: oc describe secret ibm-ban-secret"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "document_processing_runtime",
+      "app": "ZenExtension",
+      "module": "icp4adeploy-workspace-aae-zen-ext",
+      "reference": "document_processing_runtime/ZenExtension/icp4adeploy-workspace-aae-zen-ext",
+      "scope": [
+        "App-Engine"
+      ],
+      "short_description": "ZenExtension icp4adeploy-workspace-aae-zen-ext",
+      "long_description": "Kubernetes ZenExtension resource for app-engine",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-workspace-aae-zen-ext",
+          "kind": "ZenExtension",
+          "short_description": "ZenExtension for icp4adeploy-workspace-aae-zen-ext",
+          "troubleshooting": [
+            "Check ZenExtension status: oc get zenextension icp4adeploy-workspace-aae-zen-ext",
+            "Describe ZenExtension: oc describe zenextension icp4adeploy-workspace-aae-zen-ext"
           ],
           "dependency": []
         }
