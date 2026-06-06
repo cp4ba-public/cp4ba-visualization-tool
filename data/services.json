@@ -12,6 +12,7 @@
     "document_processing_runtime",
     "foundation",
     "operator",
+    "process_federation_server",
     "workflow-process-service-authoring",
     "workstreams",
     "zen"

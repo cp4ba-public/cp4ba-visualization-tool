@@ -1,0 +1,22 @@
+======================================================================
+Validation Report for Version 26.0.0
+Generated: 2026-06-05 16:54:08
+======================================================================
+
+⚠️  VALIDATION PASSED WITH 2 WARNING(S)
+
+📊 STATISTICS:
+  - Total k8s objects: 8094
+  - Unique kinds: 23
+  - Total services: 16
+  - Data items: 5909
+
+⚠️  WARNINGS (2):
+  1. Kind 'Subscription' appears only 1 time(s) - possible typo?
+  2. Kind 'ClusterServiceVersion' appears only 1 time(s) - possible typo?
+
+🔍 RECOMMENDATIONS:
+  - Review warnings to ensure they are intentional
+  - Verify new services/kinds are correctly named
+
+======================================================================

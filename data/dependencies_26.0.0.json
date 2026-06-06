@@ -2,6 +2,1338 @@
   "version": "26.0.0",
   "data": [
     {
+      "Capability": "process_federation_server",
+      "foundational_services": "cpfs-im-zen",
+      "app_description": "Ibm-Usage-Metering component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-usage-metering-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
+      "deployment": "ibm-usage-metering-instance",
+      "reference": "general/ibm-usage-metering-instance/instance",
+      "scope": [
+        "Ibm-Usage-Metering"
+      ],
+      "short_description": "ibm-usage-metering Deployment",
+      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-instance",
+          "kind": "Deployment",
+          "short_description": "Deployment for ibm-usage-metering-instance",
+          "troubleshooting": [
+            "Check Deployment status: oc get deployment ibm-usage-metering-instance",
+            "View Deployment logs: oc logs deployment/ibm-usage-metering-instance",
+            "Describe Deployment: oc describe deployment ibm-usage-metering-instance"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "ibm-usage-metering-events",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for ibm-usage-metering-events",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap ibm-usage-metering-events",
+            "Describe ConfigMap: oc describe configmap ibm-usage-metering-events"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "ibm-usage-metering-processing",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for ibm-usage-metering-processing",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap ibm-usage-metering-processing",
+            "Describe ConfigMap: oc describe configmap ibm-usage-metering-processing"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "ibm-usage-metering-config",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for ibm-usage-metering-config",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap ibm-usage-metering-config",
+            "Describe ConfigMap: oc describe configmap ibm-usage-metering-config"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "cp4ba-ums-secret",
+          "kind": "Secret",
+          "short_description": "Secret for cp4ba-ums-secret",
+          "troubleshooting": [
+            "Check Secret status: oc get secret cp4ba-ums-secret",
+            "Describe Secret: oc describe secret cp4ba-ums-secret"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "ibm-usage-metering-upload-token",
+          "kind": "Secret",
+          "short_description": "Secret for ibm-usage-metering-upload-token",
+          "troubleshooting": [
+            "Check Secret status: oc get secret ibm-usage-metering-upload-token",
+            "Describe Secret: oc describe secret ibm-usage-metering-upload-token"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "ibm-usage-metering-instance",
+          "kind": "Secret",
+          "short_description": "Secret for ibm-usage-metering-instance",
+          "troubleshooting": [
+            "Check Secret status: oc get secret ibm-usage-metering-instance",
+            "Describe Secret: oc describe secret ibm-usage-metering-instance"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "ibm-usage-metering-instance-59984d787f-m6k4q",
+          "kind": "Pod",
+          "short_description": "Pod for ibm-usage-metering-instance-59984d787f-m6k4q",
+          "troubleshooting": [
+            "Check Pod status: oc get pod ibm-usage-metering-instance-59984d787f-m6k4q",
+            "View Pod logs: oc logs pod/ibm-usage-metering-instance-59984d787f-m6k4q",
+            "Describe Pod: oc describe pod ibm-usage-metering-instance-59984d787f-m6k4q"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "ibm-usage-metering-instance",
+          "kind": "Service",
+          "short_description": "Service for ibm-usage-metering-instance",
+          "troubleshooting": [
+            "Check Service status: oc get service ibm-usage-metering-instance",
+            "View Service logs: oc logs service/ibm-usage-metering-instance",
+            "Describe Service: oc describe service ibm-usage-metering-instance"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "ibm-usage-metering-instance-59984d787f",
+          "kind": "ReplicaSet",
+          "short_description": "ReplicaSet for ibm-usage-metering-instance-59984d787f",
+          "troubleshooting": [
+            "Check ReplicaSet status: oc get replicaset ibm-usage-metering-instance-59984d787f",
+            "Describe ReplicaSet: oc describe replicaset ibm-usage-metering-instance-59984d787f"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "ibm-usage-metering-instance",
+          "kind": "Role",
+          "short_description": "Role for ibm-usage-metering-instance",
+          "troubleshooting": [
+            "Check Role status: oc get role ibm-usage-metering-instance",
+            "Describe Role: oc describe role ibm-usage-metering-instance"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "ibm-usage-metering-instance",
+          "kind": "RoleBinding",
+          "short_description": "RoleBinding for ibm-usage-metering-instance",
+          "troubleshooting": [
+            "Check RoleBinding status: oc get rolebinding ibm-usage-metering-instance",
+            "Describe RoleBinding: oc describe rolebinding ibm-usage-metering-instance"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "ibm-usage-metering-instance",
+          "kind": "ServiceAccount",
+          "short_description": "ServiceAccount for ibm-usage-metering-instance",
+          "troubleshooting": [
+            "Check ServiceAccount status: oc get serviceaccount ibm-usage-metering-instance",
+            "Describe ServiceAccount: oc describe serviceaccount ibm-usage-metering-instance"
+          ],
+          "dependency": []
+        }
+      ]
+    },
+    {
+      "Capability": "process_federation_server",
+      "foundational_services": "cpfs-im-zen",
+      "app_description": "Icp4Adeploy-Pfs component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-usage-metering-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
+      "deployment": "icp4adeploy-pfs",
+      "reference": "baw_authoring/icp4adeploy-pfs/process-federation-server",
+      "scope": [
+        "Icp4Adeploy-Pfs"
+      ],
+      "short_description": "icp4adeploy-pfs StatefulSet",
+      "long_description": "This StatefulSet manages the icp4adeploy-pfs component of CP4BA.\nCapabilities: baw_authoring, baw_runtime, workflow-process-service, process_federation_server\nIf this component is down, related functionality will be unavailable.",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-pfs",
+          "kind": "StatefulSet",
+          "short_description": "StatefulSet for icp4adeploy-pfs",
+          "troubleshooting": [
+            "Check StatefulSet status: oc get statefulset icp4adeploy-pfs",
+            "View StatefulSet logs: oc logs statefulset/icp4adeploy-pfs",
+            "Describe StatefulSet: oc describe statefulset icp4adeploy-pfs"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-pfs-secret-custom",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-pfs-secret-custom",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-pfs-secret-custom",
+            "Describe Secret: oc describe secret icp4adeploy-pfs-secret-custom"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-pfs-config-secret",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-pfs-config-secret",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-pfs-config-secret",
+            "Describe Secret: oc describe secret icp4adeploy-pfs-config-secret"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-pfs-tls-secret",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-pfs-tls-secret",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-pfs-tls-secret",
+            "Describe Secret: oc describe secret icp4adeploy-pfs-tls-secret"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-pfs-0",
+          "kind": "Pod",
+          "short_description": "Pod for icp4adeploy-pfs-0",
+          "troubleshooting": [
+            "Check Pod status: oc get pod icp4adeploy-pfs-0",
+            "View Pod logs: oc logs pod/icp4adeploy-pfs-0",
+            "Describe Pod: oc describe pod icp4adeploy-pfs-0"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-pfs-pdb",
+          "kind": "PodDisruptionBudget",
+          "short_description": "PodDisruptionBudget for icp4adeploy-pfs-pdb",
+          "troubleshooting": [
+            "Check PodDisruptionBudget status: oc get poddisruptionbudget icp4adeploy-pfs-pdb",
+            "Describe PodDisruptionBudget: oc describe poddisruptionbudget icp4adeploy-pfs-pdb"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-pfs-service-account",
+          "kind": "ServiceAccount",
+          "short_description": "ServiceAccount for icp4adeploy-pfs-service-account",
+          "troubleshooting": [
+            "Check ServiceAccount status: oc get serviceaccount icp4adeploy-pfs-service-account",
+            "Describe ServiceAccount: oc describe serviceaccount icp4adeploy-pfs-service-account"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "production-icp4adeploy-pfs-zenextension",
+          "kind": "ZenExtension",
+          "short_description": "ZenExtension for production-icp4adeploy-pfs-zenextension",
+          "troubleshooting": [
+            "Check ZenExtension status: oc get zenextension production-icp4adeploy-pfs-zenextension",
+            "Describe ZenExtension: oc describe zenextension production-icp4adeploy-pfs-zenextension"
+          ],
+          "dependency": []
+        }
+      ]
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "ReplicaSet",
+      "module": "ibm-usage-metering-operator-6fd6cc95c4",
+      "reference": "process_federation_server/ReplicaSet/ibm-usage-metering-operator-6fd6cc95c4",
+      "scope": [
+        "Ibm-Usage-Metering-Operator"
+      ],
+      "short_description": "ReplicaSet ibm-usage-metering-operator-6fd6cc95c4",
+      "long_description": "Kubernetes ReplicaSet resource for ibm-usage-metering-operator",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-operator-6fd6cc95c4",
+          "kind": "ReplicaSet",
+          "short_description": "ReplicaSet for ibm-usage-metering-operator-6fd6cc95c4",
+          "troubleshooting": [
+            "Check ReplicaSet status: oc get replicaset ibm-usage-metering-operator-6fd6cc95c4",
+            "View ReplicaSet logs: oc logs replicaset/ibm-usage-metering-operator-6fd6cc95c4",
+            "Describe ReplicaSet: oc describe replicaset ibm-usage-metering-operator-6fd6cc95c4"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "ConfigMap",
+      "module": "ibm-usage-metering-events",
+      "reference": "process_federation_server/ConfigMap/ibm-usage-metering-events",
+      "scope": [
+        "Ibm-Usage-Metering"
+      ],
+      "short_description": "ConfigMap ibm-usage-metering-events",
+      "long_description": "Kubernetes ConfigMap resource for ibm-usage-metering",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-events",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for ibm-usage-metering-events",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap ibm-usage-metering-events",
+            "Describe ConfigMap: oc describe configmap ibm-usage-metering-events"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "PersistentVolumeClaim",
+      "module": "ibm-pfs-operator-6b867945cf-48mxt-ansible-folder-pvc",
+      "reference": "process_federation_server/PersistentVolumeClaim/ibm-pfs-operator-6b867945cf-48mxt-ansible-folder-pvc",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "PersistentVolumeClaim ibm-pfs-operator-6b867945cf-48mxt-ansible-folder-pvc",
+      "long_description": "Kubernetes PersistentVolumeClaim resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-pfs-operator-6b867945cf-48mxt-ansible-folder-pvc",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for ibm-pfs-operator-6b867945cf-48mxt-ansible-folder-pvc",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim ibm-pfs-operator-6b867945cf-48mxt-ansible-folder-pvc",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim ibm-pfs-operator-6b867945cf-48mxt-ansible-folder-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Role",
+      "module": "ibm-pfs-operator.v26.0.0",
+      "reference": "process_federation_server/Role/ibm-pfs-operator.v26.0.0",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "Role ibm-pfs-operator.v26.0.0",
+      "long_description": "Kubernetes Role resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-pfs-operator.v26.0.0",
+          "kind": "Role",
+          "short_description": "Role for ibm-pfs-operator.v26.0.0",
+          "troubleshooting": [
+            "Check Role status: oc get role ibm-pfs-operator.v26.0.0",
+            "Describe Role: oc describe role ibm-pfs-operator.v26.0.0"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "PersistentVolumeClaim",
+      "module": "ibm-pfs-operator-6b867945cf-48mxt-ibm-folder-pvc",
+      "reference": "process_federation_server/PersistentVolumeClaim/ibm-pfs-operator-6b867945cf-48mxt-ibm-folder-pvc",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "PersistentVolumeClaim ibm-pfs-operator-6b867945cf-48mxt-ibm-folder-pvc",
+      "long_description": "Kubernetes PersistentVolumeClaim resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-pfs-operator-6b867945cf-48mxt-ibm-folder-pvc",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for ibm-pfs-operator-6b867945cf-48mxt-ibm-folder-pvc",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim ibm-pfs-operator-6b867945cf-48mxt-ibm-folder-pvc",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim ibm-pfs-operator-6b867945cf-48mxt-ibm-folder-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "PersistentVolumeClaim",
+      "module": "ibm-pfs-operator-6b867945cf-lbs5z-ansible-folder-pvc",
+      "reference": "process_federation_server/PersistentVolumeClaim/ibm-pfs-operator-6b867945cf-lbs5z-ansible-folder-pvc",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "PersistentVolumeClaim ibm-pfs-operator-6b867945cf-lbs5z-ansible-folder-pvc",
+      "long_description": "Kubernetes PersistentVolumeClaim resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-pfs-operator-6b867945cf-lbs5z-ansible-folder-pvc",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for ibm-pfs-operator-6b867945cf-lbs5z-ansible-folder-pvc",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim ibm-pfs-operator-6b867945cf-lbs5z-ansible-folder-pvc",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim ibm-pfs-operator-6b867945cf-lbs5z-ansible-folder-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "ReplicaSet",
+      "module": "ibm-pfs-operator-6b867945cf",
+      "reference": "process_federation_server/ReplicaSet/ibm-pfs-operator-6b867945cf",
+      "scope": [
+        "Ibm-Dba-Pfs"
+      ],
+      "short_description": "ReplicaSet ibm-pfs-operator-6b867945cf",
+      "long_description": "Kubernetes ReplicaSet resource for ibm-dba-pfs",
+      "k8s_objects": [
+        {
+          "name": "ibm-pfs-operator-6b867945cf",
+          "kind": "ReplicaSet",
+          "short_description": "ReplicaSet for ibm-pfs-operator-6b867945cf",
+          "troubleshooting": [
+            "Check ReplicaSet status: oc get replicaset ibm-pfs-operator-6b867945cf",
+            "View ReplicaSet logs: oc logs replicaset/ibm-pfs-operator-6b867945cf",
+            "Describe ReplicaSet: oc describe replicaset ibm-pfs-operator-6b867945cf"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "PersistentVolumeClaim",
+      "module": "ibm-pfs-operator-6b867945cf-lbs5z-ibm-folder-pvc",
+      "reference": "process_federation_server/PersistentVolumeClaim/ibm-pfs-operator-6b867945cf-lbs5z-ibm-folder-pvc",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "PersistentVolumeClaim ibm-pfs-operator-6b867945cf-lbs5z-ibm-folder-pvc",
+      "long_description": "Kubernetes PersistentVolumeClaim resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-pfs-operator-6b867945cf-lbs5z-ibm-folder-pvc",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for ibm-pfs-operator-6b867945cf-lbs5z-ibm-folder-pvc",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim ibm-pfs-operator-6b867945cf-lbs5z-ibm-folder-pvc",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim ibm-pfs-operator-6b867945cf-lbs5z-ibm-folder-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "ServiceAccount",
+      "module": "ibm-usage-metering-instance",
+      "reference": "process_federation_server/ServiceAccount/ibm-usage-metering-instance",
+      "scope": [
+        "Ibm-Usage-Metering"
+      ],
+      "short_description": "ServiceAccount ibm-usage-metering-instance",
+      "long_description": "Kubernetes ServiceAccount resource for ibm-usage-metering",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-instance",
+          "kind": "ServiceAccount",
+          "short_description": "ServiceAccount for ibm-usage-metering-instance",
+          "troubleshooting": [
+            "Check ServiceAccount status: oc get serviceaccount ibm-usage-metering-instance",
+            "Describe ServiceAccount: oc describe serviceaccount ibm-usage-metering-instance"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Role",
+      "module": "ibm-pfs-operator.v25.0.4",
+      "reference": "process_federation_server/Role/ibm-pfs-operator.v25.0.4",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "Role ibm-pfs-operator.v25.0.4",
+      "long_description": "Kubernetes Role resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-pfs-operator.v25.0.4",
+          "kind": "Role",
+          "short_description": "Role for ibm-pfs-operator.v25.0.4",
+          "troubleshooting": [
+            "Check Role status: oc get role ibm-pfs-operator.v25.0.4",
+            "Describe Role: oc describe role ibm-pfs-operator.v25.0.4"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "PersistentVolumeClaim",
+      "module": "ibm-pfs-operator-6b867945cf-lbs5z-tmp-folder-pvc",
+      "reference": "process_federation_server/PersistentVolumeClaim/ibm-pfs-operator-6b867945cf-lbs5z-tmp-folder-pvc",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "PersistentVolumeClaim ibm-pfs-operator-6b867945cf-lbs5z-tmp-folder-pvc",
+      "long_description": "Kubernetes PersistentVolumeClaim resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-pfs-operator-6b867945cf-lbs5z-tmp-folder-pvc",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for ibm-pfs-operator-6b867945cf-lbs5z-tmp-folder-pvc",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim ibm-pfs-operator-6b867945cf-lbs5z-tmp-folder-pvc",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim ibm-pfs-operator-6b867945cf-lbs5z-tmp-folder-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "ServiceAccount",
+      "module": "ibm-pfs-operator-sa",
+      "reference": "process_federation_server/ServiceAccount/ibm-pfs-operator-sa",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "ServiceAccount ibm-pfs-operator-sa",
+      "long_description": "Kubernetes ServiceAccount resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-pfs-operator-sa",
+          "kind": "ServiceAccount",
+          "short_description": "ServiceAccount for ibm-pfs-operator-sa",
+          "troubleshooting": [
+            "Check ServiceAccount status: oc get serviceaccount ibm-pfs-operator-sa",
+            "Describe ServiceAccount: oc describe serviceaccount ibm-pfs-operator-sa"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "PersistentVolumeClaim",
+      "module": "ibm-pfs-operator-6b867945cf-lbs5z-license-folder-pvc",
+      "reference": "process_federation_server/PersistentVolumeClaim/ibm-pfs-operator-6b867945cf-lbs5z-license-folder-pvc",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "PersistentVolumeClaim ibm-pfs-operator-6b867945cf-lbs5z-license-folder-pvc",
+      "long_description": "Kubernetes PersistentVolumeClaim resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-pfs-operator-6b867945cf-lbs5z-license-folder-pvc",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for ibm-pfs-operator-6b867945cf-lbs5z-license-folder-pvc",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim ibm-pfs-operator-6b867945cf-lbs5z-license-folder-pvc",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim ibm-pfs-operator-6b867945cf-lbs5z-license-folder-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Service",
+      "module": "ibm-usage-metering-instance",
+      "reference": "process_federation_server/Service/ibm-usage-metering-instance",
+      "scope": [
+        "Ibm-Usage-Metering"
+      ],
+      "short_description": "Service ibm-usage-metering-instance",
+      "long_description": "Kubernetes Service resource for ibm-usage-metering",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-instance",
+          "kind": "Service",
+          "short_description": "Service for ibm-usage-metering-instance",
+          "troubleshooting": [
+            "Check Service status: oc get service ibm-usage-metering-instance",
+            "View Service logs: oc logs service/ibm-usage-metering-instance",
+            "Describe Service: oc describe service ibm-usage-metering-instance"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "PersistentVolumeClaim",
+      "module": "ibm-pfs-operator-6b867945cf-48mxt-log-folder-pvc",
+      "reference": "process_federation_server/PersistentVolumeClaim/ibm-pfs-operator-6b867945cf-48mxt-log-folder-pvc",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "PersistentVolumeClaim ibm-pfs-operator-6b867945cf-48mxt-log-folder-pvc",
+      "long_description": "Kubernetes PersistentVolumeClaim resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-pfs-operator-6b867945cf-48mxt-log-folder-pvc",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for ibm-pfs-operator-6b867945cf-48mxt-log-folder-pvc",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim ibm-pfs-operator-6b867945cf-48mxt-log-folder-pvc",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim ibm-pfs-operator-6b867945cf-48mxt-log-folder-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "PersistentVolumeClaim",
+      "module": "ibm-pfs-operator-6b867945cf-48mxt-license-folder-pvc",
+      "reference": "process_federation_server/PersistentVolumeClaim/ibm-pfs-operator-6b867945cf-48mxt-license-folder-pvc",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "PersistentVolumeClaim ibm-pfs-operator-6b867945cf-48mxt-license-folder-pvc",
+      "long_description": "Kubernetes PersistentVolumeClaim resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-pfs-operator-6b867945cf-48mxt-license-folder-pvc",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for ibm-pfs-operator-6b867945cf-48mxt-license-folder-pvc",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim ibm-pfs-operator-6b867945cf-48mxt-license-folder-pvc",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim ibm-pfs-operator-6b867945cf-48mxt-license-folder-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Operator",
+      "module": "ibm-pfs-operator.production",
+      "reference": "process_federation_server/Operator/ibm-pfs-operator.production",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "Operator ibm-pfs-operator.production",
+      "long_description": "Kubernetes Operator resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-pfs-operator.production",
+          "kind": "Operator",
+          "short_description": "Operator for ibm-pfs-operator.production",
+          "troubleshooting": [
+            "Check Operator status: oc get operator ibm-pfs-operator.production",
+            "Describe Operator: oc describe operator ibm-pfs-operator.production"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "PersistentVolumeClaim",
+      "module": "ibm-pfs-operator-6b867945cf-lbs5z-log-folder-pvc",
+      "reference": "process_federation_server/PersistentVolumeClaim/ibm-pfs-operator-6b867945cf-lbs5z-log-folder-pvc",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "PersistentVolumeClaim ibm-pfs-operator-6b867945cf-lbs5z-log-folder-pvc",
+      "long_description": "Kubernetes PersistentVolumeClaim resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-pfs-operator-6b867945cf-lbs5z-log-folder-pvc",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for ibm-pfs-operator-6b867945cf-lbs5z-log-folder-pvc",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim ibm-pfs-operator-6b867945cf-lbs5z-log-folder-pvc",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim ibm-pfs-operator-6b867945cf-lbs5z-log-folder-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Pod",
+      "module": "ibm-usage-metering-operator-6fd6cc95c4-l46xt",
+      "reference": "process_federation_server/Pod/ibm-usage-metering-operator-6fd6cc95c4-l46xt",
+      "scope": [
+        "Ibm-Usage-Metering-Operator"
+      ],
+      "short_description": "Pod ibm-usage-metering-operator-6fd6cc95c4-l46xt",
+      "long_description": "Kubernetes Pod resource for ibm-usage-metering-operator",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-operator-6fd6cc95c4-l46xt",
+          "kind": "Pod",
+          "short_description": "Pod for ibm-usage-metering-operator-6fd6cc95c4-l46xt",
+          "troubleshooting": [
+            "Check Pod status: oc get pod ibm-usage-metering-operator-6fd6cc95c4-l46xt",
+            "View Pod logs: oc logs pod/ibm-usage-metering-operator-6fd6cc95c4-l46xt",
+            "Describe Pod: oc describe pod ibm-usage-metering-operator-6fd6cc95c4-l46xt"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "ServiceAccount",
+      "module": "ibm-usage-metering-catalog",
+      "reference": "process_federation_server/ServiceAccount/ibm-usage-metering-catalog",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "ServiceAccount ibm-usage-metering-catalog",
+      "long_description": "Kubernetes ServiceAccount resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-catalog",
+          "kind": "ServiceAccount",
+          "short_description": "ServiceAccount for ibm-usage-metering-catalog",
+          "troubleshooting": [
+            "Check ServiceAccount status: oc get serviceaccount ibm-usage-metering-catalog",
+            "Describe ServiceAccount: oc describe serviceaccount ibm-usage-metering-catalog"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Secret",
+      "module": "ibm-usage-metering-catalog-dockercfg-6zw6f",
+      "reference": "process_federation_server/Secret/ibm-usage-metering-catalog-dockercfg-6zw6f",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "Secret ibm-usage-metering-catalog-dockercfg-6zw6f",
+      "long_description": "Kubernetes Secret resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-catalog-dockercfg-6zw6f",
+          "kind": "Secret",
+          "short_description": "Secret for ibm-usage-metering-catalog-dockercfg-6zw6f",
+          "troubleshooting": [
+            "Check Secret status: oc get secret ibm-usage-metering-catalog-dockercfg-6zw6f",
+            "Describe Secret: oc describe secret ibm-usage-metering-catalog-dockercfg-6zw6f"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "ConfigMap",
+      "module": "ibm-usage-metering-config",
+      "reference": "process_federation_server/ConfigMap/ibm-usage-metering-config",
+      "scope": [
+        "Ibm-Usage-Metering"
+      ],
+      "short_description": "ConfigMap ibm-usage-metering-config",
+      "long_description": "Kubernetes ConfigMap resource for ibm-usage-metering",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-config",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for ibm-usage-metering-config",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap ibm-usage-metering-config",
+            "Describe ConfigMap: oc describe configmap ibm-usage-metering-config"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Secret",
+      "module": "ibm-usage-metering-operator-dockercfg-k7zz5",
+      "reference": "process_federation_server/Secret/ibm-usage-metering-operator-dockercfg-k7zz5",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "Secret ibm-usage-metering-operator-dockercfg-k7zz5",
+      "long_description": "Kubernetes Secret resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-operator-dockercfg-k7zz5",
+          "kind": "Secret",
+          "short_description": "Secret for ibm-usage-metering-operator-dockercfg-k7zz5",
+          "troubleshooting": [
+            "Check Secret status: oc get secret ibm-usage-metering-operator-dockercfg-k7zz5",
+            "Describe Secret: oc describe secret ibm-usage-metering-operator-dockercfg-k7zz5"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "PersistentVolumeClaim",
+      "module": "ibm-pfs-operator-6b867945cf-48mxt-tmp-folder-pvc",
+      "reference": "process_federation_server/PersistentVolumeClaim/ibm-pfs-operator-6b867945cf-48mxt-tmp-folder-pvc",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "PersistentVolumeClaim ibm-pfs-operator-6b867945cf-48mxt-tmp-folder-pvc",
+      "long_description": "Kubernetes PersistentVolumeClaim resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-pfs-operator-6b867945cf-48mxt-tmp-folder-pvc",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for ibm-pfs-operator-6b867945cf-48mxt-tmp-folder-pvc",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim ibm-pfs-operator-6b867945cf-48mxt-tmp-folder-pvc",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim ibm-pfs-operator-6b867945cf-48mxt-tmp-folder-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "ReplicaSet",
+      "module": "ibm-usage-metering-instance-59984d787f",
+      "reference": "process_federation_server/ReplicaSet/ibm-usage-metering-instance-59984d787f",
+      "scope": [
+        "Ibm-Usage-Metering"
+      ],
+      "short_description": "ReplicaSet ibm-usage-metering-instance-59984d787f",
+      "long_description": "Kubernetes ReplicaSet resource for ibm-usage-metering",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-instance-59984d787f",
+          "kind": "ReplicaSet",
+          "short_description": "ReplicaSet for ibm-usage-metering-instance-59984d787f",
+          "troubleshooting": [
+            "Check ReplicaSet status: oc get replicaset ibm-usage-metering-instance-59984d787f",
+            "View ReplicaSet logs: oc logs replicaset/ibm-usage-metering-instance-59984d787f",
+            "Describe ReplicaSet: oc describe replicaset ibm-usage-metering-instance-59984d787f"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Role",
+      "module": "ibm-usage-metering-operator.v1.0.6",
+      "reference": "process_federation_server/Role/ibm-usage-metering-operator.v1.0.6",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "Role ibm-usage-metering-operator.v1.0.6",
+      "long_description": "Kubernetes Role resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-operator.v1.0.6",
+          "kind": "Role",
+          "short_description": "Role for ibm-usage-metering-operator.v1.0.6",
+          "troubleshooting": [
+            "Check Role status: oc get role ibm-usage-metering-operator.v1.0.6",
+            "Describe Role: oc describe role ibm-usage-metering-operator.v1.0.6"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Pod",
+      "module": "ibm-pfs-operator-6b867945cf-48mxt",
+      "reference": "process_federation_server/Pod/ibm-pfs-operator-6b867945cf-48mxt",
+      "scope": [
+        "Ibm-Dba-Pfs"
+      ],
+      "short_description": "Pod ibm-pfs-operator-6b867945cf-48mxt",
+      "long_description": "Kubernetes Pod resource for ibm-dba-pfs",
+      "k8s_objects": [
+        {
+          "name": "ibm-pfs-operator-6b867945cf-48mxt",
+          "kind": "Pod",
+          "short_description": "Pod for ibm-pfs-operator-6b867945cf-48mxt",
+          "troubleshooting": [
+            "Check Pod status: oc get pod ibm-pfs-operator-6b867945cf-48mxt",
+            "View Pod logs: oc logs pod/ibm-pfs-operator-6b867945cf-48mxt",
+            "Describe Pod: oc describe pod ibm-pfs-operator-6b867945cf-48mxt"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Pod",
+      "module": "ibm-usage-metering-catalog-wknlx",
+      "reference": "process_federation_server/Pod/ibm-usage-metering-catalog-wknlx",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "Pod ibm-usage-metering-catalog-wknlx",
+      "long_description": "Kubernetes Pod resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-catalog-wknlx",
+          "kind": "Pod",
+          "short_description": "Pod for ibm-usage-metering-catalog-wknlx",
+          "troubleshooting": [
+            "Check Pod status: oc get pod ibm-usage-metering-catalog-wknlx",
+            "View Pod logs: oc logs pod/ibm-usage-metering-catalog-wknlx",
+            "Describe Pod: oc describe pod ibm-usage-metering-catalog-wknlx"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Secret",
+      "module": "ibm-pfs-operator-sa-dockercfg-lfxqv",
+      "reference": "process_federation_server/Secret/ibm-pfs-operator-sa-dockercfg-lfxqv",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "Secret ibm-pfs-operator-sa-dockercfg-lfxqv",
+      "long_description": "Kubernetes Secret resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-pfs-operator-sa-dockercfg-lfxqv",
+          "kind": "Secret",
+          "short_description": "Secret for ibm-pfs-operator-sa-dockercfg-lfxqv",
+          "troubleshooting": [
+            "Check Secret status: oc get secret ibm-pfs-operator-sa-dockercfg-lfxqv",
+            "Describe Secret: oc describe secret ibm-pfs-operator-sa-dockercfg-lfxqv"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Route",
+      "module": "ibm-usage-metering-fetch",
+      "reference": "process_federation_server/Route/ibm-usage-metering-fetch",
+      "scope": [
+        "Ibm-Usage-Metering"
+      ],
+      "short_description": "Route ibm-usage-metering-fetch",
+      "long_description": "Kubernetes Route resource for ibm-usage-metering",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-fetch",
+          "kind": "Route",
+          "short_description": "Route for ibm-usage-metering-fetch",
+          "troubleshooting": [
+            "Check Route status: oc get route ibm-usage-metering-fetch",
+            "Describe Route: oc describe route ibm-usage-metering-fetch"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "ConfigMap",
+      "module": "ibm-usage-metering-upload-config",
+      "reference": "process_federation_server/ConfigMap/ibm-usage-metering-upload-config",
+      "scope": [
+        "Ibm-Usage-Metering"
+      ],
+      "short_description": "ConfigMap ibm-usage-metering-upload-config",
+      "long_description": "Kubernetes ConfigMap resource for ibm-usage-metering",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-upload-config",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for ibm-usage-metering-upload-config",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap ibm-usage-metering-upload-config",
+            "Describe ConfigMap: oc describe configmap ibm-usage-metering-upload-config"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Secret",
+      "module": "ibm-usage-metering-instance-dockercfg-mcfmh",
+      "reference": "process_federation_server/Secret/ibm-usage-metering-instance-dockercfg-mcfmh",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "Secret ibm-usage-metering-instance-dockercfg-mcfmh",
+      "long_description": "Kubernetes Secret resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-instance-dockercfg-mcfmh",
+          "kind": "Secret",
+          "short_description": "Secret for ibm-usage-metering-instance-dockercfg-mcfmh",
+          "troubleshooting": [
+            "Check Secret status: oc get secret ibm-usage-metering-instance-dockercfg-mcfmh",
+            "Describe Secret: oc describe secret ibm-usage-metering-instance-dockercfg-mcfmh"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Secret",
+      "module": "ibm-pfs-operator-sa-dockercfg-fxgcz",
+      "reference": "process_federation_server/Secret/ibm-pfs-operator-sa-dockercfg-fxgcz",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "Secret ibm-pfs-operator-sa-dockercfg-fxgcz",
+      "long_description": "Kubernetes Secret resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-pfs-operator-sa-dockercfg-fxgcz",
+          "kind": "Secret",
+          "short_description": "Secret for ibm-pfs-operator-sa-dockercfg-fxgcz",
+          "troubleshooting": [
+            "Check Secret status: oc get secret ibm-pfs-operator-sa-dockercfg-fxgcz",
+            "Describe Secret: oc describe secret ibm-pfs-operator-sa-dockercfg-fxgcz"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Secret",
+      "module": "ibm-usage-metering-upload-token",
+      "reference": "process_federation_server/Secret/ibm-usage-metering-upload-token",
+      "scope": [
+        "Ibm-Usage-Metering"
+      ],
+      "short_description": "Secret ibm-usage-metering-upload-token",
+      "long_description": "Kubernetes Secret resource for ibm-usage-metering",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-upload-token",
+          "kind": "Secret",
+          "short_description": "Secret for ibm-usage-metering-upload-token",
+          "troubleshooting": [
+            "Check Secret status: oc get secret ibm-usage-metering-upload-token",
+            "Describe Secret: oc describe secret ibm-usage-metering-upload-token"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "ServiceAccount",
+      "module": "ibm-usage-metering-operator",
+      "reference": "process_federation_server/ServiceAccount/ibm-usage-metering-operator",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "ServiceAccount ibm-usage-metering-operator",
+      "long_description": "Kubernetes ServiceAccount resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-operator",
+          "kind": "ServiceAccount",
+          "short_description": "ServiceAccount for ibm-usage-metering-operator",
+          "troubleshooting": [
+            "Check ServiceAccount status: oc get serviceaccount ibm-usage-metering-operator",
+            "Describe ServiceAccount: oc describe serviceaccount ibm-usage-metering-operator"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Operator",
+      "module": "ibm-pfs-operator.kr-one",
+      "reference": "process_federation_server/Operator/ibm-pfs-operator.kr-one",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "Operator ibm-pfs-operator.kr-one",
+      "long_description": "Kubernetes Operator resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-pfs-operator.kr-one",
+          "kind": "Operator",
+          "short_description": "Operator for ibm-pfs-operator.kr-one",
+          "troubleshooting": [
+            "Check Operator status: oc get operator ibm-pfs-operator.kr-one",
+            "Describe Operator: oc describe operator ibm-pfs-operator.kr-one"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Operator",
+      "module": "ibm-pfs-operator.cp4ba-operators",
+      "reference": "process_federation_server/Operator/ibm-pfs-operator.cp4ba-operators",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "Operator ibm-pfs-operator.cp4ba-operators",
+      "long_description": "Kubernetes Operator resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-pfs-operator.cp4ba-operators",
+          "kind": "Operator",
+          "short_description": "Operator for ibm-pfs-operator.cp4ba-operators",
+          "troubleshooting": [
+            "Check Operator status: oc get operator ibm-pfs-operator.cp4ba-operators",
+            "Describe Operator: oc describe operator ibm-pfs-operator.cp4ba-operators"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Service",
+      "module": "ibm-usage-metering-catalog",
+      "reference": "process_federation_server/Service/ibm-usage-metering-catalog",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "Service ibm-usage-metering-catalog",
+      "long_description": "Kubernetes Service resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-catalog",
+          "kind": "Service",
+          "short_description": "Service for ibm-usage-metering-catalog",
+          "troubleshooting": [
+            "Check Service status: oc get service ibm-usage-metering-catalog",
+            "View Service logs: oc logs service/ibm-usage-metering-catalog",
+            "Describe Service: oc describe service ibm-usage-metering-catalog"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "ConfigMap",
+      "module": "ibm-usage-metering-processing",
+      "reference": "process_federation_server/ConfigMap/ibm-usage-metering-processing",
+      "scope": [
+        "Ibm-Usage-Metering"
+      ],
+      "short_description": "ConfigMap ibm-usage-metering-processing",
+      "long_description": "Kubernetes ConfigMap resource for ibm-usage-metering",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-processing",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for ibm-usage-metering-processing",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap ibm-usage-metering-processing",
+            "Describe ConfigMap: oc describe configmap ibm-usage-metering-processing"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Pod",
+      "module": "ibm-usage-metering-instance-59984d787f-m6k4q",
+      "reference": "process_federation_server/Pod/ibm-usage-metering-instance-59984d787f-m6k4q",
+      "scope": [
+        "Ibm-Usage-Metering"
+      ],
+      "short_description": "Pod ibm-usage-metering-instance-59984d787f-m6k4q",
+      "long_description": "Kubernetes Pod resource for ibm-usage-metering",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-instance-59984d787f-m6k4q",
+          "kind": "Pod",
+          "short_description": "Pod for ibm-usage-metering-instance-59984d787f-m6k4q",
+          "troubleshooting": [
+            "Check Pod status: oc get pod ibm-usage-metering-instance-59984d787f-m6k4q",
+            "View Pod logs: oc logs pod/ibm-usage-metering-instance-59984d787f-m6k4q",
+            "Describe Pod: oc describe pod ibm-usage-metering-instance-59984d787f-m6k4q"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Operator",
+      "module": "ibm-usage-metering-operator.production",
+      "reference": "process_federation_server/Operator/ibm-usage-metering-operator.production",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "Operator ibm-usage-metering-operator.production",
+      "long_description": "Kubernetes Operator resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-operator.production",
+          "kind": "Operator",
+          "short_description": "Operator for ibm-usage-metering-operator.production",
+          "troubleshooting": [
+            "Check Operator status: oc get operator ibm-usage-metering-operator.production",
+            "Describe Operator: oc describe operator ibm-usage-metering-operator.production"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "PersistentVolumeClaim",
+      "module": "ums-reports-pvc",
+      "reference": "process_federation_server/PersistentVolumeClaim/ums-reports-pvc",
+      "scope": [
+        "Icp4Adeploy-Aca"
+      ],
+      "short_description": "PersistentVolumeClaim ums-reports-pvc",
+      "long_description": "Kubernetes PersistentVolumeClaim resource for icp4adeploy-aca",
+      "k8s_objects": [
+        {
+          "name": "ums-reports-pvc",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for ums-reports-pvc",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim ums-reports-pvc",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim ums-reports-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Role",
+      "module": "ibm-usage-metering-instance",
+      "reference": "process_federation_server/Role/ibm-usage-metering-instance",
+      "scope": [
+        "Ibm-Usage-Metering"
+      ],
+      "short_description": "Role ibm-usage-metering-instance",
+      "long_description": "Kubernetes Role resource for ibm-usage-metering",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-instance",
+          "kind": "Role",
+          "short_description": "Role for ibm-usage-metering-instance",
+          "troubleshooting": [
+            "Check Role status: oc get role ibm-usage-metering-instance",
+            "Describe Role: oc describe role ibm-usage-metering-instance"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Secret",
+      "module": "cp4ba-ums-secret",
+      "reference": "process_federation_server/Secret/cp4ba-ums-secret",
+      "scope": [
+        "Cp4Ba"
+      ],
+      "short_description": "Secret cp4ba-ums-secret",
+      "long_description": "Kubernetes Secret resource for cp4ba",
+      "k8s_objects": [
+        {
+          "name": "cp4ba-ums-secret",
+          "kind": "Secret",
+          "short_description": "Secret for cp4ba-ums-secret",
+          "troubleshooting": [
+            "Check Secret status: oc get secret cp4ba-ums-secret",
+            "Describe Secret: oc describe secret cp4ba-ums-secret"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "process_federation_server",
+      "app": "Secret",
+      "module": "ibm-usage-metering-instance",
+      "reference": "process_federation_server/Secret/ibm-usage-metering-instance",
+      "scope": [
+        "Ibm"
+      ],
+      "short_description": "Secret ibm-usage-metering-instance",
+      "long_description": "Kubernetes Secret resource for ibm",
+      "k8s_objects": [
+        {
+          "name": "ibm-usage-metering-instance",
+          "kind": "Secret",
+          "short_description": "Secret for ibm-usage-metering-instance",
+          "troubleshooting": [
+            "Check Secret status: oc get secret ibm-usage-metering-instance",
+            "Describe Secret: oc describe secret ibm-usage-metering-instance"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
       "Capability": "baw_authoring",
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Navigator-Deploy component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
@@ -105263,6 +106595,342 @@
     },
     {
       "Capability": "baw_runtime",
+      "foundational_services": "cpfs-im-zen",
+      "app_description": "Workflow-Server component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
+      "deployment": "icp4adeploy-bawins1-baw-server",
+      "reference": "baw_authoring/icp4adeploy-bawins1-baw-server/workflow",
+      "scope": [
+        "Workflow-Server"
+      ],
+      "short_description": "workflow-server StatefulSet",
+      "long_description": "This StatefulSet manages the workflow-server component of CP4BA.\nCapabilities: baw_authoring, baw_runtime\nIf this component is down, related functionality will be unavailable.",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-bawins1-baw-server",
+          "kind": "StatefulSet",
+          "short_description": "StatefulSet for icp4adeploy-bawins1-baw-server",
+          "troubleshooting": [
+            "Check StatefulSet status: oc get statefulset icp4adeploy-bawins1-baw-server",
+            "View StatefulSet logs: oc logs statefulset/icp4adeploy-bawins1-baw-server",
+            "Describe StatefulSet: oc describe statefulset icp4adeploy-bawins1-baw-server"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "ibm-connectivity-pack-config",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for ibm-connectivity-pack-config",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap ibm-connectivity-pack-config",
+            "Describe ConfigMap: oc describe configmap ibm-connectivity-pack-config"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-bawins1-baw-server-configmap-lombardi",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-bawins1-baw-server-configmap-lombardi",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-bawins1-baw-server-configmap-lombardi",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-bawins1-baw-server-configmap-lombardi"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "ibm-usage-metering-upload-config",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for ibm-usage-metering-upload-config",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap ibm-usage-metering-upload-config",
+            "Describe ConfigMap: oc describe configmap ibm-usage-metering-upload-config"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-bawins1-baw-server-configmap-liberty",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-bawins1-baw-server-configmap-liberty",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-bawins1-baw-server-configmap-liberty",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-bawins1-baw-server-configmap-liberty"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-bawins1-baw-tls-secret",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-bawins1-baw-tls-secret",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-bawins1-baw-tls-secret",
+            "Describe Secret: oc describe secret icp4adeploy-bawins1-baw-tls-secret"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-global-function-id-secret",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-global-function-id-secret",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-global-function-id-secret",
+            "Describe Secret: oc describe secret icp4adeploy-global-function-id-secret"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-bawins1-baw-server-secret",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-bawins1-baw-server-secret",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-bawins1-baw-server-secret",
+            "Describe Secret: oc describe secret icp4adeploy-bawins1-baw-server-secret"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "ibm-usage-metering-upload-token",
+          "kind": "Secret",
+          "short_description": "Secret for ibm-usage-metering-upload-token",
+          "troubleshooting": [
+            "Check Secret status: oc get secret ibm-usage-metering-upload-token",
+            "Describe Secret: oc describe secret ibm-usage-metering-upload-token"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-bawins1-baw-server-def-secret",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-bawins1-baw-server-def-secret",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-bawins1-baw-server-def-secret",
+            "Describe Secret: oc describe secret icp4adeploy-bawins1-baw-server-def-secret"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-ecm-ltpa",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-ecm-ltpa",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-ecm-ltpa",
+            "Describe Secret: oc describe secret icp4adeploy-ecm-ltpa"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "custom-config-dropins",
+          "kind": "Secret",
+          "short_description": "Secret for custom-config-dropins",
+          "troubleshooting": [
+            "Check Secret status: oc get secret custom-config-dropins",
+            "Describe Secret: oc describe secret custom-config-dropins"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "lombardi-custom-xml-secret",
+          "kind": "Secret",
+          "short_description": "Secret for lombardi-custom-xml-secret",
+          "troubleshooting": [
+            "Check Secret status: oc get secret lombardi-custom-xml-secret",
+            "Describe Secret: oc describe secret lombardi-custom-xml-secret"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "ibm-dba-postgresql-client",
+          "kind": "Secret",
+          "short_description": "Secret for ibm-dba-postgresql-client",
+          "troubleshooting": [
+            "Check Secret status: oc get secret ibm-dba-postgresql-client",
+            "Describe Secret: oc describe secret ibm-dba-postgresql-client"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-bawins1-baw-server-secret-case",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-bawins1-baw-server-secret-case",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-bawins1-baw-server-secret-case",
+            "Describe Secret: oc describe secret icp4adeploy-bawins1-baw-server-secret-case"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-bawins1-baw-server-ltpa",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-bawins1-baw-server-ltpa",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-bawins1-baw-server-ltpa",
+            "Describe Secret: oc describe secret icp4adeploy-bawins1-baw-server-ltpa"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-bawins1-baw-ch-db-client-tls",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-bawins1-baw-ch-db-client-tls",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-bawins1-baw-ch-db-client-tls",
+            "Describe Secret: oc describe secret icp4adeploy-bawins1-baw-ch-db-client-tls"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-bawins1-baw-server-secret-kafka",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-bawins1-baw-server-secret-kafka",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-bawins1-baw-server-secret-kafka",
+            "Describe Secret: oc describe secret icp4adeploy-bawins1-baw-server-secret-kafka"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-bawins1-baw-file-storage-pvc",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for icp4adeploy-bawins1-baw-file-storage-pvc",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-bawins1-baw-file-storage-pvc",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-bawins1-baw-file-storage-pvc"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "process-apps-logs",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for process-apps-logs",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim process-apps-logs",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim process-apps-logs"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "operator-shared-pvc",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for operator-shared-pvc",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim operator-shared-pvc",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim operator-shared-pvc"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-bawins1-baw-logs-storage-pvc",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for icp4adeploy-bawins1-baw-logs-storage-pvc",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-bawins1-baw-logs-storage-pvc",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-bawins1-baw-logs-storage-pvc"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-bawins1-baw-dump-storage-pvc",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for icp4adeploy-bawins1-baw-dump-storage-pvc",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-bawins1-baw-dump-storage-pvc",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-bawins1-baw-dump-storage-pvc"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icn-cfgstore",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for icn-cfgstore",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icn-cfgstore",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icn-cfgstore"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icn-pluginstore",
+          "kind": "PersistentVolumeClaim",
+          "short_description": "PersistentVolumeClaim for icn-pluginstore",
+          "troubleshooting": [
+            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icn-pluginstore",
+            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icn-pluginstore"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-bawins1-baw-server-0",
+          "kind": "Pod",
+          "short_description": "Pod for icp4adeploy-bawins1-baw-server-0",
+          "troubleshooting": [
+            "Check Pod status: oc get pod icp4adeploy-bawins1-baw-server-0",
+            "View Pod logs: oc logs pod/icp4adeploy-bawins1-baw-server-0",
+            "Describe Pod: oc describe pod icp4adeploy-bawins1-baw-server-0"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-bawins1-baw-server-pdb",
+          "kind": "PodDisruptionBudget",
+          "short_description": "PodDisruptionBudget for icp4adeploy-bawins1-baw-server-pdb",
+          "troubleshooting": [
+            "Check PodDisruptionBudget status: oc get poddisruptionbudget icp4adeploy-bawins1-baw-server-pdb",
+            "Describe PodDisruptionBudget: oc describe poddisruptionbudget icp4adeploy-bawins1-baw-server-pdb"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-bawins1-baw-server-role",
+          "kind": "Role",
+          "short_description": "Role for icp4adeploy-bawins1-baw-server-role",
+          "troubleshooting": [
+            "Check Role status: oc get role icp4adeploy-bawins1-baw-server-role",
+            "Describe Role: oc describe role icp4adeploy-bawins1-baw-server-role"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-bawins1-baw-server-rolebinding",
+          "kind": "RoleBinding",
+          "short_description": "RoleBinding for icp4adeploy-bawins1-baw-server-rolebinding",
+          "troubleshooting": [
+            "Check RoleBinding status: oc get rolebinding icp4adeploy-bawins1-baw-server-rolebinding",
+            "Describe RoleBinding: oc describe rolebinding icp4adeploy-bawins1-baw-server-rolebinding"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-bawins1-baw-server-ltpa-sa",
+          "kind": "ServiceAccount",
+          "short_description": "ServiceAccount for icp4adeploy-bawins1-baw-server-ltpa-sa",
+          "troubleshooting": [
+            "Check ServiceAccount status: oc get serviceaccount icp4adeploy-bawins1-baw-server-ltpa-sa",
+            "Describe ServiceAccount: oc describe serviceaccount icp4adeploy-bawins1-baw-server-ltpa-sa"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "icp4adeploy-bawins1-baw-server-sa",
+          "kind": "ServiceAccount",
+          "short_description": "ServiceAccount for icp4adeploy-bawins1-baw-server-sa",
+          "troubleshooting": [
+            "Check ServiceAccount status: oc get serviceaccount icp4adeploy-bawins1-baw-server-sa",
+            "Describe ServiceAccount: oc describe serviceaccount icp4adeploy-bawins1-baw-server-sa"
+          ],
+          "dependency": []
+        },
+        {
+          "name": "production-icp4adeploy-bawins1-baw-server-zen-extension",
+          "kind": "ZenExtension",
+          "short_description": "ZenExtension for production-icp4adeploy-bawins1-baw-server-zen-extension",
+          "troubleshooting": [
+            "Check ZenExtension status: oc get zenextension production-icp4adeploy-bawins1-baw-server-zen-extension",
+            "Describe ZenExtension: oc describe zenextension production-icp4adeploy-bawins1-baw-server-zen-extension"
+          ],
+          "dependency": []
+        }
+      ]
+    },
+    {
+      "Capability": "baw_runtime",
       "app": "PersistentVolumeClaim",
       "module": "icp4adeploy-graphql-deploy-6db88467b4-d52z9-tls-stores",
       "reference": "baw_runtime/PersistentVolumeClaim/icp4adeploy-graphql-deploy-6db88467b4-d52z9-tls-stores",
@@ -106278,6 +107946,30 @@
     },
     {
       "Capability": "baw_runtime",
+      "app": "Job",
+      "module": "icp4adeploy-bawins1-baw-ltpa",
+      "reference": "baw_runtime/Job/icp4adeploy-bawins1-baw-ltpa",
+      "scope": [
+        "Workflow-Server"
+      ],
+      "short_description": "Job icp4adeploy-bawins1-baw-ltpa",
+      "long_description": "Kubernetes Job resource for workflow-server",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-bawins1-baw-ltpa",
+          "kind": "Job",
+          "short_description": "Job for icp4adeploy-bawins1-baw-ltpa",
+          "troubleshooting": [
+            "Check Job status: oc get job icp4adeploy-bawins1-baw-ltpa",
+            "Describe Job: oc describe job icp4adeploy-bawins1-baw-ltpa"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "baw_runtime",
       "app": "Secret",
       "module": "icp4adeploy-insights-engine-flink-cert",
       "reference": "baw_runtime/Secret/icp4adeploy-insights-engine-flink-cert",
@@ -106318,6 +108010,30 @@
           "troubleshooting": [
             "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-css-deploy-2-fc485d86-sgp6b-server-stellent-linux64-folder-pvc",
             "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-css-deploy-2-fc485d86-sgp6b-server-stellent-linux64-folder-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "baw_runtime",
+      "app": "ConfigMap",
+      "module": "icp4adeploy-bawins1-baw-server-configmap",
+      "reference": "baw_runtime/ConfigMap/icp4adeploy-bawins1-baw-server-configmap",
+      "scope": [
+        "Workflow-Server"
+      ],
+      "short_description": "ConfigMap icp4adeploy-bawins1-baw-server-configmap",
+      "long_description": "Kubernetes ConfigMap resource for workflow-server",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-bawins1-baw-server-configmap",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-bawins1-baw-server-configmap",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-bawins1-baw-server-configmap",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-bawins1-baw-server-configmap"
           ],
           "dependency": []
         }
@@ -107123,6 +108839,30 @@
     },
     {
       "Capability": "baw_runtime",
+      "app": "ConfigMap",
+      "module": "icp4adeploy-bawins1-baw-server-configmap-lombardi",
+      "reference": "baw_runtime/ConfigMap/icp4adeploy-bawins1-baw-server-configmap-lombardi",
+      "scope": [
+        "Workflow-Server"
+      ],
+      "short_description": "ConfigMap icp4adeploy-bawins1-baw-server-configmap-lombardi",
+      "long_description": "Kubernetes ConfigMap resource for workflow-server",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-bawins1-baw-server-configmap-lombardi",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-bawins1-baw-server-configmap-lombardi",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-bawins1-baw-server-configmap-lombardi",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-bawins1-baw-server-configmap-lombardi"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "baw_runtime",
       "app": "PersistentVolumeClaim",
       "module": "graphql-logstore",
       "reference": "baw_runtime/PersistentVolumeClaim/graphql-logstore",
@@ -107404,6 +109144,30 @@
           "troubleshooting": [
             "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-cpe-deploy-6d45c74f4c-j52v9-usr-folder-pvc",
             "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-cpe-deploy-6d45c74f4c-j52v9-usr-folder-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "baw_runtime",
+      "app": "Job",
+      "module": "icp4adeploy-bawins1-baw-content-init-job",
+      "reference": "baw_runtime/Job/icp4adeploy-bawins1-baw-content-init-job",
+      "scope": [
+        "Workflow-Server"
+      ],
+      "short_description": "Job icp4adeploy-bawins1-baw-content-init-job",
+      "long_description": "Kubernetes Job resource for workflow-server",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-bawins1-baw-content-init-job",
+          "kind": "Job",
+          "short_description": "Job for icp4adeploy-bawins1-baw-content-init-job",
+          "troubleshooting": [
+            "Check Job status: oc get job icp4adeploy-bawins1-baw-content-init-job",
+            "Describe Job: oc describe job icp4adeploy-bawins1-baw-content-init-job"
           ],
           "dependency": []
         }
@@ -108562,6 +110326,30 @@
           "troubleshooting": [
             "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-cpe-deploy-6d45c74f4c-vk8zw-licenses-folder-pvc",
             "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-cpe-deploy-6d45c74f4c-vk8zw-licenses-folder-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "baw_runtime",
+      "app": "Secret",
+      "module": "icp4adeploy-bawins1-baw-server-secret-case",
+      "reference": "baw_runtime/Secret/icp4adeploy-bawins1-baw-server-secret-case",
+      "scope": [
+        "Icp4Adeploy"
+      ],
+      "short_description": "Secret icp4adeploy-bawins1-baw-server-secret-case",
+      "long_description": "Kubernetes Secret resource for icp4adeploy",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-bawins1-baw-server-secret-case",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-bawins1-baw-server-secret-case",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-bawins1-baw-server-secret-case",
+            "Describe Secret: oc describe secret icp4adeploy-bawins1-baw-server-secret-case"
           ],
           "dependency": []
         }
@@ -110179,6 +111967,30 @@
           "troubleshooting": [
             "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-graphql-deploy-6db88467b4-2jj4s-licenses-folder-pvc",
             "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-graphql-deploy-6db88467b4-2jj4s-licenses-folder-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "baw_runtime",
+      "app": "ConfigMap",
+      "module": "icp4adeploy-bawins1-baw-server-configmap-liberty",
+      "reference": "baw_runtime/ConfigMap/icp4adeploy-bawins1-baw-server-configmap-liberty",
+      "scope": [
+        "Workflow-Server"
+      ],
+      "short_description": "ConfigMap icp4adeploy-bawins1-baw-server-configmap-liberty",
+      "long_description": "Kubernetes ConfigMap resource for workflow-server",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-bawins1-baw-server-configmap-liberty",
+          "kind": "ConfigMap",
+          "short_description": "ConfigMap for icp4adeploy-bawins1-baw-server-configmap-liberty",
+          "troubleshooting": [
+            "Check ConfigMap status: oc get configmap icp4adeploy-bawins1-baw-server-configmap-liberty",
+            "Describe ConfigMap: oc describe configmap icp4adeploy-bawins1-baw-server-configmap-liberty"
           ],
           "dependency": []
         }
@@ -113280,6 +115092,30 @@
     {
       "Capability": "baw_runtime",
       "app": "Secret",
+      "module": "icp4adeploy-bawins1-baw-server-secret",
+      "reference": "baw_runtime/Secret/icp4adeploy-bawins1-baw-server-secret",
+      "scope": [
+        "Icp4Adeploy"
+      ],
+      "short_description": "Secret icp4adeploy-bawins1-baw-server-secret",
+      "long_description": "Kubernetes Secret resource for icp4adeploy",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-bawins1-baw-server-secret",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-bawins1-baw-server-secret",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-bawins1-baw-server-secret",
+            "Describe Secret: oc describe secret icp4adeploy-bawins1-baw-server-secret"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "baw_runtime",
+      "app": "Secret",
       "module": "icp4adeploy-ban-postgres-ssl-secret",
       "reference": "baw_runtime/Secret/icp4adeploy-ban-postgres-ssl-secret",
       "scope": [
@@ -113367,6 +115203,30 @@
           "troubleshooting": [
             "Check Secret status: oc get secret ibm-usage-metering-upload-token",
             "Describe Secret: oc describe secret ibm-usage-metering-upload-token"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "baw_runtime",
+      "app": "Job",
+      "module": "icp4adeploy-bawins1-baw-case-init-job",
+      "reference": "baw_runtime/Job/icp4adeploy-bawins1-baw-case-init-job",
+      "scope": [
+        "Workflow-Server"
+      ],
+      "short_description": "Job icp4adeploy-bawins1-baw-case-init-job",
+      "long_description": "Kubernetes Job resource for workflow-server",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-bawins1-baw-case-init-job",
+          "kind": "Job",
+          "short_description": "Job for icp4adeploy-bawins1-baw-case-init-job",
+          "troubleshooting": [
+            "Check Job status: oc get job icp4adeploy-bawins1-baw-case-init-job",
+            "Describe Job: oc describe job icp4adeploy-bawins1-baw-case-init-job"
           ],
           "dependency": []
         }
@@ -115152,6 +117012,54 @@
           "troubleshooting": [
             "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-cpe-deploy-6d45c74f4c-vk8zw-server-tranlog-folder-pvc",
             "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-cpe-deploy-6d45c74f4c-vk8zw-server-tranlog-folder-pvc"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "baw_runtime",
+      "app": "Job",
+      "module": "icp4adeploy-bawins1-baw-db-init-job",
+      "reference": "baw_runtime/Job/icp4adeploy-bawins1-baw-db-init-job",
+      "scope": [
+        "Workflow-Server"
+      ],
+      "short_description": "Job icp4adeploy-bawins1-baw-db-init-job",
+      "long_description": "Kubernetes Job resource for workflow-server",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-bawins1-baw-db-init-job",
+          "kind": "Job",
+          "short_description": "Job for icp4adeploy-bawins1-baw-db-init-job",
+          "troubleshooting": [
+            "Check Job status: oc get job icp4adeploy-bawins1-baw-db-init-job",
+            "Describe Job: oc describe job icp4adeploy-bawins1-baw-db-init-job"
+          ],
+          "dependency": []
+        }
+      ],
+      "table_only": true
+    },
+    {
+      "Capability": "baw_runtime",
+      "app": "Secret",
+      "module": "icp4adeploy-bawins1-baw-server-secret-kafka",
+      "reference": "baw_runtime/Secret/icp4adeploy-bawins1-baw-server-secret-kafka",
+      "scope": [
+        "Icp4Adeploy"
+      ],
+      "short_description": "Secret icp4adeploy-bawins1-baw-server-secret-kafka",
+      "long_description": "Kubernetes Secret resource for icp4adeploy",
+      "k8s_objects": [
+        {
+          "name": "icp4adeploy-bawins1-baw-server-secret-kafka",
+          "kind": "Secret",
+          "short_description": "Secret for icp4adeploy-bawins1-baw-server-secret-kafka",
+          "troubleshooting": [
+            "Check Secret status: oc get secret icp4adeploy-bawins1-baw-server-secret-kafka",
+            "Describe Secret: oc describe secret icp4adeploy-bawins1-baw-server-secret-kafka"
           ],
           "dependency": []
         }
