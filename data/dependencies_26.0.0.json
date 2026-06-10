@@ -6,12 +6,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Usage-Metering component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-usage-metering-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "ibm-usage-metering-instance",
-      "reference": "general/ibm-usage-metering-instance/instance",
+      "reference": "process_federation_server/ibm-usage-metering-instance/instance",
       "scope": [
         "Ibm-Usage-Metering"
       ],
       "short_description": "ibm-usage-metering Deployment",
-      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: process_federation_server\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "ibm-usage-metering-instance",
@@ -153,7 +153,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Pfs component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-usage-metering-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-pfs",
-      "reference": "baw_authoring/icp4adeploy-pfs/process-federation-server",
+      "reference": "process_federation_server/icp4adeploy-pfs/process-federation-server",
       "scope": [
         "Icp4Adeploy-Pfs"
       ],
@@ -1338,7 +1338,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Navigator-Deploy component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-navigator-deploy",
-      "reference": "content/icp4adeploy-navigator-deploy/business-automation-navigator",
+      "reference": "baw_authoring/icp4adeploy-navigator-deploy/business-automation-navigator",
       "scope": [
         "Icp4Adeploy-Navigator-Deploy"
       ],
@@ -1586,7 +1586,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Cp4Ba-Insights-Engine component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-insights-engine-cockpit",
-      "reference": "content/icp4adeploy-insights-engine-cockpit/insights",
+      "reference": "baw_authoring/icp4adeploy-insights-engine-cockpit/insights",
       "scope": [
         "Ibm-Cp4Ba-Insights-Engine"
       ],
@@ -1739,7 +1739,7 @@
         "Machine-Learning-Server"
       ],
       "short_description": "machine-learning-server Deployment",
-      "long_description": "This Deployment manages the machine-learning-server component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the machine-learning-server component of CP4BA.\nCapabilities: baw_authoring\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "icp4adeploy-mls-wfi",
@@ -1831,7 +1831,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Navigator-Watcher component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-navigator-watcher",
-      "reference": "content/icp4adeploy-navigator-watcher/business-automation-navigator",
+      "reference": "baw_authoring/icp4adeploy-navigator-watcher/business-automation-navigator",
       "scope": [
         "Icp4Adeploy-Navigator-Watcher"
       ],
@@ -1898,7 +1898,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Cp4Ba-Insights-Engine component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-insights-engine-management",
-      "reference": "content/icp4adeploy-insights-engine-management/insights",
+      "reference": "baw_authoring/icp4adeploy-insights-engine-management/insights",
       "scope": [
         "Ibm-Cp4Ba-Insights-Engine"
       ],
@@ -2025,7 +2025,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Graphql-Deploy component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-graphql-deploy",
-      "reference": "content/icp4adeploy-graphql-deploy/graphql",
+      "reference": "baw_authoring/icp4adeploy-graphql-deploy/graphql",
       "scope": [
         "Icp4Adeploy-Graphql-Deploy"
       ],
@@ -2194,12 +2194,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Usage-Metering component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "ibm-usage-metering-instance",
-      "reference": "general/ibm-usage-metering-instance/instance",
+      "reference": "baw_authoring/ibm-usage-metering-instance/instance",
       "scope": [
         "Ibm-Usage-Metering"
       ],
       "short_description": "ibm-usage-metering Deployment",
-      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: baw_authoring\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "ibm-usage-metering-instance",
@@ -2341,7 +2341,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Opencontent-Flink component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-insights-engine-flink-taskmanager",
-      "reference": "content/icp4adeploy-insights-engine-flink-taskmanager/insights",
+      "reference": "baw_authoring/icp4adeploy-insights-engine-flink-taskmanager/insights",
       "scope": [
         "Ibm-Opencontent-Flink"
       ],
@@ -2608,7 +2608,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Cpe-Watcher component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-cpe-watcher",
-      "reference": "content/icp4adeploy-cpe-watcher/content-platform-engine",
+      "reference": "baw_authoring/icp4adeploy-cpe-watcher/content-platform-engine",
       "scope": [
         "Icp4Adeploy-Cpe-Watcher"
       ],
@@ -2675,7 +2675,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Opencontent-Flink component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-insights-engine-flink",
-      "reference": "content/icp4adeploy-insights-engine-flink/insights",
+      "reference": "baw_authoring/icp4adeploy-insights-engine-flink/insights",
       "scope": [
         "Ibm-Opencontent-Flink"
       ],
@@ -3015,12 +3015,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Model-Gateway component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "model-gateway",
-      "reference": "general/model-gateway/gateway",
+      "reference": "baw_authoring/model-gateway/gateway",
       "scope": [
         "Model-Gateway"
       ],
       "short_description": "model-gateway Deployment",
-      "long_description": "This Deployment manages the model-gateway component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the model-gateway component of CP4BA.\nCapabilities: baw_authoring\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "model-gateway",
@@ -3151,7 +3151,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Cpe-Deploy component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-cpe-deploy",
-      "reference": "content/icp4adeploy-cpe-deploy/content-platform-engine",
+      "reference": "baw_authoring/icp4adeploy-cpe-deploy/content-platform-engine",
       "scope": [
         "Icp4Adeploy-Cpe-Deploy"
       ],
@@ -3454,7 +3454,7 @@
         "Machine-Learning-Server"
       ],
       "short_description": "machine-learning-server Deployment",
-      "long_description": "This Deployment manages the machine-learning-server component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the machine-learning-server component of CP4BA.\nCapabilities: baw_authoring\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "icp4adeploy-mls-itp",
@@ -17715,12 +17715,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Usage-Metering component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "ibm-usage-metering-instance",
-      "reference": "general/ibm-usage-metering-instance/instance",
+      "reference": "decisions_ads/ibm-usage-metering-instance/instance",
       "scope": [
         "Ibm-Usage-Metering"
       ],
       "short_description": "ibm-usage-metering Deployment",
-      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: decisions_ads\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "ibm-usage-metering-instance",
@@ -17862,12 +17862,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Bts-Cp4Ba-Bts component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "ibm-bts-cp4ba-bts-316-deployment",
-      "reference": "document_processing/ibm-bts-cp4ba-bts-316-deployment/bts",
+      "reference": "decisions_ads/ibm-bts-cp4ba-bts-316-deployment/bts",
       "scope": [
         "Ibm-Bts-Cp4Ba-Bts"
       ],
       "short_description": "ibm-bts-cp4ba-bts Deployment",
-      "long_description": "This Deployment manages the ibm-bts-cp4ba-bts component of CP4BA.\nCapabilities: document_processing\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the ibm-bts-cp4ba-bts component of CP4BA.\nCapabilities: decisions_ads\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "ibm-bts-cp4ba-bts-316-deployment",
@@ -20192,7 +20192,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Cp4Ba-Insights-Engine component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-cp4a-wfps-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-cp4a-wfps-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-insights-engine-cockpit",
-      "reference": "content/icp4adeploy-insights-engine-cockpit/insights",
+      "reference": "workflow-process-service-authoring/icp4adeploy-insights-engine-cockpit/insights",
       "scope": [
         "Ibm-Cp4Ba-Insights-Engine"
       ],
@@ -20340,7 +20340,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Cp4Ba-Insights-Engine component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-cp4a-wfps-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-cp4a-wfps-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-insights-engine-management",
-      "reference": "content/icp4adeploy-insights-engine-management/insights",
+      "reference": "workflow-process-service-authoring/icp4adeploy-insights-engine-management/insights",
       "scope": [
         "Ibm-Cp4Ba-Insights-Engine"
       ],
@@ -20467,12 +20467,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Usage-Metering component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-cp4a-wfps-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-cp4a-wfps-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "ibm-usage-metering-instance",
-      "reference": "general/ibm-usage-metering-instance/instance",
+      "reference": "workflow-process-service-authoring/ibm-usage-metering-instance/instance",
       "scope": [
         "Ibm-Usage-Metering"
       ],
       "short_description": "ibm-usage-metering Deployment",
-      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: workflow-process-service-authoring\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "ibm-usage-metering-instance",
@@ -20614,7 +20614,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Opencontent-Flink component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-cp4a-wfps-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-cp4a-wfps-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-insights-engine-flink-taskmanager",
-      "reference": "content/icp4adeploy-insights-engine-flink-taskmanager/insights",
+      "reference": "workflow-process-service-authoring/icp4adeploy-insights-engine-flink-taskmanager/insights",
       "scope": [
         "Ibm-Opencontent-Flink"
       ],
@@ -20881,7 +20881,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Opencontent-Flink component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-cp4a-wfps-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-cp4a-wfps-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-insights-engine-flink",
-      "reference": "content/icp4adeploy-insights-engine-flink/insights",
+      "reference": "workflow-process-service-authoring/icp4adeploy-insights-engine-flink/insights",
       "scope": [
         "Ibm-Opencontent-Flink"
       ],
@@ -21221,12 +21221,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Bastudio component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-cp4a-wfps-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-cp4a-wfps-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-bastudio-deployment",
-      "reference": "baw_authoring/icp4adeploy-bastudio-deployment/bastudio",
+      "reference": "workflow-process-service-authoring/icp4adeploy-bastudio-deployment/bastudio",
       "scope": [
         "Bastudio"
       ],
       "short_description": "bastudio StatefulSet",
-      "long_description": "This StatefulSet manages the bastudio component of CP4BA.\nCapabilities: baw_authoring, foundation\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This StatefulSet manages the bastudio component of CP4BA.\nCapabilities: workflow-process-service-authoring, foundation\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "icp4adeploy-bastudio-deployment",
@@ -21438,342 +21438,6 @@
             "Check Pod status: oc get pod icp4adeploy-bastudio-deployment-1",
             "View Pod logs: oc logs pod/icp4adeploy-bastudio-deployment-1",
             "Describe Pod: oc describe pod icp4adeploy-bastudio-deployment-1"
-          ],
-          "dependency": []
-        }
-      ]
-    },
-    {
-      "Capability": "workflow-process-service-authoring",
-      "foundational_services": "cpfs-im-zen",
-      "app_description": "Workflow-Server component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-cp4a-wfps-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-cp4a-wfps-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
-      "deployment": "icp4adeploy-bawins1-baw-server",
-      "reference": "baw_authoring/icp4adeploy-bawins1-baw-server/workflow",
-      "scope": [
-        "Workflow-Server"
-      ],
-      "short_description": "workflow-server StatefulSet",
-      "long_description": "This StatefulSet manages the workflow-server component of CP4BA.\nCapabilities: baw_authoring, baw_runtime\nIf this component is down, related functionality will be unavailable.",
-      "k8s_objects": [
-        {
-          "name": "icp4adeploy-bawins1-baw-server",
-          "kind": "StatefulSet",
-          "short_description": "StatefulSet for icp4adeploy-bawins1-baw-server",
-          "troubleshooting": [
-            "Check StatefulSet status: oc get statefulset icp4adeploy-bawins1-baw-server",
-            "View StatefulSet logs: oc logs statefulset/icp4adeploy-bawins1-baw-server",
-            "Describe StatefulSet: oc describe statefulset icp4adeploy-bawins1-baw-server"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "ibm-connectivity-pack-config",
-          "kind": "ConfigMap",
-          "short_description": "ConfigMap for ibm-connectivity-pack-config",
-          "troubleshooting": [
-            "Check ConfigMap status: oc get configmap ibm-connectivity-pack-config",
-            "Describe ConfigMap: oc describe configmap ibm-connectivity-pack-config"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-bawins1-baw-server-configmap-lombardi",
-          "kind": "ConfigMap",
-          "short_description": "ConfigMap for icp4adeploy-bawins1-baw-server-configmap-lombardi",
-          "troubleshooting": [
-            "Check ConfigMap status: oc get configmap icp4adeploy-bawins1-baw-server-configmap-lombardi",
-            "Describe ConfigMap: oc describe configmap icp4adeploy-bawins1-baw-server-configmap-lombardi"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "ibm-usage-metering-upload-config",
-          "kind": "ConfigMap",
-          "short_description": "ConfigMap for ibm-usage-metering-upload-config",
-          "troubleshooting": [
-            "Check ConfigMap status: oc get configmap ibm-usage-metering-upload-config",
-            "Describe ConfigMap: oc describe configmap ibm-usage-metering-upload-config"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-bawins1-baw-server-configmap-liberty",
-          "kind": "ConfigMap",
-          "short_description": "ConfigMap for icp4adeploy-bawins1-baw-server-configmap-liberty",
-          "troubleshooting": [
-            "Check ConfigMap status: oc get configmap icp4adeploy-bawins1-baw-server-configmap-liberty",
-            "Describe ConfigMap: oc describe configmap icp4adeploy-bawins1-baw-server-configmap-liberty"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-bawins1-baw-tls-secret",
-          "kind": "Secret",
-          "short_description": "Secret for icp4adeploy-bawins1-baw-tls-secret",
-          "troubleshooting": [
-            "Check Secret status: oc get secret icp4adeploy-bawins1-baw-tls-secret",
-            "Describe Secret: oc describe secret icp4adeploy-bawins1-baw-tls-secret"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-global-function-id-secret",
-          "kind": "Secret",
-          "short_description": "Secret for icp4adeploy-global-function-id-secret",
-          "troubleshooting": [
-            "Check Secret status: oc get secret icp4adeploy-global-function-id-secret",
-            "Describe Secret: oc describe secret icp4adeploy-global-function-id-secret"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-bawins1-baw-server-secret",
-          "kind": "Secret",
-          "short_description": "Secret for icp4adeploy-bawins1-baw-server-secret",
-          "troubleshooting": [
-            "Check Secret status: oc get secret icp4adeploy-bawins1-baw-server-secret",
-            "Describe Secret: oc describe secret icp4adeploy-bawins1-baw-server-secret"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "ibm-usage-metering-upload-token",
-          "kind": "Secret",
-          "short_description": "Secret for ibm-usage-metering-upload-token",
-          "troubleshooting": [
-            "Check Secret status: oc get secret ibm-usage-metering-upload-token",
-            "Describe Secret: oc describe secret ibm-usage-metering-upload-token"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-bawins1-baw-server-def-secret",
-          "kind": "Secret",
-          "short_description": "Secret for icp4adeploy-bawins1-baw-server-def-secret",
-          "troubleshooting": [
-            "Check Secret status: oc get secret icp4adeploy-bawins1-baw-server-def-secret",
-            "Describe Secret: oc describe secret icp4adeploy-bawins1-baw-server-def-secret"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-ecm-ltpa",
-          "kind": "Secret",
-          "short_description": "Secret for icp4adeploy-ecm-ltpa",
-          "troubleshooting": [
-            "Check Secret status: oc get secret icp4adeploy-ecm-ltpa",
-            "Describe Secret: oc describe secret icp4adeploy-ecm-ltpa"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "custom-config-dropins",
-          "kind": "Secret",
-          "short_description": "Secret for custom-config-dropins",
-          "troubleshooting": [
-            "Check Secret status: oc get secret custom-config-dropins",
-            "Describe Secret: oc describe secret custom-config-dropins"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "lombardi-custom-xml-secret",
-          "kind": "Secret",
-          "short_description": "Secret for lombardi-custom-xml-secret",
-          "troubleshooting": [
-            "Check Secret status: oc get secret lombardi-custom-xml-secret",
-            "Describe Secret: oc describe secret lombardi-custom-xml-secret"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "ibm-dba-postgresql-client",
-          "kind": "Secret",
-          "short_description": "Secret for ibm-dba-postgresql-client",
-          "troubleshooting": [
-            "Check Secret status: oc get secret ibm-dba-postgresql-client",
-            "Describe Secret: oc describe secret ibm-dba-postgresql-client"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-bawins1-baw-server-secret-case",
-          "kind": "Secret",
-          "short_description": "Secret for icp4adeploy-bawins1-baw-server-secret-case",
-          "troubleshooting": [
-            "Check Secret status: oc get secret icp4adeploy-bawins1-baw-server-secret-case",
-            "Describe Secret: oc describe secret icp4adeploy-bawins1-baw-server-secret-case"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-bawins1-baw-server-ltpa",
-          "kind": "Secret",
-          "short_description": "Secret for icp4adeploy-bawins1-baw-server-ltpa",
-          "troubleshooting": [
-            "Check Secret status: oc get secret icp4adeploy-bawins1-baw-server-ltpa",
-            "Describe Secret: oc describe secret icp4adeploy-bawins1-baw-server-ltpa"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-bawins1-baw-ch-db-client-tls",
-          "kind": "Secret",
-          "short_description": "Secret for icp4adeploy-bawins1-baw-ch-db-client-tls",
-          "troubleshooting": [
-            "Check Secret status: oc get secret icp4adeploy-bawins1-baw-ch-db-client-tls",
-            "Describe Secret: oc describe secret icp4adeploy-bawins1-baw-ch-db-client-tls"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-bawins1-baw-server-secret-kafka",
-          "kind": "Secret",
-          "short_description": "Secret for icp4adeploy-bawins1-baw-server-secret-kafka",
-          "troubleshooting": [
-            "Check Secret status: oc get secret icp4adeploy-bawins1-baw-server-secret-kafka",
-            "Describe Secret: oc describe secret icp4adeploy-bawins1-baw-server-secret-kafka"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-bawins1-baw-file-storage-pvc",
-          "kind": "PersistentVolumeClaim",
-          "short_description": "PersistentVolumeClaim for icp4adeploy-bawins1-baw-file-storage-pvc",
-          "troubleshooting": [
-            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-bawins1-baw-file-storage-pvc",
-            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-bawins1-baw-file-storage-pvc"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "process-apps-logs",
-          "kind": "PersistentVolumeClaim",
-          "short_description": "PersistentVolumeClaim for process-apps-logs",
-          "troubleshooting": [
-            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim process-apps-logs",
-            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim process-apps-logs"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "operator-shared-pvc",
-          "kind": "PersistentVolumeClaim",
-          "short_description": "PersistentVolumeClaim for operator-shared-pvc",
-          "troubleshooting": [
-            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim operator-shared-pvc",
-            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim operator-shared-pvc"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-bawins1-baw-logs-storage-pvc",
-          "kind": "PersistentVolumeClaim",
-          "short_description": "PersistentVolumeClaim for icp4adeploy-bawins1-baw-logs-storage-pvc",
-          "troubleshooting": [
-            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-bawins1-baw-logs-storage-pvc",
-            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-bawins1-baw-logs-storage-pvc"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-bawins1-baw-dump-storage-pvc",
-          "kind": "PersistentVolumeClaim",
-          "short_description": "PersistentVolumeClaim for icp4adeploy-bawins1-baw-dump-storage-pvc",
-          "troubleshooting": [
-            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icp4adeploy-bawins1-baw-dump-storage-pvc",
-            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icp4adeploy-bawins1-baw-dump-storage-pvc"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icn-cfgstore",
-          "kind": "PersistentVolumeClaim",
-          "short_description": "PersistentVolumeClaim for icn-cfgstore",
-          "troubleshooting": [
-            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icn-cfgstore",
-            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icn-cfgstore"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icn-pluginstore",
-          "kind": "PersistentVolumeClaim",
-          "short_description": "PersistentVolumeClaim for icn-pluginstore",
-          "troubleshooting": [
-            "Check PersistentVolumeClaim status: oc get persistentvolumeclaim icn-pluginstore",
-            "Describe PersistentVolumeClaim: oc describe persistentvolumeclaim icn-pluginstore"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-bawins1-baw-server-0",
-          "kind": "Pod",
-          "short_description": "Pod for icp4adeploy-bawins1-baw-server-0",
-          "troubleshooting": [
-            "Check Pod status: oc get pod icp4adeploy-bawins1-baw-server-0",
-            "View Pod logs: oc logs pod/icp4adeploy-bawins1-baw-server-0",
-            "Describe Pod: oc describe pod icp4adeploy-bawins1-baw-server-0"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-bawins1-baw-server-pdb",
-          "kind": "PodDisruptionBudget",
-          "short_description": "PodDisruptionBudget for icp4adeploy-bawins1-baw-server-pdb",
-          "troubleshooting": [
-            "Check PodDisruptionBudget status: oc get poddisruptionbudget icp4adeploy-bawins1-baw-server-pdb",
-            "Describe PodDisruptionBudget: oc describe poddisruptionbudget icp4adeploy-bawins1-baw-server-pdb"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-bawins1-baw-server-role",
-          "kind": "Role",
-          "short_description": "Role for icp4adeploy-bawins1-baw-server-role",
-          "troubleshooting": [
-            "Check Role status: oc get role icp4adeploy-bawins1-baw-server-role",
-            "Describe Role: oc describe role icp4adeploy-bawins1-baw-server-role"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-bawins1-baw-server-rolebinding",
-          "kind": "RoleBinding",
-          "short_description": "RoleBinding for icp4adeploy-bawins1-baw-server-rolebinding",
-          "troubleshooting": [
-            "Check RoleBinding status: oc get rolebinding icp4adeploy-bawins1-baw-server-rolebinding",
-            "Describe RoleBinding: oc describe rolebinding icp4adeploy-bawins1-baw-server-rolebinding"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-bawins1-baw-server-ltpa-sa",
-          "kind": "ServiceAccount",
-          "short_description": "ServiceAccount for icp4adeploy-bawins1-baw-server-ltpa-sa",
-          "troubleshooting": [
-            "Check ServiceAccount status: oc get serviceaccount icp4adeploy-bawins1-baw-server-ltpa-sa",
-            "Describe ServiceAccount: oc describe serviceaccount icp4adeploy-bawins1-baw-server-ltpa-sa"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-bawins1-baw-server-sa",
-          "kind": "ServiceAccount",
-          "short_description": "ServiceAccount for icp4adeploy-bawins1-baw-server-sa",
-          "troubleshooting": [
-            "Check ServiceAccount status: oc get serviceaccount icp4adeploy-bawins1-baw-server-sa",
-            "Describe ServiceAccount: oc describe serviceaccount icp4adeploy-bawins1-baw-server-sa"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "production-icp4adeploy-bawins1-baw-server-zen-extension",
-          "kind": "ZenExtension",
-          "short_description": "ZenExtension for production-icp4adeploy-bawins1-baw-server-zen-extension",
-          "troubleshooting": [
-            "Check ZenExtension status: oc get zenextension production-icp4adeploy-bawins1-baw-server-zen-extension",
-            "Describe ZenExtension: oc describe zenextension production-icp4adeploy-bawins1-baw-server-zen-extension"
           ],
           "dependency": []
         }
@@ -22521,30 +22185,6 @@
           "troubleshooting": [
             "Check Secret status: oc get secret icp4adeploy-insights-engine-flink-cert",
             "Describe Secret: oc describe secret icp4adeploy-insights-engine-flink-cert"
-          ],
-          "dependency": []
-        }
-      ],
-      "table_only": true
-    },
-    {
-      "Capability": "workflow-process-service-authoring",
-      "app": "ConfigMap",
-      "module": "icp4adeploy-bawins1-baw-server-configmap",
-      "reference": "workflow-process-service-authoring/ConfigMap/icp4adeploy-bawins1-baw-server-configmap",
-      "scope": [
-        "Workflow-Server"
-      ],
-      "short_description": "ConfigMap icp4adeploy-bawins1-baw-server-configmap",
-      "long_description": "Kubernetes ConfigMap resource for workflow-server",
-      "k8s_objects": [
-        {
-          "name": "icp4adeploy-bawins1-baw-server-configmap",
-          "kind": "ConfigMap",
-          "short_description": "ConfigMap for icp4adeploy-bawins1-baw-server-configmap",
-          "troubleshooting": [
-            "Check ConfigMap status: oc get configmap icp4adeploy-bawins1-baw-server-configmap",
-            "Describe ConfigMap: oc describe configmap icp4adeploy-bawins1-baw-server-configmap"
           ],
           "dependency": []
         }
@@ -28242,30 +27882,6 @@
     {
       "Capability": "workflow-process-service-authoring",
       "app": "Secret",
-      "module": "icp4adeploy-bawins1-baw-server-secret",
-      "reference": "workflow-process-service-authoring/Secret/icp4adeploy-bawins1-baw-server-secret",
-      "scope": [
-        "Icp4Adeploy"
-      ],
-      "short_description": "Secret icp4adeploy-bawins1-baw-server-secret",
-      "long_description": "Kubernetes Secret resource for icp4adeploy",
-      "k8s_objects": [
-        {
-          "name": "icp4adeploy-bawins1-baw-server-secret",
-          "kind": "Secret",
-          "short_description": "Secret for icp4adeploy-bawins1-baw-server-secret",
-          "troubleshooting": [
-            "Check Secret status: oc get secret icp4adeploy-bawins1-baw-server-secret",
-            "Describe Secret: oc describe secret icp4adeploy-bawins1-baw-server-secret"
-          ],
-          "dependency": []
-        }
-      ],
-      "table_only": true
-    },
-    {
-      "Capability": "workflow-process-service-authoring",
-      "app": "Secret",
       "module": "opensearch-admin-user",
       "reference": "workflow-process-service-authoring/Secret/opensearch-admin-user",
       "scope": [
@@ -30829,7 +30445,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Navigator-Deploy component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "icp4adeploy-navigator-deploy",
-      "reference": "content/icp4adeploy-navigator-deploy/business-automation-navigator",
+      "reference": "foundation/icp4adeploy-navigator-deploy/business-automation-navigator",
       "scope": [
         "Icp4Adeploy-Navigator-Deploy"
       ],
@@ -31077,7 +30693,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Navigator-Watcher component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "icp4adeploy-navigator-watcher",
-      "reference": "content/icp4adeploy-navigator-watcher/business-automation-navigator",
+      "reference": "foundation/icp4adeploy-navigator-watcher/business-automation-navigator",
       "scope": [
         "Icp4Adeploy-Navigator-Watcher"
       ],
@@ -31144,7 +30760,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "App-Engine component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "icp4adeploy-pbk-ae-deployment",
-      "reference": "application/icp4adeploy-pbk-ae-deployment/ae",
+      "reference": "foundation/icp4adeploy-pbk-ae-deployment/ae",
       "scope": [
         "App-Engine"
       ],
@@ -31291,12 +30907,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Bastudio component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "icp4adeploy-bastudio-deployment",
-      "reference": "baw_authoring/icp4adeploy-bastudio-deployment/bastudio",
+      "reference": "foundation/icp4adeploy-bastudio-deployment/bastudio",
       "scope": [
         "Bastudio"
       ],
       "short_description": "bastudio StatefulSet",
-      "long_description": "This StatefulSet manages the bastudio component of CP4BA.\nCapabilities: baw_authoring, foundation\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This StatefulSet manages the bastudio component of CP4BA.\nCapabilities: foundation, foundation\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "icp4adeploy-bastudio-deployment",
@@ -39050,12 +38666,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Lsreporter-Content-Deploy component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-ccx-ai-services-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,postgresql-operator-controller-manager-1-25-5,ibm-content-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-ccx-ai-services-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 postgresql-operator-controller-manager-1-25-5<br/>&nbsp;&nbsp;\u2022 ibm-content-operator<br/>",
       "deployment": "icp4adeploy-lsreporter-content-deploy",
-      "reference": "general/icp4adeploy-lsreporter-content-deploy/content",
+      "reference": "content/icp4adeploy-lsreporter-content-deploy/content",
       "scope": [
         "Icp4Adeploy-Lsreporter-Content-Deploy"
       ],
       "short_description": "icp4adeploy-lsreporter-content-deploy Deployment",
-      "long_description": "This Deployment manages the icp4adeploy-lsreporter-content-deploy component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the icp4adeploy-lsreporter-content-deploy component of CP4BA.\nCapabilities: content\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "icp4adeploy-lsreporter-content-deploy",
@@ -39630,12 +39246,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Ccxmo-Deploy component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-ccx-ai-services-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,postgresql-operator-controller-manager-1-25-5,ibm-content-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-ccx-ai-services-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 postgresql-operator-controller-manager-1-25-5<br/>&nbsp;&nbsp;\u2022 ibm-content-operator<br/>",
       "deployment": "icp4adeploy-ccxmo-deploy",
-      "reference": "general/icp4adeploy-ccxmo-deploy/ccxmo",
+      "reference": "content/icp4adeploy-ccxmo-deploy/ccxmo",
       "scope": [
         "Icp4Adeploy-Ccxmo-Deploy"
       ],
       "short_description": "icp4adeploy-ccxmo-deploy Deployment",
-      "long_description": "This Deployment manages the icp4adeploy-ccxmo-deploy component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the icp4adeploy-ccxmo-deploy component of CP4BA.\nCapabilities: content\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "icp4adeploy-ccxmo-deploy",
@@ -39747,12 +39363,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Usage-Metering component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-ccx-ai-services-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,postgresql-operator-controller-manager-1-25-5,ibm-content-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-ccx-ai-services-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 postgresql-operator-controller-manager-1-25-5<br/>&nbsp;&nbsp;\u2022 ibm-content-operator<br/>",
       "deployment": "ibm-usage-metering-instance",
-      "reference": "general/ibm-usage-metering-instance/instance",
+      "reference": "content/ibm-usage-metering-instance/instance",
       "scope": [
         "Ibm-Usage-Metering"
       ],
       "short_description": "ibm-usage-metering Deployment",
-      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: content\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "ibm-usage-metering-instance",
@@ -40866,12 +40482,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Reasoning-Service-Deploy component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-ccx-ai-services-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,postgresql-operator-controller-manager-1-25-5,ibm-content-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-ccx-ai-services-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 postgresql-operator-controller-manager-1-25-5<br/>&nbsp;&nbsp;\u2022 ibm-content-operator<br/>",
       "deployment": "ibm-reasoning-service-deploy",
-      "reference": "general/ibm-reasoning-service-deploy/service",
+      "reference": "content/ibm-reasoning-service-deploy/service",
       "scope": [
         "Ibm-Reasoning-Service-Deploy"
       ],
       "short_description": "ibm-reasoning-service-deploy Deployment",
-      "long_description": "This Deployment manages the ibm-reasoning-service-deploy component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the ibm-reasoning-service-deploy component of CP4BA.\nCapabilities: content\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "ibm-reasoning-service-deploy",
@@ -66285,7 +65901,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Navigator-Deploy component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator,ibm-dpe-operator,ibm-bts-operator-controller-manager) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-dpe-operator<br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>",
       "deployment": "icp4adeploy-navigator-deploy",
-      "reference": "content/icp4adeploy-navigator-deploy/business-automation-navigator",
+      "reference": "document_processing/icp4adeploy-navigator-deploy/business-automation-navigator",
       "scope": [
         "Icp4Adeploy-Navigator-Deploy"
       ],
@@ -66630,7 +66246,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Navigator-Watcher component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator,ibm-dpe-operator,ibm-bts-operator-controller-manager) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-dpe-operator<br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>",
       "deployment": "icp4adeploy-navigator-watcher",
-      "reference": "content/icp4adeploy-navigator-watcher/business-automation-navigator",
+      "reference": "document_processing/icp4adeploy-navigator-watcher/business-automation-navigator",
       "scope": [
         "Icp4Adeploy-Navigator-Watcher"
       ],
@@ -66697,7 +66313,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Css-Deploy-2 component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator,ibm-dpe-operator,ibm-bts-operator-controller-manager) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-dpe-operator<br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>",
       "deployment": "icp4adeploy-css-deploy-2",
-      "reference": "content/icp4adeploy-css-deploy-2/content-search-services",
+      "reference": "document_processing/icp4adeploy-css-deploy-2/content-search-services",
       "scope": [
         "Icp4Adeploy-Css-Deploy-2"
       ],
@@ -67176,7 +66792,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Aca component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator,ibm-dpe-operator,ibm-bts-operator-controller-manager) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-dpe-operator<br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>",
       "deployment": "icp4adeploy-postprocessing",
-      "reference": "content/icp4adeploy-postprocessing/postprocessing",
+      "reference": "document_processing/icp4adeploy-postprocessing/postprocessing",
       "scope": [
         "Icp4Adeploy-Aca"
       ],
@@ -67283,7 +66899,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Graphql-Deploy component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator,ibm-dpe-operator,ibm-bts-operator-controller-manager) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-dpe-operator<br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>",
       "deployment": "icp4adeploy-graphql-deploy",
-      "reference": "content/icp4adeploy-graphql-deploy/graphql",
+      "reference": "document_processing/icp4adeploy-graphql-deploy/graphql",
       "scope": [
         "Icp4Adeploy-Graphql-Deploy"
       ],
@@ -67923,12 +67539,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Usage-Metering component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator,ibm-dpe-operator,ibm-bts-operator-controller-manager) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-dpe-operator<br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>",
       "deployment": "ibm-usage-metering-instance",
-      "reference": "general/ibm-usage-metering-instance/instance",
+      "reference": "document_processing/ibm-usage-metering-instance/instance",
       "scope": [
         "Ibm-Usage-Metering"
       ],
       "short_description": "ibm-usage-metering Deployment",
-      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: document_processing\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "ibm-usage-metering-instance",
@@ -68070,7 +67686,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Cpe-Watcher component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator,ibm-dpe-operator,ibm-bts-operator-controller-manager) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-dpe-operator<br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>",
       "deployment": "icp4adeploy-cpe-watcher",
-      "reference": "content/icp4adeploy-cpe-watcher/content-platform-engine",
+      "reference": "document_processing/icp4adeploy-cpe-watcher/content-platform-engine",
       "scope": [
         "Icp4Adeploy-Cpe-Watcher"
       ],
@@ -68137,7 +67753,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Aca component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator,ibm-dpe-operator,ibm-bts-operator-controller-manager) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-dpe-operator<br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>",
       "deployment": "icp4adeploy-processing-extraction",
-      "reference": "content/icp4adeploy-processing-extraction/processing",
+      "reference": "document_processing/icp4adeploy-processing-extraction/processing",
       "scope": [
         "Icp4Adeploy-Aca"
       ],
@@ -68299,7 +67915,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Cpe-Deploy component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator,ibm-dpe-operator,ibm-bts-operator-controller-manager) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-dpe-operator<br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>",
       "deployment": "icp4adeploy-cpe-deploy",
-      "reference": "content/icp4adeploy-cpe-deploy/content-platform-engine",
+      "reference": "document_processing/icp4adeploy-cpe-deploy/content-platform-engine",
       "scope": [
         "Icp4Adeploy-Cpe-Deploy"
       ],
@@ -68845,7 +68461,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Aca component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator,ibm-dpe-operator,ibm-bts-operator-controller-manager) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-dpe-operator<br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>",
       "deployment": "icp4adeploy-classifyprocess-classify",
-      "reference": "content/icp4adeploy-classifyprocess-classify/classifyprocess",
+      "reference": "document_processing/icp4adeploy-classifyprocess-classify/classifyprocess",
       "scope": [
         "Icp4Adeploy-Aca"
       ],
@@ -69130,12 +68746,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "App-Engine component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator,ibm-dpe-operator,ibm-bts-operator-controller-manager) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-dpe-operator<br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>",
       "deployment": "icp4adeploy-workspace-aae-ae-deployment",
-      "reference": "application/icp4adeploy-workspace-aae-ae-deployment/ae",
+      "reference": "document_processing/icp4adeploy-workspace-aae-ae-deployment/ae",
       "scope": [
         "App-Engine"
       ],
       "short_description": "app-engine Deployment",
-      "long_description": "This Deployment manages the app-engine component of CP4BA.\nCapabilities: application\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the app-engine component of CP4BA.\nCapabilities: document_processing\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "icp4adeploy-workspace-aae-ae-deployment",
@@ -69427,7 +69043,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Css-Deploy-1 component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator,ibm-dpe-operator,ibm-bts-operator-controller-manager) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-dpe-operator<br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>",
       "deployment": "icp4adeploy-css-deploy-1",
-      "reference": "content/icp4adeploy-css-deploy-1/content-search-services",
+      "reference": "document_processing/icp4adeploy-css-deploy-1/content-search-services",
       "scope": [
         "Icp4Adeploy-Css-Deploy-1"
       ],
@@ -69673,7 +69289,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Aca component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator,ibm-dpe-operator,ibm-bts-operator-controller-manager) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-dpe-operator<br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>",
       "deployment": "icp4adeploy-rabbitmq-ha",
-      "reference": "content/icp4adeploy-rabbitmq-ha/tm",
+      "reference": "document_processing/icp4adeploy-rabbitmq-ha/tm",
       "scope": [
         "Icp4Adeploy-Aca"
       ],
@@ -69791,12 +69407,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Bastudio component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator,ibm-dpe-operator,ibm-bts-operator-controller-manager) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-dpe-operator<br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>",
       "deployment": "icp4adeploy-bastudio-deployment",
-      "reference": "baw_authoring/icp4adeploy-bastudio-deployment/bastudio",
+      "reference": "document_processing/icp4adeploy-bastudio-deployment/bastudio",
       "scope": [
         "Bastudio"
       ],
       "short_description": "bastudio StatefulSet",
-      "long_description": "This StatefulSet manages the bastudio component of CP4BA.\nCapabilities: baw_authoring, foundation\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This StatefulSet manages the bastudio component of CP4BA.\nCapabilities: document_processing, foundation\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "icp4adeploy-bastudio-deployment",
@@ -91018,7 +90634,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Cp4Ba-Insights-Engine component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-odm-operator,ibm-ads-operator,ibm-odm-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-odm-operator<br/>&nbsp;&nbsp;\u2022 ibm-ads-operator<br/>&nbsp;&nbsp;\u2022 ibm-odm-operator<br/>",
       "deployment": "icp4adeploy-insights-engine-cockpit",
-      "reference": "content/icp4adeploy-insights-engine-cockpit/insights",
+      "reference": "decisions/icp4adeploy-insights-engine-cockpit/insights",
       "scope": [
         "Ibm-Cp4Ba-Insights-Engine"
       ],
@@ -91363,7 +90979,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Cp4Ba-Insights-Engine component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-odm-operator,ibm-ads-operator,ibm-odm-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-odm-operator<br/>&nbsp;&nbsp;\u2022 ibm-ads-operator<br/>&nbsp;&nbsp;\u2022 ibm-odm-operator<br/>",
       "deployment": "icp4adeploy-insights-engine-management",
-      "reference": "content/icp4adeploy-insights-engine-management/insights",
+      "reference": "decisions/icp4adeploy-insights-engine-management/insights",
       "scope": [
         "Ibm-Cp4Ba-Insights-Engine"
       ],
@@ -91687,12 +91303,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Usage-Metering component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-odm-operator,ibm-ads-operator,ibm-odm-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-odm-operator<br/>&nbsp;&nbsp;\u2022 ibm-ads-operator<br/>&nbsp;&nbsp;\u2022 ibm-odm-operator<br/>",
       "deployment": "ibm-usage-metering-instance",
-      "reference": "general/ibm-usage-metering-instance/instance",
+      "reference": "decisions/ibm-usage-metering-instance/instance",
       "scope": [
         "Ibm-Usage-Metering"
       ],
       "short_description": "ibm-usage-metering Deployment",
-      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: decisions\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "ibm-usage-metering-instance",
@@ -91834,7 +91450,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Opencontent-Flink component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-odm-operator,ibm-ads-operator,ibm-odm-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-odm-operator<br/>&nbsp;&nbsp;\u2022 ibm-ads-operator<br/>&nbsp;&nbsp;\u2022 ibm-odm-operator<br/>",
       "deployment": "icp4adeploy-insights-engine-flink-taskmanager",
-      "reference": "content/icp4adeploy-insights-engine-flink-taskmanager/insights",
+      "reference": "decisions/icp4adeploy-insights-engine-flink-taskmanager/insights",
       "scope": [
         "Ibm-Opencontent-Flink"
       ],
@@ -92101,7 +91717,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Opencontent-Flink component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-odm-operator,ibm-ads-operator,ibm-odm-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-odm-operator<br/>&nbsp;&nbsp;\u2022 ibm-ads-operator<br/>&nbsp;&nbsp;\u2022 ibm-odm-operator<br/>",
       "deployment": "icp4adeploy-insights-engine-flink",
-      "reference": "content/icp4adeploy-insights-engine-flink/insights",
+      "reference": "decisions/icp4adeploy-insights-engine-flink/insights",
       "scope": [
         "Ibm-Opencontent-Flink"
       ],
@@ -92618,12 +92234,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Bts-Cp4Ba-Bts component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-odm-operator,ibm-ads-operator,ibm-odm-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-odm-operator<br/>&nbsp;&nbsp;\u2022 ibm-ads-operator<br/>&nbsp;&nbsp;\u2022 ibm-odm-operator<br/>",
       "deployment": "ibm-bts-cp4ba-bts-316-deployment",
-      "reference": "document_processing/ibm-bts-cp4ba-bts-316-deployment/bts",
+      "reference": "decisions/ibm-bts-cp4ba-bts-316-deployment/bts",
       "scope": [
         "Ibm-Bts-Cp4Ba-Bts"
       ],
       "short_description": "ibm-bts-cp4ba-bts Deployment",
-      "long_description": "This Deployment manages the ibm-bts-cp4ba-bts component of CP4BA.\nCapabilities: document_processing\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the ibm-bts-cp4ba-bts component of CP4BA.\nCapabilities: decisions\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "ibm-bts-cp4ba-bts-316-deployment",
@@ -95996,12 +95612,12 @@
       "foundational_services": "zen-services",
       "app_description": "0030-Gateway component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "ibm-nginx",
-      "reference": "general/gateway/nginx",
+      "reference": "zen/Deployment/ibm-nginx",
       "scope": [
         "0030-Gateway"
       ],
       "short_description": "0030-gateway Deployment",
-      "long_description": "This Deployment manages the 0030-gateway component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the 0030-gateway component of CP4BA.\nCapabilities: zen\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "ibm-nginx",
@@ -96246,7 +95862,7 @@
       "foundational_services": "zen-services",
       "app_description": "0020-Zen-Base component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "zen-core-api",
-      "reference": "zen/framework/zen-ui",
+      "reference": "zen/Deployment/zen-core-api",
       "scope": [
         "0020-Zen-Base"
       ],
@@ -96444,7 +96060,7 @@
       "foundational_services": "zen-services",
       "app_description": "0020-Zen-Base component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "zen-watcher",
-      "reference": "zen/framework/zen-ui",
+      "reference": "zen/Deployment/zen-watcher",
       "scope": [
         "0020-Zen-Base"
       ],
@@ -96621,7 +96237,7 @@
       "foundational_services": "zen-services",
       "app_description": "0020-Zen-Base component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "zen-audit",
-      "reference": "zen/framework/zen-ui",
+      "reference": "zen/Deployment/zen-audit",
       "scope": [
         "0020-Zen-Base"
       ],
@@ -96749,7 +96365,7 @@
       "foundational_services": "zen-services",
       "app_description": "0020-Zen-Base component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "zen-core",
-      "reference": "zen/framework/zen-ui",
+      "reference": "zen/Deployment/zen-core",
       "scope": [
         "0020-Zen-Base"
       ],
@@ -96951,7 +96567,7 @@
       "foundational_services": "zen-services",
       "app_description": "Ibm component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "ibm-zen-operator",
-      "reference": "zen/operator/zen-ui",
+      "reference": "zen/Deployment/ibm-zen-operator",
       "scope": [
         "Ibm"
       ],
@@ -97078,12 +96694,12 @@
       "foundational_services": "zen-services",
       "app_description": "0010-Infra component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "usermgmt",
-      "reference": "cpfs-im/cpfs-im-zen/user-management",
+      "reference": "zen/Deployment/usermgmt",
       "scope": [
         "0010-Infra"
       ],
       "short_description": "0010-infra Deployment",
-      "long_description": "This Deployment manages the 0010-infra component of CP4BA.\nCapabilities: cpfs-im\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the 0010-infra component of CP4BA.\nCapabilities: zen\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "usermgmt",
@@ -97413,12 +97029,12 @@
       "foundational_services": "zen-services",
       "app_description": "Ibm-Zen-Meta-Api component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "meta-api-deploy",
-      "reference": "general/meta-api-deploy/api",
+      "reference": "zen/meta-api-deploy/api",
       "scope": [
         "Ibm-Zen-Meta-Api"
       ],
       "short_description": "ibm-zen-meta-api Deployment",
-      "long_description": "This Deployment manages the ibm-zen-meta-api component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the ibm-zen-meta-api component of CP4BA.\nCapabilities: zen\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "meta-api-deploy",
@@ -97521,7 +97137,7 @@
       "foundational_services": "zen-services",
       "app_description": "0010-Infra component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "zen-minio",
-      "reference": "zen/infrastructure/zen-ui",
+      "reference": "zen/StatefulSet/zen-minio",
       "scope": [
         "0010-Infra"
       ],
@@ -104282,7 +103898,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Navigator-Deploy component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-navigator-deploy",
-      "reference": "content/icp4adeploy-navigator-deploy/business-automation-navigator",
+      "reference": "baw_runtime/icp4adeploy-navigator-deploy/business-automation-navigator",
       "scope": [
         "Icp4Adeploy-Navigator-Deploy"
       ],
@@ -104530,7 +104146,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Cp4Ba-Insights-Engine component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-insights-engine-cockpit",
-      "reference": "content/icp4adeploy-insights-engine-cockpit/insights",
+      "reference": "baw_runtime/icp4adeploy-insights-engine-cockpit/insights",
       "scope": [
         "Ibm-Cp4Ba-Insights-Engine"
       ],
@@ -104683,7 +104299,7 @@
         "Machine-Learning-Server"
       ],
       "short_description": "machine-learning-server Deployment",
-      "long_description": "This Deployment manages the machine-learning-server component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the machine-learning-server component of CP4BA.\nCapabilities: baw_runtime\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "icp4adeploy-mls-wfi",
@@ -104775,7 +104391,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Navigator-Watcher component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-navigator-watcher",
-      "reference": "content/icp4adeploy-navigator-watcher/business-automation-navigator",
+      "reference": "baw_runtime/icp4adeploy-navigator-watcher/business-automation-navigator",
       "scope": [
         "Icp4Adeploy-Navigator-Watcher"
       ],
@@ -104842,7 +104458,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Cp4Ba-Insights-Engine component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-insights-engine-management",
-      "reference": "content/icp4adeploy-insights-engine-management/insights",
+      "reference": "baw_runtime/icp4adeploy-insights-engine-management/insights",
       "scope": [
         "Ibm-Cp4Ba-Insights-Engine"
       ],
@@ -104969,7 +104585,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Graphql-Deploy component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-graphql-deploy",
-      "reference": "content/icp4adeploy-graphql-deploy/graphql",
+      "reference": "baw_runtime/icp4adeploy-graphql-deploy/graphql",
       "scope": [
         "Icp4Adeploy-Graphql-Deploy"
       ],
@@ -105138,12 +104754,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Usage-Metering component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "ibm-usage-metering-instance",
-      "reference": "general/ibm-usage-metering-instance/instance",
+      "reference": "baw_runtime/ibm-usage-metering-instance/instance",
       "scope": [
         "Ibm-Usage-Metering"
       ],
       "short_description": "ibm-usage-metering Deployment",
-      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: baw_runtime\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "ibm-usage-metering-instance",
@@ -105285,7 +104901,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Opencontent-Flink component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-insights-engine-flink-taskmanager",
-      "reference": "content/icp4adeploy-insights-engine-flink-taskmanager/insights",
+      "reference": "baw_runtime/icp4adeploy-insights-engine-flink-taskmanager/insights",
       "scope": [
         "Ibm-Opencontent-Flink"
       ],
@@ -105552,7 +105168,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Cpe-Watcher component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-cpe-watcher",
-      "reference": "content/icp4adeploy-cpe-watcher/content-platform-engine",
+      "reference": "baw_runtime/icp4adeploy-cpe-watcher/content-platform-engine",
       "scope": [
         "Icp4Adeploy-Cpe-Watcher"
       ],
@@ -105619,7 +105235,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Opencontent-Flink component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-insights-engine-flink",
-      "reference": "content/icp4adeploy-insights-engine-flink/insights",
+      "reference": "baw_runtime/icp4adeploy-insights-engine-flink/insights",
       "scope": [
         "Ibm-Opencontent-Flink"
       ],
@@ -105959,12 +105575,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Model-Gateway component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "model-gateway",
-      "reference": "general/model-gateway/gateway",
+      "reference": "baw_runtime/model-gateway/gateway",
       "scope": [
         "Model-Gateway"
       ],
       "short_description": "model-gateway Deployment",
-      "long_description": "This Deployment manages the model-gateway component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the model-gateway component of CP4BA.\nCapabilities: baw_runtime\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "model-gateway",
@@ -106095,7 +105711,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Cpe-Deploy component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-cpe-deploy",
-      "reference": "content/icp4adeploy-cpe-deploy/content-platform-engine",
+      "reference": "baw_runtime/icp4adeploy-cpe-deploy/content-platform-engine",
       "scope": [
         "Icp4Adeploy-Cpe-Deploy"
       ],
@@ -106393,12 +106009,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Bts-Cp4Ba-Bts component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "ibm-bts-cp4ba-bts-316-deployment",
-      "reference": "document_processing/ibm-bts-cp4ba-bts-316-deployment/bts",
+      "reference": "baw_runtime/ibm-bts-cp4ba-bts-316-deployment/bts",
       "scope": [
         "Ibm-Bts-Cp4Ba-Bts"
       ],
       "short_description": "ibm-bts-cp4ba-bts Deployment",
-      "long_description": "This Deployment manages the ibm-bts-cp4ba-bts component of CP4BA.\nCapabilities: document_processing\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the ibm-bts-cp4ba-bts component of CP4BA.\nCapabilities: baw_runtime\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "ibm-bts-cp4ba-bts-316-deployment",
@@ -106496,7 +106112,7 @@
         "Machine-Learning-Server"
       ],
       "short_description": "machine-learning-server Deployment",
-      "long_description": "This Deployment manages the machine-learning-server component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the machine-learning-server component of CP4BA.\nCapabilities: baw_runtime\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "icp4adeploy-mls-itp",
@@ -106598,7 +106214,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Workflow-Server component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-cpd-model-gateway-operator,flink-kubernetes-operator,ibm-insights-engine-operator,ibm-usage-metering-operator,ibm-workflow-operator,ibm-pfs-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-cpd-model-gateway-operator<br/>&nbsp;&nbsp;\u2022 flink-kubernetes-operator<br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>&nbsp;&nbsp;\u2022 ibm-workflow-operator<br/>&nbsp;&nbsp;\u2022 ibm-pfs-operator<br/>",
       "deployment": "icp4adeploy-bawins1-baw-server",
-      "reference": "baw_authoring/icp4adeploy-bawins1-baw-server/workflow",
+      "reference": "baw_runtime/icp4adeploy-bawins1-baw-server/workflow",
       "scope": [
         "Workflow-Server"
       ],
@@ -117994,12 +117610,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Usage-Metering component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "ibm-usage-metering-instance",
-      "reference": "general/ibm-usage-metering-instance/instance",
+      "reference": "application/ibm-usage-metering-instance/instance",
       "scope": [
         "Ibm-Usage-Metering"
       ],
       "short_description": "ibm-usage-metering Deployment",
-      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: application\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "ibm-usage-metering-instance",
@@ -118141,12 +117757,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Bts-Cp4Ba-Bts component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "ibm-bts-cp4ba-bts-316-deployment",
-      "reference": "document_processing/ibm-bts-cp4ba-bts-316-deployment/bts",
+      "reference": "application/ibm-bts-cp4ba-bts-316-deployment/bts",
       "scope": [
         "Ibm-Bts-Cp4Ba-Bts"
       ],
       "short_description": "ibm-bts-cp4ba-bts Deployment",
-      "long_description": "This Deployment manages the ibm-bts-cp4ba-bts component of CP4BA.\nCapabilities: document_processing\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the ibm-bts-cp4ba-bts component of CP4BA.\nCapabilities: application\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "ibm-bts-cp4ba-bts-316-deployment",
@@ -121868,7 +121484,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Business Automation Insights component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-insights-engine-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>",
       "deployment": "icp4adeploy-insights-engine-cockpit",
-      "reference": "bai/cpfs-im-zen/icp4adeploy-insights-engine-cockpit",
+      "reference": "bai/Deployment/icp4adeploy-insights-engine-cockpit",
       "scope": [
         "Business Automation Insights"
       ],
@@ -122055,7 +121671,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Business Automation Insights component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-insights-engine-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-insights-engine-operator<br/>",
       "deployment": "icp4adeploy-insights-engine-management",
-      "reference": "bai/cpfs-im-zen/icp4adeploy-insights-engine-management",
+      "reference": "bai/Deployment/icp4adeploy-insights-engine-management",
       "scope": [
         "Business Automation Insights"
       ],
@@ -122259,7 +121875,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Navigator-Deploy component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-navigator-deploy",
-      "reference": "content/icp4adeploy-navigator-deploy/business-automation-navigator",
+      "reference": "document_processing_runtime/icp4adeploy-navigator-deploy/business-automation-navigator",
       "scope": [
         "Icp4Adeploy-Navigator-Deploy"
       ],
@@ -122507,12 +122123,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Aca component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-deep-learning",
-      "reference": "document_processing/icp4adeploy-deep-learning/learning",
+      "reference": "document_processing_runtime/icp4adeploy-deep-learning/learning",
       "scope": [
         "Icp4Adeploy-Aca"
       ],
       "short_description": "icp4adeploy-aca Deployment",
-      "long_description": "This Deployment manages the icp4adeploy-aca component of CP4BA.\nCapabilities: document_processing\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the icp4adeploy-aca component of CP4BA.\nCapabilities: document_processing_runtime\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "icp4adeploy-deep-learning",
@@ -122604,7 +122220,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Navigator-Watcher component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-navigator-watcher",
-      "reference": "content/icp4adeploy-navigator-watcher/business-automation-navigator",
+      "reference": "document_processing_runtime/icp4adeploy-navigator-watcher/business-automation-navigator",
       "scope": [
         "Icp4Adeploy-Navigator-Watcher"
       ],
@@ -122671,7 +122287,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Css-Deploy-2 component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-css-deploy-2",
-      "reference": "content/icp4adeploy-css-deploy-2/content-search-services",
+      "reference": "document_processing_runtime/icp4adeploy-css-deploy-2/content-search-services",
       "scope": [
         "Icp4Adeploy-Css-Deploy-2"
       ],
@@ -122788,12 +122404,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Cpds-Deploy component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-cpds-deploy",
-      "reference": "document_processing/icp4adeploy-cpds-deploy/cpds",
+      "reference": "document_processing_runtime/icp4adeploy-cpds-deploy/cpds",
       "scope": [
         "Icp4Adeploy-Cpds-Deploy"
       ],
       "short_description": "icp4adeploy-cpds-deploy Deployment",
-      "long_description": "This Deployment manages the icp4adeploy-cpds-deploy component of CP4BA.\nCapabilities: document_processing\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the icp4adeploy-cpds-deploy component of CP4BA.\nCapabilities: document_processing_runtime\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "icp4adeploy-cpds-deploy",
@@ -122946,12 +122562,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Aca component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-wdu-extraction",
-      "reference": "document_processing/icp4adeploy-wdu-extraction/extraction",
+      "reference": "document_processing_runtime/icp4adeploy-wdu-extraction/extraction",
       "scope": [
         "Icp4Adeploy-Aca"
       ],
       "short_description": "icp4adeploy-aca Deployment",
-      "long_description": "This Deployment manages the icp4adeploy-aca component of CP4BA.\nCapabilities: document_processing\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the icp4adeploy-aca component of CP4BA.\nCapabilities: document_processing_runtime\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "icp4adeploy-wdu-extraction",
@@ -123032,7 +122648,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Aca component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-postprocessing",
-      "reference": "content/icp4adeploy-postprocessing/postprocessing",
+      "reference": "document_processing_runtime/icp4adeploy-postprocessing/postprocessing",
       "scope": [
         "Icp4Adeploy-Aca"
       ],
@@ -123139,7 +122755,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Graphql-Deploy component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-graphql-deploy",
-      "reference": "content/icp4adeploy-graphql-deploy/graphql",
+      "reference": "document_processing_runtime/icp4adeploy-graphql-deploy/graphql",
       "scope": [
         "Icp4Adeploy-Graphql-Deploy"
       ],
@@ -123308,12 +122924,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Viewone-Deploy component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-viewone-deploy",
-      "reference": "document_processing/icp4adeploy-viewone-deploy/viewone",
+      "reference": "document_processing_runtime/icp4adeploy-viewone-deploy/viewone",
       "scope": [
         "Icp4Adeploy-Viewone-Deploy"
       ],
       "short_description": "icp4adeploy-viewone-deploy Deployment",
-      "long_description": "This Deployment manages the icp4adeploy-viewone-deploy component of CP4BA.\nCapabilities: document_processing\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the icp4adeploy-viewone-deploy component of CP4BA.\nCapabilities: document_processing_runtime\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "icp4adeploy-viewone-deploy",
@@ -123476,12 +123092,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Aca component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-wdu-runtime",
-      "reference": "document_processing/icp4adeploy-wdu-runtime/runtime",
+      "reference": "document_processing_runtime/icp4adeploy-wdu-runtime/runtime",
       "scope": [
         "Icp4Adeploy-Aca"
       ],
       "short_description": "icp4adeploy-aca Deployment",
-      "long_description": "This Deployment manages the icp4adeploy-aca component of CP4BA.\nCapabilities: document_processing\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the icp4adeploy-aca component of CP4BA.\nCapabilities: document_processing_runtime\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "icp4adeploy-wdu-runtime",
@@ -123543,12 +123159,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Aca component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-ocr-extraction",
-      "reference": "document_processing/icp4adeploy-ocr-extraction/extraction",
+      "reference": "document_processing_runtime/icp4adeploy-ocr-extraction/extraction",
       "scope": [
         "Icp4Adeploy-Aca"
       ],
       "short_description": "icp4adeploy-aca Deployment",
-      "long_description": "This Deployment manages the icp4adeploy-aca component of CP4BA.\nCapabilities: document_processing\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the icp4adeploy-aca component of CP4BA.\nCapabilities: document_processing_runtime\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "icp4adeploy-ocr-extraction",
@@ -123672,12 +123288,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Aca component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-webhook",
-      "reference": "document_processing/icp4adeploy-webhook/webhook",
+      "reference": "document_processing_runtime/icp4adeploy-webhook/webhook",
       "scope": [
         "Icp4Adeploy-Aca"
       ],
       "short_description": "icp4adeploy-aca Deployment",
-      "long_description": "This Deployment manages the icp4adeploy-aca component of CP4BA.\nCapabilities: document_processing\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the icp4adeploy-aca component of CP4BA.\nCapabilities: document_processing_runtime\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "icp4adeploy-webhook",
@@ -123779,12 +123395,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Usage-Metering component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "ibm-usage-metering-instance",
-      "reference": "general/ibm-usage-metering-instance/instance",
+      "reference": "document_processing_runtime/ibm-usage-metering-instance/instance",
       "scope": [
         "Ibm-Usage-Metering"
       ],
       "short_description": "ibm-usage-metering Deployment",
-      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: document_processing_runtime\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "ibm-usage-metering-instance",
@@ -123926,7 +123542,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Cpe-Watcher component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-cpe-watcher",
-      "reference": "content/icp4adeploy-cpe-watcher/content-platform-engine",
+      "reference": "document_processing_runtime/icp4adeploy-cpe-watcher/content-platform-engine",
       "scope": [
         "Icp4Adeploy-Cpe-Watcher"
       ],
@@ -123993,7 +123609,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Aca component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-processing-extraction",
-      "reference": "content/icp4adeploy-processing-extraction/processing",
+      "reference": "document_processing_runtime/icp4adeploy-processing-extraction/processing",
       "scope": [
         "Icp4Adeploy-Aca"
       ],
@@ -124155,7 +123771,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Cpe-Deploy component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-cpe-deploy",
-      "reference": "content/icp4adeploy-cpe-deploy/content-platform-engine",
+      "reference": "document_processing_runtime/icp4adeploy-cpe-deploy/content-platform-engine",
       "scope": [
         "Icp4Adeploy-Cpe-Deploy"
       ],
@@ -124453,12 +124069,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Aca component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-spbackend",
-      "reference": "document_processing/icp4adeploy-spbackend/spbackend",
+      "reference": "document_processing_runtime/icp4adeploy-spbackend/spbackend",
       "scope": [
         "Icp4Adeploy-Aca"
       ],
       "short_description": "icp4adeploy-aca Deployment",
-      "long_description": "This Deployment manages the icp4adeploy-aca component of CP4BA.\nCapabilities: document_processing\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the icp4adeploy-aca component of CP4BA.\nCapabilities: document_processing_runtime\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "icp4adeploy-spbackend",
@@ -124603,12 +124219,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Bts-Cp4Ba-Bts component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "ibm-bts-cp4ba-bts-316-deployment",
-      "reference": "document_processing/ibm-bts-cp4ba-bts-316-deployment/bts",
+      "reference": "document_processing_runtime/ibm-bts-cp4ba-bts-316-deployment/bts",
       "scope": [
         "Ibm-Bts-Cp4Ba-Bts"
       ],
       "short_description": "ibm-bts-cp4ba-bts Deployment",
-      "long_description": "This Deployment manages the ibm-bts-cp4ba-bts component of CP4BA.\nCapabilities: document_processing\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the ibm-bts-cp4ba-bts component of CP4BA.\nCapabilities: document_processing_runtime\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "ibm-bts-cp4ba-bts-316-deployment",
@@ -124701,7 +124317,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Aca component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-classifyprocess-classify",
-      "reference": "content/icp4adeploy-classifyprocess-classify/classifyprocess",
+      "reference": "document_processing_runtime/icp4adeploy-classifyprocess-classify/classifyprocess",
       "scope": [
         "Icp4Adeploy-Aca"
       ],
@@ -124808,12 +124424,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "App-Engine component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-workspace-aae-ae-deployment",
-      "reference": "application/icp4adeploy-workspace-aae-ae-deployment/ae",
+      "reference": "document_processing_runtime/icp4adeploy-workspace-aae-ae-deployment/ae",
       "scope": [
         "App-Engine"
       ],
       "short_description": "app-engine Deployment",
-      "long_description": "This Deployment manages the app-engine component of CP4BA.\nCapabilities: application\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the app-engine component of CP4BA.\nCapabilities: document_processing_runtime\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "icp4adeploy-workspace-aae-ae-deployment",
@@ -124977,7 +124593,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Css-Deploy-1 component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-css-deploy-1",
-      "reference": "content/icp4adeploy-css-deploy-1/content-search-services",
+      "reference": "document_processing_runtime/icp4adeploy-css-deploy-1/content-search-services",
       "scope": [
         "Icp4Adeploy-Css-Deploy-1"
       ],
@@ -125094,12 +124710,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Aca component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-setup",
-      "reference": "document_processing/icp4adeploy-setup/setup",
+      "reference": "document_processing_runtime/icp4adeploy-setup/setup",
       "scope": [
         "Icp4Adeploy-Aca"
       ],
       "short_description": "icp4adeploy-aca Deployment",
-      "long_description": "This Deployment manages the icp4adeploy-aca component of CP4BA.\nCapabilities: document_processing\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the icp4adeploy-aca component of CP4BA.\nCapabilities: document_processing_runtime\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "icp4adeploy-setup",
@@ -125223,7 +124839,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Icp4Adeploy-Aca component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-bts-operator-controller-manager,ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-bts-operator-controller-manager<br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-rabbitmq-ha",
-      "reference": "content/icp4adeploy-rabbitmq-ha/tm",
+      "reference": "document_processing_runtime/icp4adeploy-rabbitmq-ha/tm",
       "scope": [
         "Icp4Adeploy-Aca"
       ],
@@ -144908,12 +144524,12 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Ibm-Usage-Metering component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "ibm-usage-metering-instance",
-      "reference": "general/ibm-usage-metering-instance/instance",
+      "reference": "workstreams/ibm-usage-metering-instance/instance",
       "scope": [
         "Ibm-Usage-Metering"
       ],
       "short_description": "ibm-usage-metering Deployment",
-      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the ibm-usage-metering component of CP4BA.\nCapabilities: workstreams\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "ibm-usage-metering-instance",
@@ -145055,7 +144671,7 @@
       "foundational_services": "cpfs-im-zen",
       "app_description": "Workflow-Server component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.<br/><br/><strong>[Operators](#view=graph&service=operator&nodelevel=3&names=ibm-usage-metering-operator) for this service:</strong><br/>&nbsp;&nbsp;\u2022 ibm-usage-metering-operator<br/>",
       "deployment": "icp4adeploy-awsins1-baw-server",
-      "reference": "baw_authoring/icp4adeploy-awsins1-baw-server/workflow",
+      "reference": "workstreams/icp4adeploy-awsins1-baw-server/workflow",
       "scope": [
         "Workflow-Server"
       ],
@@ -150907,7 +150523,7 @@
       "foundational_services": "operators",
       "app_description": "Ibm component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "ibm-cp4a-operator",
-      "reference": "operator/operator/operator",
+      "reference": "operator/Deployment/ibm-cp4a-operator",
       "scope": [
         "Ibm"
       ],
@@ -151055,7 +150671,7 @@
       "foundational_services": "operators",
       "app_description": "Ibm component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "ibm-dpe-operator",
-      "reference": "operator/operator/operator",
+      "reference": "operator/Deployment/ibm-dpe-operator",
       "scope": [
         "Ibm"
       ],
@@ -151172,7 +150788,7 @@
       "foundational_services": "operators",
       "app_description": "Ibm-Bts-Operator component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "ibm-bts-operator-controller-manager",
-      "reference": "document_processing/operator/bts",
+      "reference": "operator/Deployment/ibm-bts-operator-controller-manager",
       "scope": [
         "Ibm-Bts-Operator"
       ],
@@ -151248,7 +150864,7 @@
       "foundational_services": "operators",
       "app_description": "Ibm-Common-Service-Operator component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "ibm-common-service-operator",
-      "reference": "operator/operator/operator",
+      "reference": "operator/Deployment/ibm-common-service-operator",
       "scope": [
         "Ibm-Common-Service-Operator"
       ],
@@ -151354,7 +150970,7 @@
       "foundational_services": "operators",
       "app_description": "Ibm component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "ibm-ads-operator",
-      "reference": "decisions_ads/operator/automation-decision-services",
+      "reference": "operator/Deployment/ibm-ads-operator",
       "scope": [
         "Ibm"
       ],
@@ -151491,7 +151107,7 @@
       "foundational_services": "operators",
       "app_description": "Ibm component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "ibm-cp4a-wfps-operator",
-      "reference": "workflow-process-service/operator/operator",
+      "reference": "operator/Deployment/ibm-cp4a-wfps-operator",
       "scope": [
         "Ibm"
       ],
@@ -151648,7 +151264,7 @@
       "foundational_services": "operators",
       "app_description": "Ibm-Ccx-Ai-Services-Operator component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "ibm-ccx-ai-services-operator",
-      "reference": "content/operator/operator",
+      "reference": "operator/Deployment/ibm-ccx-ai-services-operator",
       "scope": [
         "Ibm-Ccx-Ai-Services-Operator"
       ],
@@ -151734,7 +151350,7 @@
       "foundational_services": "operators",
       "app_description": "Deployment component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "ibm-opensearch-operator-controller-manager",
-      "reference": "operator/operator/operator",
+      "reference": "operator/Deployment/ibm-opensearch-operator-controller-manager",
       "scope": [
         "Deployment"
       ],
@@ -151790,7 +151406,7 @@
       "foundational_services": "operators",
       "app_description": "Flink-Kubernetes-Operator component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "flink-kubernetes-operator",
-      "reference": "content/operator/kubernetes",
+      "reference": "operator/Deployment/flink-kubernetes-operator",
       "scope": [
         "Flink-Kubernetes-Operator"
       ],
@@ -151896,7 +151512,7 @@
       "foundational_services": "operators",
       "app_description": "Ibm component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "ibm-insights-engine-operator",
-      "reference": "content/operator/insights",
+      "reference": "operator/Deployment/ibm-insights-engine-operator",
       "scope": [
         "Ibm"
       ],
@@ -152003,7 +151619,7 @@
       "foundational_services": "operators",
       "app_description": "Ibm-Usage-Metering-Operator component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "ibm-usage-metering-operator",
-      "reference": "operator/operator/operator",
+      "reference": "operator/Deployment/ibm-usage-metering-operator",
       "scope": [
         "Ibm-Usage-Metering-Operator"
       ],
@@ -152089,7 +151705,7 @@
       "foundational_services": "operators",
       "app_description": "Icp4A component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "icp4a-foundation-operator",
-      "reference": "operator/operator/operator",
+      "reference": "operator/Deployment/icp4a-foundation-operator",
       "scope": [
         "Icp4A"
       ],
@@ -152196,7 +151812,7 @@
       "foundational_services": "operators",
       "app_description": "Entity-Operator component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "iaf-system-entity-operator",
-      "reference": "operator/operator/operator",
+      "reference": "operator/Deployment/iaf-system-entity-operator",
       "scope": [
         "Entity-Operator"
       ],
@@ -152312,7 +151928,7 @@
       "foundational_services": "operators",
       "app_description": "Cloud-Native-Postgresql component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "postgresql-operator-controller-manager-1-25-5",
-      "reference": "content/operator/operator",
+      "reference": "operator/Deployment/postgresql-operator-controller-manager-1-25-5",
       "scope": [
         "Cloud-Native-Postgresql"
       ],
@@ -152388,7 +152004,7 @@
       "foundational_services": "operators",
       "app_description": "Ibm component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "ibm-events-operator-v5.2.1",
-      "reference": "operator/operator/operator",
+      "reference": "operator/Deployment/ibm-events-operator-v5.2.1",
       "scope": [
         "Ibm"
       ],
@@ -152444,7 +152060,7 @@
       "foundational_services": "operators",
       "app_description": "Ibm component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "ibm-content-operator",
-      "reference": "operator/operator/operator",
+      "reference": "operator/Deployment/ibm-content-operator",
       "scope": [
         "Ibm"
       ],
@@ -152561,7 +152177,7 @@
       "foundational_services": "operators",
       "app_description": "Ibm component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "ibm-workflow-operator",
-      "reference": "baw_authoring/operator/workflow",
+      "reference": "operator/Deployment/ibm-workflow-operator",
       "scope": [
         "Ibm"
       ],
@@ -152688,7 +152304,7 @@
       "foundational_services": "operators",
       "app_description": "Ibm component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "ibm-commonui-operator",
-      "reference": "operator/operator/operator",
+      "reference": "operator/Deployment/ibm-commonui-operator",
       "scope": [
         "Ibm"
       ],
@@ -152794,7 +152410,7 @@
       "foundational_services": "operators",
       "app_description": "Ibm component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "ibm-pfs-operator",
-      "reference": "baw_authoring/operator/process-federation-server",
+      "reference": "operator/Deployment/ibm-pfs-operator",
       "scope": [
         "Ibm"
       ],
@@ -152921,7 +152537,7 @@
       "foundational_services": "operators",
       "app_description": "Ibm component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "ibm-zen-operator",
-      "reference": "zen/operator/zen-ui",
+      "reference": "operator/Deployment/ibm-zen-operator",
       "scope": [
         "Ibm"
       ],
@@ -153048,7 +152664,7 @@
       "foundational_services": "operators",
       "app_description": "Ibm-Odm-Operator component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "ibm-odm-operator",
-      "reference": "decisions/operator/operational-decision-manager",
+      "reference": "operator/Deployment/ibm-odm-operator",
       "scope": [
         "Ibm-Odm-Operator"
       ],
@@ -153175,7 +152791,7 @@
       "foundational_services": "operators",
       "app_description": "Ibm-Iam-Operator component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "ibm-iam-operator",
-      "reference": "operator/cpfs-im-zen/operator",
+      "reference": "operator/Deployment/ibm-iam-operator",
       "scope": [
         "Ibm-Iam-Operator"
       ],
@@ -161026,12 +160642,12 @@
       "foundational_services": "foundational-services",
       "app_description": "Operand-Deployment-Lifecycle-Manager component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "operand-deployment-lifecycle-manager",
-      "reference": "general/cpfs-im-zen/manager",
+      "reference": "cpfs-im/Deployment/operand-deployment-lifecycle-manager",
       "scope": [
         "Operand-Deployment-Lifecycle-Manager"
       ],
       "short_description": "operand-deployment-lifecycle-manager Deployment",
-      "long_description": "This Deployment manages the operand-deployment-lifecycle-manager component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the operand-deployment-lifecycle-manager component of CP4BA.\nCapabilities: cpfs-im\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "operand-deployment-lifecycle-manager",
@@ -161062,7 +160678,7 @@
       "foundational_services": "foundational-services",
       "app_description": "Platform component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "platform-identity-provider",
-      "reference": "cpfs-im/cpfs-im-zen/platform-identity-provider",
+      "reference": "cpfs-im/Deployment/platform-identity-provider",
       "scope": [
         "Platform"
       ],
@@ -161270,7 +160886,7 @@
       "foundational_services": "foundational-services",
       "app_description": "Platform component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "platform-identity-management",
-      "reference": "cpfs-im/cpfs-im-zen/platform-identity-management",
+      "reference": "cpfs-im/Deployment/platform-identity-management",
       "scope": [
         "Platform"
       ],
@@ -161458,12 +161074,12 @@
       "foundational_services": "foundational-services",
       "app_description": "Common-Web-Ui component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "common-web-ui",
-      "reference": "general/cpfs-im-zen/ui",
+      "reference": "cpfs-im/Deployment/common-web-ui",
       "scope": [
         "Common-Web-Ui"
       ],
       "short_description": "common-web-ui Deployment",
-      "long_description": "This Deployment manages the common-web-ui component of CP4BA.\nCapabilities: general\nIf this component is down, related functionality will be unavailable.",
+      "long_description": "This Deployment manages the common-web-ui component of CP4BA.\nCapabilities: cpfs-im\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "common-web-ui",
@@ -161646,7 +161262,7 @@
       "foundational_services": "foundational-services",
       "app_description": "Platform component. Depends on [cpfs-im](#view=graph&service=cpfs-im) for foundational services and [zen](#view=graph&service=zen) services.",
       "deployment": "platform-auth-service",
-      "reference": "cpfs-im/cpfs-im-zen/platform-auth-service",
+      "reference": "cpfs-im/Deployment/platform-auth-service",
       "scope": [
         "Platform"
       ],
