@@ -121488,181 +121488,24 @@
       "scope": [
         "Business Automation Insights"
       ],
-      "short_description": "BAI Cockpit - Web-based dashboard for business process analytics and insights",
-      "long_description": "The Business Automation Insights (BAI) Cockpit is the primary user interface for viewing and analyzing business process data. It provides real-time dashboards, custom reports, and analytics capabilities for monitoring business automation workflows, cases, and decisions.\n\nIf the Cockpit is down, users cannot access BAI dashboards, view process analytics, create custom reports, or monitor business metrics. This impacts business visibility, decision-making, and compliance reporting capabilities.",
+      "short_description": "BAI Cockpit with OpenSearch operator dependencies",
+      "long_description": "Business Automation Insights (BAI) Cockpit component that depends on the OpenSearch operator for data storage and search capabilities.\nIf this component is down, related functionality will be unavailable.",
       "k8s_objects": [
         {
           "name": "icp4adeploy-insights-engine-cockpit",
           "kind": "Deployment",
-          "short_description": "Business Performance Center (BPC) - BAI Cockpit web application",
+          "short_description": "Deployment for icp4adeploy-insights-engine-cockpit",
           "troubleshooting": [
-            "Check deployment status: oc get deployment icp4adeploy-insights-engine-cockpit",
-            "View deployment logs: oc logs deployment/icp4adeploy-insights-engine-cockpit",
-            "Describe deployment: oc describe deployment icp4adeploy-insights-engine-cockpit",
-            "Verify OpenSearch connectivity for dashboard data queries",
-            "Review cockpit logs: oc logs -l component=icp4adeploy-insights-engine-cockpit",
-            "Documentation: https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/latest?topic=insights-troubleshooting-business-automation"
+            "Check Deployment status: oc get deployment icp4adeploy-insights-engine-cockpit",
+            "View Deployment logs: oc logs deployment/icp4adeploy-insights-engine-cockpit",
+            "Describe Deployment: oc describe deployment icp4adeploy-insights-engine-cockpit"
           ],
           "dependency": [
-            "OpenSearch"
+            "OpenSearch",
+            "Pod: ibm-opensearch-operator-controller-manager-*",
+            "ReplicaSet: ibm-opensearch-operator-controller-manager-*",
+            "ServiceAccount: ibm-opensearch-operator-controller-manager"
           ]
-        },
-        {
-          "name": "icp4adeploy-insights-engine-cockpit-*",
-          "kind": "Pod",
-          "short_description": "BAI Cockpit (BPC) pod",
-          "troubleshooting": [
-            "Check pod status: oc get pod -l component=icp4adeploy-insights-engine-cockpit",
-            "View pod logs: oc logs -l component=icp4adeploy-insights-engine-cockpit",
-            "Describe pod: oc describe pod -l component=icp4adeploy-insights-engine-cockpit",
-            "If pod is in CrashLoopBackOff, verify OpenSearch is running: oc get pods -l app=opensearch",
-            "Check OpenSearch service availability: oc get service opensearch"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-insights-engine-cockpit-*",
-          "kind": "ReplicaSet",
-          "short_description": "ReplicaSet managing BAI Cockpit pods",
-          "troubleshooting": [
-            "Check ReplicaSet status: oc get replicaset -l component=icp4adeploy-insights-engine-cockpit",
-            "Describe ReplicaSet: oc describe replicaset -l component=icp4adeploy-insights-engine-cockpit",
-            "Verify replica count matches deployment specification"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-insights-engine-cockpit",
-          "kind": "Service",
-          "short_description": "Service endpoint for BAI Cockpit",
-          "troubleshooting": [
-            "Check service status: oc get service icp4adeploy-insights-engine-cockpit",
-            "Describe service: oc describe service icp4adeploy-insights-engine-cockpit",
-            "Verify service endpoints: oc get endpoints icp4adeploy-insights-engine-cockpit"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-insights-engine-env",
-          "kind": "ConfigMap",
-          "short_description": "Environment configuration for BAI Cockpit",
-          "troubleshooting": [
-            "Check ConfigMap: oc get configmap icp4adeploy-insights-engine-env",
-            "View ConfigMap data: oc describe configmap icp4adeploy-insights-engine-env",
-            "Verify Kafka bootstrap servers configuration",
-            "Verify OpenSearch URL configuration",
-            "Check authentication type (zen) configuration"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-insights-engine-cockpit-secret",
-          "kind": "Secret",
-          "short_description": "Authentication credentials and certificates for BAI Cockpit",
-          "troubleshooting": [
-            "Check secret exists: oc get secret icp4adeploy-insights-engine-cockpit-secret",
-            "Verify secret has required keys: oc describe secret icp4adeploy-insights-engine-cockpit-secret",
-            "Verify admin credentials are configured",
-            "Check CA certificate validity"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-insights-engine-secret-internal",
-          "kind": "Secret",
-          "short_description": "Internal credentials and certificates for BAI components",
-          "troubleshooting": [
-            "Check secret exists: oc get secret icp4adeploy-insights-engine-secret-internal",
-            "Verify secret has required keys: oc describe secret icp4adeploy-insights-engine-secret-internal",
-            "Verify Kafka credentials are valid",
-            "Verify OpenSearch credentials are valid",
-            "Check Flink JobManager credentials",
-            "Verify Zen API key is present"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "bai-cockpit-ltpa-checksum-secret",
-          "kind": "Secret",
-          "short_description": "LTPA keys for single sign-on authentication",
-          "troubleshooting": [
-            "Check secret exists: oc get secret bai-cockpit-ltpa-checksum-secret",
-            "Verify LTPA keys are present: oc describe secret bai-cockpit-ltpa-checksum-secret",
-            "Check LTPA key synchronization with other components"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "internal-tls",
-          "kind": "Secret",
-          "short_description": "Internal TLS certificates for Zen integration",
-          "troubleshooting": [
-            "Check secret exists: oc get secret internal-tls",
-            "Verify certificate validity: oc get secret internal-tls -o jsonpath='{.data.tls\\.crt}' | base64 -d | openssl x509 -noout -dates"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-insights-engine-cockpit-cert",
-          "kind": "Certificate",
-          "short_description": "TLS certificate resource for BAI Cockpit HTTPS endpoint",
-          "troubleshooting": [
-            "Check certificate status: oc get certificate icp4adeploy-insights-engine-cockpit-cert",
-            "Describe certificate: oc describe certificate icp4adeploy-insights-engine-cockpit-cert",
-            "Verify certificate is ready: oc get certificate icp4adeploy-insights-engine-cockpit-cert -o jsonpath='{.status.conditions[?(@.type==\"Ready\")].status}'",
-            "Check issuer: oc get certificate icp4adeploy-insights-engine-cockpit-cert -o jsonpath='{.spec.issuerRef.name}'",
-            "View certificate expiry: oc get certificate icp4adeploy-insights-engine-cockpit-cert -o jsonpath='{.status.notAfter}'"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-insights-engine-cockpit-cert",
-          "kind": "Secret",
-          "short_description": "TLS certificate secret for BAI Cockpit HTTPS endpoint",
-          "troubleshooting": [
-            "Check secret exists: oc get secret icp4adeploy-insights-engine-cockpit-cert",
-            "Verify certificate expiry: oc get secret icp4adeploy-insights-engine-cockpit-cert -o jsonpath='{.data.tls\\.crt}' | base64 -d | openssl x509 -noout -dates",
-            "Check cert-manager annotations: oc get secret icp4adeploy-insights-engine-cockpit-cert -o jsonpath='{.metadata.annotations}'"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-bai-pvc",
-          "kind": "PersistentVolumeClaim",
-          "short_description": "Persistent storage for BAI Cockpit",
-          "troubleshooting": [
-            "Check PVC status: oc get pvc icp4adeploy-bai-pvc",
-            "Verify PVC is bound: oc describe pvc icp4adeploy-bai-pvc",
-            "Check storage class availability",
-            "Verify storage capacity is sufficient",
-            "Check PV binding: oc get pv | grep icp4adeploy-bai-pvc"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-insights-engine-sa",
-          "kind": "ServiceAccount",
-          "short_description": "Service account for BAI Cockpit pods",
-          "troubleshooting": [
-            "Check service account: oc get serviceaccount icp4adeploy-insights-engine-sa",
-            "Verify service account secrets: oc describe serviceaccount icp4adeploy-insights-engine-sa",
-            "Check associated roles and role bindings"
-          ],
-          "dependency": []
-        },
-        {
-          "name": "icp4adeploy-insights-engine-cockpit-pdb",
-          "kind": "PodDisruptionBudget",
-          "short_description": "Pod disruption budget protecting BAI Cockpit availability during voluntary disruptions",
-          "troubleshooting": [
-            "Check PodDisruptionBudget status: oc get pdb icp4adeploy-insights-engine-cockpit-pdb",
-            "Describe PodDisruptionBudget: oc describe pdb icp4adeploy-insights-engine-cockpit-pdb",
-            "Verify disruptions allowed: oc get pdb icp4adeploy-insights-engine-cockpit-pdb -o jsonpath='{.status.disruptionsAllowed}'",
-            "Verify selected pods: oc get pod -l component=icp4adeploy-insights-engine-cockpit",
-            "Check minAvailable setting: oc get pdb icp4adeploy-insights-engine-cockpit-pdb -o jsonpath='{.spec.minAvailable}'",
-            "Check unhealthy pod eviction policy: oc get pdb icp4adeploy-insights-engine-cockpit-pdb -o jsonpath='{.spec.unhealthyPodEvictionPolicy}'"
-          ],
-          "dependency": []
         }
       ]
     },
@@ -121695,7 +121538,26 @@
           ],
           "dependency": [
             "OpenSearch",
+            "Pod: ibm-opensearch-operator-controller-manager-*",
+            "ReplicaSet: ibm-opensearch-operator-controller-manager-*",
+            "ServiceAccount: ibm-opensearch-operator-controller-manager",
             "Flink",
+            "Deployment: icp4adeploy-insights-engine-flink",
+            "ConfigMap: icp4adeploy-insights-engine-env",
+            "ConfigMap: flink-config-icp4adeploy-insights-engine-flink",
+            "Secret: flink-internal-truststore",
+            "Secret: icp4adeploy-insights-engine-flink-admin-user",
+            "Secret: icp4adeploy-kafka-certificate-secret",
+            "Secret: icp4ba-kafka-auth-0",
+            "Secret: icp4adeploy-insights-engine-flink-cert",
+            "Secret: opensearch-tls-secret-route",
+            "Secret: opensearch-admin-user",
+            "Pod: icp4adeploy-insights-engine-flink-*",
+            "Pod: icp4adeploy-insights-engine-flink-taskmanager-*",
+            "ReplicaSet: icp4adeploy-insights-engine-flink-*",
+            "ReplicaSet: icp4adeploy-insights-engine-flink-taskmanager-*",
+            "Service: icp4adeploy-insights-engine-flink",
+            "ServiceAccount: icp4adeploy-insights-engine-flink",
             "Kafka"
           ]
         },
