@@ -16316,7 +16316,7 @@
         },
         {
           "name": "ibm-insights-engine-operator.v26.0.0",
-          "kind": "ClusterServiceVersion",
+          "kind": "Cluster",
           "short_description": "ClusterServiceVersion for the installed IBM Insights Engine Operator release",
           "troubleshooting": [
             "Check CSV status: oc get csv -n bai ibm-insights-engine-operator.v26.0.0",

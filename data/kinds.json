@@ -1,7 +1,7 @@
 {
   "kinds": [
     "Certificate",
-    "ClusterServiceVersion",
+    "Cluster",
     "ConfigMap",
     "CronJob",
     "Deployment",
