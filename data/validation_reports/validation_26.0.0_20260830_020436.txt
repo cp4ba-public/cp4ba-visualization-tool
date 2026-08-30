@@ -1,0 +1,26 @@
+======================================================================
+Validation Report for Version 26.0.0
+Generated: 2026-08-30 02:04:36
+======================================================================
+
+❌ VALIDATION FAILED - 1 ERROR(S) FOUND
+
+📊 STATISTICS:
+  - Total k8s objects: 7142
+  - Unique kinds: 22
+  - Total services: 16
+  - Data items: 5326
+
+❌ ERRORS (1):
+  1. Kind 'operator' might be a typo. Did you mean 'Operator'? (distance: 1)
+
+⚠️  WARNINGS (1):
+  1. Kind 'clusterserviceversion' appears only 1 time(s) - possible typo?
+
+🔍 RECOMMENDATIONS:
+  - Fix all errors before proceeding with deployment
+  - Review the source data in cp4ba-k8s-deps repository
+  - Review warnings to ensure they are intentional
+  - Verify new services/kinds are correctly named
+
+======================================================================
